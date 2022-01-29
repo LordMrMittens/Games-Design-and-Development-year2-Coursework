@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyMovementController : AgentMover
+public class EnemyPatrol : AgentMover
 {
 
 
@@ -21,12 +21,12 @@ public class EnemyMovementController : AgentMover
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         Navigate();
     }
 
-    private void Navigate()
+    public virtual void Navigate()
     {
         NavigateWaypoints();
         FindPlayer();

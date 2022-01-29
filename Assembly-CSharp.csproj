@@ -59,14 +59,16 @@
     <Compile Include="Assets\Scripts\EnemyHydra.cs" />
     <Compile Include="Assets\Scripts\Projectiles.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
-    <Compile Include="Assets\Scripts\EnemyMovementController.cs" />
+    <Compile Include="Assets\Scripts\AgentMover.cs" />
+    <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\Obsolete\PlayerController.cs" />
     <Compile Include="Assets\Scripts\EnemyBomber.cs" />
+    <Compile Include="Assets\Scripts\EnemyDrone.cs" />
     <Compile Include="Assets\Scripts\Obsolete\Gravity.cs" />
-    <Compile Include="Assets\Scripts\MarchingEnemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyMarchController.cs" />
     <Compile Include="Assets\Scripts\PlayerControllerRotation.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\AgentMover.cs" />
+    <Compile Include="Assets\Scripts\EnemyMarch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

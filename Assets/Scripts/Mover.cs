@@ -7,18 +7,20 @@ public class Mover : MonoBehaviour
 {
     public float radiusOffset;
     public float speed;
-    public GameObject center;
+    public GameObject center { get; set; }
     public Vector3 origin;
     public float rotation { get; set; }
-    public float elevation;
+    public float altitude { get; set; }
     public float movementSpeed;
     public float horizontalMovement { get; set; }
     public float setHorizontalMovement { get; set; }
     public float verticalMovement { get; set; }
     public virtual void Start()
     {
+        center = GameObject.Find("Center");
         rotation = transform.eulerAngles.y;
         origin = center.transform.position;
+        
     }
     // Update is called once per frame
     void Update()
@@ -28,8 +30,8 @@ public class Mover : MonoBehaviour
     public virtual void Move(float horizontalMovement, float verticalMovement)
     {
         rotation -= horizontalMovement * speed * Time.deltaTime; //horizontal movement
-        elevation += verticalMovement * (speed / 6) * Time.deltaTime; //vertical speed should be slower than horizontal speed
-        transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, elevation, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
+        altitude += verticalMovement * (speed / 6) * Time.deltaTime; //vertical speed should be slower than horizontal speed
+        transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
         //this makes the player's "back" to always face the center of the cylinder
         transform.LookAt(new Vector3(origin.x, transform.position.y, origin.z), Vector3.up);
     }

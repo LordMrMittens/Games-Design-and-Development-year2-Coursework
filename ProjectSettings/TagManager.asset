@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - patrol_node
+  - FlankingPoint
   layers:
   - Default
   - TransparentFX

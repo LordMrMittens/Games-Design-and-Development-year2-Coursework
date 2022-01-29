@@ -20,7 +20,7 @@ public class PlayerControllerRotation : Mover
     {
         base.Start();
         rotation = 0;
-        elevation = -5;
+        altitude = -5;
         
     }
 
@@ -51,7 +51,7 @@ public class PlayerControllerRotation : Mover
         Projectiles projectile = Bullet.GetComponent<Projectiles>();
         Bullet.transform.forward = target - transform.position;
         projectile.rotation = rotation - .3f;
-        projectile.elevation = elevation + .2f;
+        projectile.altitude = altitude + .2f;
         projectile.speed = speed / Mathf.Sqrt(angle);
         if (projectile.speed > maxBulletSpeed)
         {
@@ -78,12 +78,12 @@ public class PlayerControllerRotation : Mover
     }
     public override void Move(float horizontalMovement,float verticalMovement)
     {
-        if (elevation <=-5) 
+        if (altitude <=-5) 
         { 
-            elevation = -5;
-        } else if (elevation >= 5)
+            altitude = -5;
+        } else if (altitude >= 5)
         {
-            elevation = 5;
+            altitude = 5;
         }  
         base.Move(horizontalMovement,verticalMovement);
         

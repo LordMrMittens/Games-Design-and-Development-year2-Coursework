@@ -20,8 +20,8 @@ public class Projectiles : Mover
     public override void Move(float horizontalMovement, float verticalMovement)
     {
         rotation -= lateralSpeed * Time.deltaTime;
-        elevation += speed * Time.deltaTime;
-        transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, elevation, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
+        altitude += speed * Time.deltaTime;
+        transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
         transform.LookAt(new Vector3(origin.x, transform.position.y, origin.z), Vector3.up);
     }
 
