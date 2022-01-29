@@ -11,8 +11,7 @@ public class EnemyHydra : AgentMover
     float movementCounter;
     public override void Start()
     {
-        rotation = transform.eulerAngles.y;
-        origin = center.transform.position;
+        base.Start();
         movementCounter = timeBetweenMovements;
         
     }
