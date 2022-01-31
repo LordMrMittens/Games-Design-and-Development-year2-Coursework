@@ -6,6 +6,9 @@ TagManager:
   tags:
   - patrol_node
   - FlankingPoint
+  - Enemy
+  - Center
+  - MouseMask
   layers:
   - Default
   - TransparentFX
@@ -13,13 +16,13 @@ TagManager:
   - Mousecast
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerBullets
+  - Enemy
+  - enemyBullets
+  - PowerUps
+  - Boss
+  - BossBullets
   - 
   - 
   - 

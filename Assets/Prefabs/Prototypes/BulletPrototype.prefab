@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7280299743685637166}
   - component: {fileID: 7280299743685637167}
   - component: {fileID: 3927744147799755803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletPrototype
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,8 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc803443735dc848a79cf3c7b5e7320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radiusOffset: 0
-  center: {fileID: 0}
+  radiusOffset: 0.5
+  speed: 0
+  origin: {x: 0, y: 0, z: 0}
+  movementSpeed: 0
+  damage: 6
 --- !u!135 &7280299743685637167
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -106,7 +109,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7280299743685637164}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

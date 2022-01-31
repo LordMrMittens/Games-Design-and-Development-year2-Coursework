@@ -12,7 +12,8 @@ public class EnemyMarchController : Mover
     [SerializeField] float altitudeOffset;
     public int enemiesToSpawn;
     [SerializeField] GameObject enemyPrefab;
-    List<GameObject> enemiesInSquad = new List<GameObject>();
+    public List<GameObject> enemiesInSquad = new List<GameObject>();
+    int enemiesLeftInSquad;
     // Start is called before the first frame update
     public override void Start()
     {
@@ -20,8 +21,8 @@ public class EnemyMarchController : Mover
         {
             GameObject enemy = Instantiate(enemyPrefab);
             enemiesInSquad.Add(enemy);
+            enemy.transform.parent = gameObject.transform;
         }
-
         base.Start();
         horizontalMovement = movementSpeed;
         setHorizontalMovement = horizontalMovement;
@@ -31,6 +32,11 @@ public class EnemyMarchController : Mover
     void Update()
     {
         Move(horizontalMovement, verticalMovement);
+        UpdateSquad();
+    }
+    private void UpdateSquad()
+    {
+        enemiesLeftInSquad = enemiesToSpawn;
         float j = altitudeOffset;
         for (int i = 0; i < enemiesInSquad.Count; i++)
         {
@@ -39,12 +45,16 @@ public class EnemyMarchController : Mover
                 j += altitudeOffset;
             }
             enemiesInSquad[i].GetComponent<EnemyMarch>().rotation = rotation + ((i % 10) * rotationOffset);
-                enemiesInSquad[i].GetComponent<EnemyMarch>().altitude = (altitude + altitudeOffset) + j;
-            
-
-            Debug.Log(j);
+            enemiesInSquad[i].GetComponent<EnemyMarch>().altitude = (altitude + altitudeOffset) + j;
+            if (!enemiesInSquad[i].activeSelf)
+            {
+                enemiesLeftInSquad--;
+                if (enemiesLeftInSquad <= 0)
+                {
+                    Destroy(gameObject);
+                }
+            } 
         }
-       
     }
     IEnumerator changeDirection()
     {

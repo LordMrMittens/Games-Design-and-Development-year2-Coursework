@@ -2,53 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControllerRotation : Mover
+public class PlayerGun : MonoBehaviour
 {
-
-    //Shooting
+    PlayerMovementController playerMovementController;
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject bulletTemplate;
-    [SerializeField]GameObject cannon;
+    [SerializeField] GameObject cannon;
     [SerializeField] LayerMask targetMask;
     [SerializeField] float maxBulletSpeed;
+    [SerializeField] int bulletDamage;
+    int damage;
     Vector3 target;
     int direction;
-
-
-    // Start is called before the first frame update
-    public override void Start()
+    PlayerInventory playerInventory;
+    float speed;
+    float rotation;
+    float altitude;
+    void Start()
     {
-        base.Start();
-        rotation = 0;
-        altitude = -5;
-        
+        playerMovementController = GetComponent<PlayerMovementController>();
+        playerInventory = GetComponent<PlayerInventory>();
+        damage = bulletDamage;
     }
-
-    // Update is called once per frame
     void Update()
     {
-
-
-        Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Shoot();
-        }
+        }        
     }
-
     private void Shoot()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-
         if (Physics.Raycast(ray, out hit, targetMask))
         {
             ObtainShootingDirection(hit);
         }
         Vector3 targetDir = target - cannon.transform.position;
         float angle = Vector3.Angle(targetDir, cannon.transform.up);
+        speed = playerMovementController.speed;
+        rotation = playerMovementController.rotation;
+        altitude = playerMovementController.altitude;
         GameObject Bullet = Instantiate(bulletTemplate, cannon.transform.position, Quaternion.identity);
         Projectiles projectile = Bullet.GetComponent<Projectiles>();
+        projectile.damage = damage;
         Bullet.transform.forward = target - transform.position;
         projectile.rotation = rotation - .3f;
         projectile.altitude = altitude + .2f;
@@ -59,7 +57,6 @@ public class PlayerControllerRotation : Mover
         }
         projectile.lateralSpeed = angle * direction;
     }
-
     private void ObtainShootingDirection(RaycastHit hit)
     {
         target = hit.point;
@@ -76,17 +73,8 @@ public class PlayerControllerRotation : Mover
             direction = 0;
         }
     }
-    public override void Move(float horizontalMovement,float verticalMovement)
+    public void doubleDamage()
     {
-        if (altitude <=-5) 
-        { 
-            altitude = -5;
-        } else if (altitude >= 5)
-        {
-            altitude = 5;
-        }  
-        base.Move(horizontalMovement,verticalMovement);
-        
-
+        damage = bulletDamage * 2;
     }
 }

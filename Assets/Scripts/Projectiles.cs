@@ -5,14 +5,13 @@ using UnityEngine;
 public class Projectiles : Mover
 {
     public float lateralSpeed { get; set; }
-    // Start is called before the first frame update
+    public int damage { get; set; }
     public override void Start()
     {
         center = GameObject.Find("Center"); 
         origin = center.transform.position;
         Destroy(gameObject, 2); 
     }
-    // Update is called once per frame
     void Update()
     {
         Move(lateralSpeed,lateralSpeed); 
@@ -24,5 +23,12 @@ public class Projectiles : Mover
         transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
         transform.LookAt(new Vector3(origin.x, transform.position.y, origin.z), Vector3.up);
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag != "Player" && other.tag != "PowerUp" && other.tag != "MouseMask" && other.tag != "Center")
+        {
+            other.GetComponent<HealthManager>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+    }
 }
