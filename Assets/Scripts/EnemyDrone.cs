@@ -28,21 +28,16 @@ public class EnemyDrone : EnemyPatrol
         if (state == State.Patrolling)
         {
             Navigate();
-            //Debug.Log("Patrolling");
         }
         if (state == State.Chasing)
         {
             ChasePlayer(player);
-            //Debug.Log("Chasing");
         }
         if (state == State.Orbiting)
         {
-            //Debug.Log("Orbiting");
             Orbit();
-           // KeepDistance();
-            //orbit player
-            
         }
+        
     }
     public override void ChasePlayer(GameObject target)
     {
@@ -62,7 +57,7 @@ public class EnemyDrone : EnemyPatrol
                 state = State.Orbiting;
             } else
             {
-               // state = State.Patrolling;
+               
             }
             
         }
@@ -71,18 +66,16 @@ public class EnemyDrone : EnemyPatrol
     void Orbit()
     {
         float distance = Vector3.Distance(transform.position,player.transform.position);
-
+        
         if (distance > orbitDistance)
         {
             navAgent.speed = chaseSpeed;
             navAgent.acceleration = 20;
-            /*
-            distance = orbitDistance;
-            transform.position = (transform.position - player.transform.position).normalized * distance + player.transform.position;*/
         }
         else
         {
             navAgent.speed = orbitSpeed;
+            transform.LookAt(player.transform, Vector3.forward);
         }
         
         agent.SetDestination(targetFlankingPoint.transform.position);
@@ -104,25 +97,4 @@ public class EnemyDrone : EnemyPatrol
             
         }
     }
-
-    /*
-     void Orbit(float horizontalMovement)
-    {
-        float distance = Vector3.Distance(transform.position, orbitCentre.transform.position);
-        if (distance != orbitDistance)
-        {
-            distance = orbitDistance;
-            transform.position = (transform.position - orbitCentre.transform.position).normalized * distance + orbitCentre.transform.position;
-            
-        }
-        //rotation -= horizontalMovement * speed * Time.deltaTime;
-        transform.RotateAround(orbitCentre.transform.localPosition, orbitCentre.transform.forward, orbitSpeed * Time.deltaTime);
-        
-        //transform.position = orbitOrigin + Quaternion.Euler(rotation,0,0) * new Vector3(0, orbitDistance, 0);
-        //transform.LookAt(new Vector3(orbitOrigin.x, orbitOrigin.y, orbitOrigin.z), Vector3.left);
-    }
-    void KeepDistance()
-    {
-        transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, elevation, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
-    }*/
 }

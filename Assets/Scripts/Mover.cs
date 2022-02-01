@@ -29,10 +29,13 @@ public class Mover : MonoBehaviour
     }
     public virtual void Move(float horizontalMovement, float verticalMovement)
     {
-        rotation -= horizontalMovement * speed * Time.deltaTime; //horizontal movement
-        altitude += verticalMovement * (speed / 6) * Time.deltaTime; //vertical speed should be slower than horizontal speed
+        rotation -= horizontalMovement * speed * Time.deltaTime;
+        altitude += verticalMovement * (speed / 6) * Time.deltaTime; 
         transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
-        //this makes the player's "back" to always face the center of the cylinder
+        KeepFacingCenter();
+    }
+    public virtual void KeepFacingCenter()
+    {
         transform.LookAt(new Vector3(origin.x, transform.position.y, origin.z), Vector3.up);
     }
 

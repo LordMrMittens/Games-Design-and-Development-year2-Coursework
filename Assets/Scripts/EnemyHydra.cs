@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyHydra : AgentMover
 {
     enum status { Passive, Active, Attached}
@@ -9,10 +10,12 @@ public class EnemyHydra : AgentMover
     bool isDivided = false;
     public float timeBetweenMovements;
     float movementCounter;
+    
     public override void Start()
     {
         base.Start();
         movementCounter = timeBetweenMovements;
+        agent.enabled=false;
         
     }
     // Update is called once per frame
@@ -54,6 +57,7 @@ public class EnemyHydra : AgentMover
             float distance = Vector3.Distance(player.transform.position, transform.position);
             if (distance < viewDistance)
             {
+                agent.enabled = true;
                 viewDistance = 100;
                 state = status.Active;
 
@@ -70,44 +74,7 @@ public class EnemyHydra : AgentMover
     }
     public override void ChasePlayer(GameObject target)
     {
-        Debug.Log(transform.position);
         base.ChasePlayer(target);
-        Debug.Log(transform.position);
+        KeepFacingCenter();
     }
-    /*
-    void ChaseThePlayer()
-    {
-        status = State.Active;
-        float myrotation = rotation;
-        float playerRotation = playerController.rotation;
-        
-        if (elevation < playerController.elevation - .2)
-        {
-            verticalMovement = movementSpeed;
-
-        } else if (elevation > playerController.elevation+.2)
-        {
-            verticalMovement = movementSpeed * -1;
-
-        } else
-        {
-            verticalMovement = 0;
-
-        }
-        if (Mathf.Abs(rotation % 360) > Mathf.Abs(playerRotation%360))
-       
-        {
-            horizontalMovement = movementSpeed;
-            //Debug.Log("first Statement");
-        }
-        else //if (Mathf.Abs(rotation%360) < Mathf.Abs(playerRotation%360))
-        {
-            horizontalMovement = -movementSpeed;
-            //Debug.Log("Second Statement");
-        }
-        Debug.Log(Mathf.Abs(rotation % 360) + " substraction of both math abs rotations");
-        
-        //Move(horizontalMovement, verticalMovement);
-        
-    }*/
 }

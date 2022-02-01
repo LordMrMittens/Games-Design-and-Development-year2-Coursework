@@ -20,7 +20,6 @@ public class EnemyPatrol : AgentMover
         }
     }
 
-    // Update is called once per frame
     public virtual void Update()
     {
         Navigate();

@@ -16,7 +16,7 @@ public class AgentMover : Mover
     public override void Start()
     {
         patrolNodes.AddRange(GameObject.FindGameObjectsWithTag("patrol_node"));
-
+        agent = GetComponent<NavMeshAgent>();
         if (patrolNodes.Count > 0)
         {
             currentNode = 0;
@@ -40,6 +40,7 @@ public class AgentMover : Mover
             {
                 
                 ChasePlayer(player);
+
             }
             else
             {
