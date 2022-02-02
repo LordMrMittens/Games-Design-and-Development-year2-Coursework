@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7280299743685637167}
   - component: {fileID: 5381575578663692849}
   - component: {fileID: -7301726225194568337}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: EnemyBulletPrototype
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +112,10 @@ MonoBehaviour:
   speed: 15.93
   center: {fileID: 0}
   verticalSpeed: 0
+  distanceFromCenter: 0
+  centerRigidbody: {fileID: 0}
+  damage: 0
+  radiusOffset: 0.5
 --- !u!54 &-7301726225194568337
 Rigidbody:
   m_ObjectHideFlags: 0

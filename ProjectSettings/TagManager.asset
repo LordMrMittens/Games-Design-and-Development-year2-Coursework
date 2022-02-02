@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Center
   - MouseMask
+  - Obstacle
   layers:
   - Default
   - TransparentFX

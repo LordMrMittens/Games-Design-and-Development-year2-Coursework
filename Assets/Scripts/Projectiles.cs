@@ -8,7 +8,7 @@ public class Projectiles : Mover
     public int damage { get; set; }
     public override void Start()
     {
-        Debug.Log(rotation);
+        
         center = GameObject.Find("Center"); 
         origin = center.transform.position;
         Destroy(gameObject, 2); 

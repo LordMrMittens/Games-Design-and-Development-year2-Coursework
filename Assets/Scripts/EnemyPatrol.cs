@@ -5,13 +5,9 @@ using UnityEngine.AI;
 
 public class EnemyPatrol : AgentMover
 {
-
-
-    // Start is called before the first frame update
     public override void Start()
     {
         patrolNodes.AddRange(GameObject.FindGameObjectsWithTag("patrol_node"));
-
         if (patrolNodes.Count > 0)
         {
             currentNode = 0;
@@ -19,7 +15,6 @@ public class EnemyPatrol : AgentMover
             agent.SetDestination(nextDestination.position);
         }
     }
-
     public virtual void Update()
     {
         Navigate();
@@ -30,6 +25,9 @@ public class EnemyPatrol : AgentMover
         NavigateWaypoints();
         FindPlayer();
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        
     }
+}
 

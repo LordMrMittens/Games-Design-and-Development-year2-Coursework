@@ -100,7 +100,6 @@ MonoBehaviour:
   speed: 0
   origin: {x: 0, y: 0, z: 0}
   movementSpeed: 0
-  damage: 6
 --- !u!135 &7280299743685637167
 SphereCollider:
   m_ObjectHideFlags: 0

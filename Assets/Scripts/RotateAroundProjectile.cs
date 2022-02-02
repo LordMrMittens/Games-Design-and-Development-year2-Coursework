@@ -8,21 +8,30 @@ public class RotateAroundProjectile : MonoBehaviour
     public Transform center;
     public float verticalSpeed;
     public float distanceFromCenter;
+    public CapsuleCollider centerRigidbody;
+    public int damage;
+    public float radiusOffset;
     // Start is called before the first frame update
     void Start()
     {
         center = GameObject.Find("Center").transform;
+        centerRigidbody = center.GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        distanceFromCenter = Vector3.Distance(transform.position, center.transform.position);
-        distanceFromCenter = 16;
-        transform.position = (transform.position - center.transform.position).normalized * distanceFromCenter + center.transform.position;
-        /*
-            transform.Translate(Vector3.up * verticalSpeed * Time.deltaTime);*/
-        //transform.RotateAround(center.position, Vector3.up, speed * Time.deltaTime);
+        distanceFromCenter = centerRigidbody.radius +radiusOffset;
+        transform.position = (transform.position - new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z)).normalized * distanceFromCenter + new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z);
         Destroy(gameObject, 2);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            
+            other.GetComponent<HealthManager>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }

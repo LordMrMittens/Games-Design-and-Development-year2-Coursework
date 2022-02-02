@@ -22,11 +22,6 @@ public class Mover : MonoBehaviour
         origin = center.transform.position;
         
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public virtual void Move(float horizontalMovement, float verticalMovement)
     {
         rotation -= horizontalMovement * speed * Time.deltaTime;
@@ -38,6 +33,4 @@ public class Mover : MonoBehaviour
     {
         transform.LookAt(new Vector3(origin.x, transform.position.y, origin.z), Vector3.up);
     }
-
-
 }

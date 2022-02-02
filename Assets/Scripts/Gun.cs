@@ -5,7 +5,6 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     GameObject player;
-    
     [SerializeField] GameObject bulletTemplate;
     [SerializeField] GameObject cannon;
     
@@ -13,57 +12,41 @@ public class Gun : MonoBehaviour
     [SerializeField] int bulletDamage;
     int damage;
     Vector3 target;
-    int direction;
     Transform center;
-    float speed;
-    float rotation;
-    float altitude;
     public Vector3 origin;
+    public float timeBetweenShots;
+    float shotTimer;
+    bool canShoot;
     void Start()
     {
         player = GameObject.Find("Player");
         damage = bulletDamage;
         center = GameObject.Find("Center").transform;
         origin = center.transform.position;
+        shotTimer = 0;
+        canShoot = false;
     }
-    void Update()
+    private void Update()
     {
-       Shoot();
-
-
-
-        Debug.Log(transform.rotation.x);
-    }
-    private void Shoot()
-    {
-
-            ObtainShootingDirection(player.transform);
-        
-        Vector3 targetDir = target - cannon.transform.position;
-        float angle = Vector3.Angle(targetDir, cannon.transform.right);
-        GameObject Bullet = Instantiate(bulletTemplate, cannon.transform.position, Quaternion.identity);
-        Bullet.GetComponent<Rigidbody>().AddForce((player.transform.position -transform.position ).normalized*10,ForceMode.Impulse);
-       // Bullet.GetComponent<RotateAroundProjectile>().verticalSpeed = -(cannon.transform.position.y - player.transform.position.y);
-       // Bullet.GetComponent<RotateAroundProjectile>().verticalSpeed = -(cannon.transform.position.y - player.transform.position.y);
-        /*
-        Projectiles projectile = Bullet.GetComponent<Projectiles>();
-        projectile.damage = damage;
-        Bullet.transform.forward = target - transform.position;
-        projectile.rotation = rotation - .3f;
-        projectile.altitude = altitude + .2f;
-        projectile.speed = speed / Mathf.Sqrt(angle);
-        if (projectile.speed > maxBulletSpeed)
+        shotTimer+=Time.deltaTime;
+            if (shotTimer > timeBetweenShots)
         {
-            projectile.speed = maxBulletSpeed;
+            canShoot = true;
         }
-        projectile.lateralSpeed = angle * direction;*/
+        else { 
+            canShoot = false;
+        }
     }
-    private void ObtainShootingDirection(Transform target)
+    public void Shoot()
     {
-
-    }
-    public void doubleDamage()
-    {
-        damage = bulletDamage * 2;
+        if (canShoot)
+        {
+            Vector3 targetDir = target - cannon.transform.position;
+            float angle = Vector3.Angle(targetDir, cannon.transform.right);
+            GameObject Bullet = Instantiate(bulletTemplate, cannon.transform.position, Quaternion.identity);
+            Bullet.GetComponent<Rigidbody>().AddForce((player.transform.position - transform.position).normalized * maxBulletSpeed, ForceMode.Impulse);
+            Bullet.GetComponent<RotateAroundProjectile>().damage = damage;
+            shotTimer = 0;
+        }
     }
 }

@@ -1195,6 +1195,11 @@ MonoBehaviour:
   player: {fileID: 0}
   searchInterval: 100
   timeBetweenMovements: 0.1
+  hydraPrefab: {fileID: 5186032210790852289}
+  offSpringHealth: 5
+  offSpringSizeDividedBy: 3
+  damage: 2
+  timeBetweenDamage: 1
 --- !u!195 &5186032210790852288
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1230,6 +1235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+  damageGiven: 0
+  destroyOnTouch: 0
 --- !u!65 &5186032210790852292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1238,8 +1245,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5186032210790852289}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.291703, y: 0.29868236, z: 0.5394562}
-  m_Center: {x: -0.099999994, y: -0.07404703, z: -0.24}
+  m_Size: {x: 0.291703, y: 0.29868236, z: 2.0061028}
+  m_Center: {x: -0.099999994, y: -0.07404703, z: -0.15795362}

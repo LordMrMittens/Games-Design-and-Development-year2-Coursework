@@ -16,12 +16,13 @@ public class EnemyDrone : EnemyPatrol
     NavMeshAgent navAgent;
     Transform targetFlankingPoint;
     int currentFlankingPoint;
-    
+    Gun gun;
     public override void Start()
     {
         state = State.Patrolling;
         base.Start();
         navAgent = GetComponent<NavMeshAgent>();
+        gun = GetComponent<Gun>();
     }
     public override void Update()
     {
@@ -37,7 +38,6 @@ public class EnemyDrone : EnemyPatrol
         {
             Orbit();
         }
-        
     }
     public override void ChasePlayer(GameObject target)
     {
@@ -55,14 +55,9 @@ public class EnemyDrone : EnemyPatrol
                 currentFlankingPoint = 0;
                 targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
                 state = State.Orbiting;
-            } else
-            {
-               
             }
-            
         }
     }
-
     void Orbit()
     {
         float distance = Vector3.Distance(transform.position,player.transform.position);
@@ -76,16 +71,14 @@ public class EnemyDrone : EnemyPatrol
         {
             navAgent.speed = orbitSpeed;
             transform.LookAt(player.transform, Vector3.forward);
+            gun.Shoot();
         }
-        
         agent.SetDestination(targetFlankingPoint.transform.position);
-        
         if (Vector3.Distance(transform.position, targetFlankingPoint.position) < .5)
         {
             if ((currentFlankingPoint + 1) < flankingPoints.Count)
             {
                 currentFlankingPoint++;
-
                 targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
             }
             else
@@ -94,7 +87,6 @@ public class EnemyDrone : EnemyPatrol
                 targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
             }
             agent.SetDestination(targetFlankingPoint.position);
-            
         }
     }
 }
