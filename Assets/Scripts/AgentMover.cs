@@ -15,6 +15,7 @@ public class AgentMover : Mover
     // Start is called before the first frame update
     public override void Start()
     {
+        base.Start();
         patrolNodes.AddRange(GameObject.FindGameObjectsWithTag("patrol_node"));
         agent = GetComponent<NavMeshAgent>();
         if (patrolNodes.Count > 0)
@@ -23,7 +24,7 @@ public class AgentMover : Mover
             nextDestination = patrolNodes[currentNode].transform;
             agent.SetDestination(nextDestination.position);
         }
-        base.Start();
+        
     }
 
     // Update is called once per frame

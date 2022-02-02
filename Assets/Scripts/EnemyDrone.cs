@@ -19,10 +19,11 @@ public class EnemyDrone : EnemyPatrol
     Gun gun;
     public override void Start()
     {
-        state = State.Patrolling;
         base.Start();
+        state = State.Patrolling;
         navAgent = GetComponent<NavMeshAgent>();
         gun = GetComponent<Gun>();
+        transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
     }
     public override void Update()
     {

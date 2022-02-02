@@ -17,6 +17,7 @@ public class Mover : MonoBehaviour
     public float verticalMovement { get; set; }
     public virtual void Start()
     {
+        
         center = GameObject.Find("Center");
         //rotation = transform.eulerAngles.y;
         origin = center.transform.position;
