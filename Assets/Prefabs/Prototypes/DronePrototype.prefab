@@ -607,6 +607,7 @@ GameObject:
   - component: {fileID: 5155387351334467269}
   - component: {fileID: 5155387351334467267}
   - component: {fileID: 5155387351334467264}
+  - component: {fileID: -2397026441191911391}
   m_Layer: 8
   m_Name: DronePrototype
   m_TagString: Enemy
@@ -692,6 +693,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+  damageGiven: 5
+  destroyOnTouch: 0
 --- !u!65 &5155387351334467264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -705,6 +708,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.291703, y: 0.55176425, z: 0.3597843}
   m_Center: {x: 0.020149112, y: 0.4049523, z: 0.014161319}
+--- !u!114 &-2397026441191911391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5155387351334467271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9ad1e8a2c4b98943aa5d178cd16add4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletTemplate: {fileID: 7280299743685637164, guid: 6394a0e73fe069848a4fb7cf75460cbd, type: 3}
+  cannon: {fileID: 8594700901554609909}
+  maxBulletSpeed: 5
+  bulletDamage: 5
+  origin: {x: 0, y: 0, z: 0}
+  timeBetweenShots: 2
 --- !u!1 &8594700901554609909
 GameObject:
   m_ObjectHideFlags: 0

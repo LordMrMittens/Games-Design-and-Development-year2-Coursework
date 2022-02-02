@@ -18,7 +18,7 @@ public class Mover : MonoBehaviour
     public virtual void Start()
     {
         center = GameObject.Find("Center");
-        rotation = transform.eulerAngles.y;
+        //rotation = transform.eulerAngles.y;
         origin = center.transform.position;
         
     }

@@ -1235,7 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
-  damageGiven: 0
+  damageGiven: 2
   destroyOnTouch: 0
 --- !u!65 &5186032210790852292
 BoxCollider:
