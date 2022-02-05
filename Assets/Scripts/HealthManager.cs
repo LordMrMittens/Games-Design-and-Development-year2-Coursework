@@ -4,9 +4,27 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    public int health;
+    public int maxHealth;
+    public int health { get; set; }
     [SerializeField] int damageGiven;
     [SerializeField] bool destroyOnTouch;
+    [SerializeField] int pointsValue;
+    //GameManager gameManager;
+    private void Start()
+    {
+        health = maxHealth;
+        if (gameObject.tag == "Player")
+        {
+            GameManager.gameManager.playerIsAlive = true;
+        }
+        else if(gameObject.tag == "Enemy")
+        {
+            if (gameObject.name != "Enemy(Clone)")
+            {
+                GameManager.gameManager.enemiesOnScreen++;
+            }
+        }
+    }
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -17,21 +35,38 @@ public class HealthManager : MonoBehaviour
     }
     private void Destroy()
     {
-        if (gameObject.name == "EnemyHydra")
+        if (gameObject.GetComponent<EnemyHydra>() != null)
         {
             gameObject.GetComponent<EnemyHydra>().DivideOnDeath();
         }
-            gameObject.SetActive(false);
+        GameManager.gameManager.score += pointsValue;
+        if (gameObject.tag == "Player")
+        {
+            GameManager.gameManager.playerIsAlive = false;
+
+        }
+        else
+        {
+            if (gameObject.name != "Enemy(Clone)")
+            {
+                GameManager.gameManager.enemiesOnScreen--;
+            }
+            
+        }
+        gameObject.SetActive(false);
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (gameObject.name != "EnemyHydra"&& other.tag=="Enemy;")
+        if (other.tag != "City"||other.tag!="Bullet")
         {
-            other.GetComponent<HealthManager>().TakeDamage(damageGiven);
-        }
-        if (destroyOnTouch)
-        {
-            gameObject.SetActive(false);
+            if (other.tag == "Player")
+            {
+                other.GetComponent<HealthManager>().TakeDamage(damageGiven);
+            }
+            if (destroyOnTouch)
+            {
+                Destroy();
+            }
         }
     }
 }

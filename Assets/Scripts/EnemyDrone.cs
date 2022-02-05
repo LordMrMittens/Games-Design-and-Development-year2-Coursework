@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class EnemyDrone : EnemyPatrol
 {
-    enum State { Patrolling, Chasing, Orbiting}
+    enum State { Patrolling, Chasing, Orbiting }
     State state;
     List<GameObject> flankingPoints = new List<GameObject>();
     [SerializeField] float chaseSpeed;
@@ -39,18 +39,23 @@ public class EnemyDrone : EnemyPatrol
         {
             Orbit();
         }
+        if (!GameManager.gameManager.playerIsAlive)
+        {
+            state = State.Patrolling;
+        }
     }
     public override void ChasePlayer(GameObject target)
     {
         state = State.Chasing;
         flankingPoints.AddRange(GameObject.FindGameObjectsWithTag("FlankingPoint"));
-        
+
         if (Vector3.Distance(transform.position, player.transform.position) > orbitDistance)
         {
             base.ChasePlayer(target);
-        } else
+        }
+        else
         {
-            
+
             if (flankingPoints.Count > 0)
             {
                 currentFlankingPoint = 0;
@@ -61,8 +66,8 @@ public class EnemyDrone : EnemyPatrol
     }
     void Orbit()
     {
-        float distance = Vector3.Distance(transform.position,player.transform.position);
-        
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+
         if (distance > orbitDistance)
         {
             navAgent.speed = chaseSpeed;

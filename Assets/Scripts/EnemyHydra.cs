@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class EnemyHydra : AgentMover
 {
-    enum status { Passive, Active, Attached}
+    enum status { Passive, Active, Attached }
     status state;
-    bool isDivided = false;
-    bool isAttached = false;
+    public bool isDivided = false;
+    public bool isAttached = false;
     [SerializeField] float timeBetweenMovements;
     float movementCounter;
     [SerializeField] GameObject hydraPrefab;
@@ -21,8 +21,8 @@ public class EnemyHydra : AgentMover
     PlayerMovementController playerController;
     public override void Start()
     {
-            base.Start();
-            movementCounter = timeBetweenMovements; 
+        base.Start();
+        movementCounter = timeBetweenMovements;
         if (isDivided)
         {
             viewDistance = 100;
@@ -54,6 +54,10 @@ public class EnemyHydra : AgentMover
                 }
                 break;
         }
+        if (!GameManager.gameManager.playerIsAlive)
+        {
+            state = status.Passive;
+        }
     }
     private void MoveErratically()
     {
@@ -82,7 +86,7 @@ public class EnemyHydra : AgentMover
         {
             if (Time.frameCount % searchInterval == 0)
             {
-                player = GameObject.Find("Player");
+                player = GameObject.FindGameObjectWithTag("Player");
             }
         }
     }
@@ -95,6 +99,7 @@ public class EnemyHydra : AgentMover
     {
         if (!isDivided && !isAttached)
         {
+            Debug.Log("Divided");
             for (int i = 0; i < 2; i++)
             {
                 GameObject offspring = Instantiate(hydraPrefab, transform.position, Quaternion.identity);
@@ -122,7 +127,7 @@ public class EnemyHydra : AgentMover
     }
     void AttachToPlayer()
     {
-        rotation = playerController.rotation; 
-        altitude = playerController.altitude; 
+        rotation = playerController.rotation;
+        altitude = playerController.altitude;
     }
 }

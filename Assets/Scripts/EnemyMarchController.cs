@@ -51,6 +51,7 @@ public class EnemyMarchController : Mover
                 enemiesLeftInSquad--;
                 if (enemiesLeftInSquad <= 0)
                 {
+                    GameManager.gameManager.enemiesOnScreen--;
                     Destroy(gameObject);
                 }
             } 

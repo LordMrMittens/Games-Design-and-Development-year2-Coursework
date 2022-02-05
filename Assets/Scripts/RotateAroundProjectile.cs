@@ -11,6 +11,7 @@ public class RotateAroundProjectile : MonoBehaviour
     public CapsuleCollider centerRigidbody;
     public int damage;
     public float radiusOffset;
+    public bool isPlayerBullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,22 @@ public class RotateAroundProjectile : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (!isPlayerBullet)
         {
-            
-            other.GetComponent<HealthManager>().TakeDamage(damage);
-            Destroy(gameObject);
+            if (other.tag == "Player")
+            {
+
+                other.GetComponent<HealthManager>().TakeDamage(damage);
+                Destroy(gameObject);
+            }
+        } else
+        {
+            if (other.tag == "Enemy")
+            {
+                
+                other.GetComponent<HealthManager>().TakeDamage(damage);
+                Destroy(gameObject);
+            }
         }
     }
 }

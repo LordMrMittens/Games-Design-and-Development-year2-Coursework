@@ -10,6 +10,9 @@ TagManager:
   - Center
   - MouseMask
   - Obstacle
+  - Bomb
+  - Bullet
+  - City
   layers:
   - Default
   - TransparentFX

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -7301726225194568337}
   m_Layer: 9
   m_Name: EnemyBulletPrototype
-  m_TagString: Enemy
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   centerRigidbody: {fileID: 0}
   damage: 0
   radiusOffset: 0.5
+  isPlayerBullet: 0
 --- !u!54 &-7301726225194568337
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1194,6 +1194,8 @@ MonoBehaviour:
   viewDistance: 2
   player: {fileID: 0}
   searchInterval: 100
+  isDivided: 0
+  isAttached: 0
   timeBetweenMovements: 0.1
   hydraPrefab: {fileID: 5186032210790852289}
   offSpringHealth: 5
@@ -1234,9 +1236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
-  damageGiven: 2
+  maxHealth: 10
+  damageGiven: 0
   destroyOnTouch: 0
+  pointsValue: 5
 --- !u!65 &5186032210790852292
 BoxCollider:
   m_ObjectHideFlags: 0

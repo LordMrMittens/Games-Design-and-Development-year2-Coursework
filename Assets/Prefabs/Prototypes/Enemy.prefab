@@ -323,6 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  maxHealth: 1
   damageGiven: 5
   destroyOnTouch: 1
+  pointsValue: 1

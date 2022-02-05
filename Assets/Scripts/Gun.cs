@@ -5,28 +5,28 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     GameObject player;
-    [SerializeField] GameObject bulletTemplate;
-    [SerializeField] GameObject cannon;
-    
-    [SerializeField] float maxBulletSpeed;
-    [SerializeField] int bulletDamage;
-    int damage;
+    public GameObject bulletTemplate;
+    public GameObject cannon;
+
+    public float maxBulletSpeed;
+    public int bulletDamage;
+    public int damage { get; set; }
     Vector3 target;
     Transform center;
     public Vector3 origin;
     public float timeBetweenShots;
-    float shotTimer;
-    bool canShoot;
+    public float shotTimer { get; set; }
+    public bool canShoot { get; set; }
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         damage = bulletDamage;
         center = GameObject.Find("Center").transform;
         origin = center.transform.position;
         shotTimer = 0;
         canShoot = false;
     }
-    private void Update()
+    public virtual void Update()
     {
         shotTimer+=Time.deltaTime;
             if (shotTimer > timeBetweenShots)
@@ -37,7 +37,7 @@ public class Gun : MonoBehaviour
             canShoot = false;
         }
     }
-    public void Shoot()
+    public virtual void Shoot()
     {
         if (canShoot)
         {

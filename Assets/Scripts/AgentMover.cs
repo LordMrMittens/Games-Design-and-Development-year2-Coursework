@@ -16,21 +16,27 @@ public class AgentMover : Mover
     public override void Start()
     {
         base.Start();
+        FindPatrolNodes();
+
+    }
+
+    public virtual void FindPatrolNodes()
+    {
         patrolNodes.AddRange(GameObject.FindGameObjectsWithTag("patrol_node"));
         agent = GetComponent<NavMeshAgent>();
-        if (patrolNodes.Count > 0)
+        if (patrolNodes.Count > 0 && agent.enabled == true)
         {
             currentNode = 0;
             nextDestination = patrolNodes[currentNode].transform;
             agent.SetDestination(nextDestination.position);
         }
-        
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
     }
     public virtual void FindPlayer()
     {
@@ -39,7 +45,7 @@ public class AgentMover : Mover
             float distance = Vector3.Distance(player.transform.position, transform.position);
             if (distance < viewDistance)
             {
-                
+
                 ChasePlayer(player);
 
             }
@@ -52,7 +58,8 @@ public class AgentMover : Mover
         {
             if (Time.frameCount % searchInterval == 0)
             {
-                player = GameObject.Find("Player");
+               // Debug.Log(name + " Searched for player");
+                player = GameObject.FindGameObjectWithTag("Player");
             }
         }
     }

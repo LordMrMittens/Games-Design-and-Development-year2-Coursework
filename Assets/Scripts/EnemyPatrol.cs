@@ -27,9 +27,5 @@ public class EnemyPatrol : AgentMover
         NavigateWaypoints();
         FindPlayer();
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
 }
 

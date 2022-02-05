@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class EnemyBomber : AgentMover
 {
-    enum State { Bombing, Chasing};
+    enum State { Bombing, Chasing };
     State bomberState = State.Bombing;
-    //Bomb Dropping
     [SerializeField] int numberOfBombs;
     [SerializeField] float timeBetweenBombDrops;
     float bombCounter;
     [SerializeField] GameObject bombPrefab;
     bool hasBombs = true;
-    
+
     // Start is called before the first frame update
     public override void Start()
     {
@@ -21,12 +20,12 @@ public class EnemyBomber : AgentMover
         rotation = 90;
         horizontalMovement = movementSpeed;
         bombCounter = timeBetweenBombDrops;
-        
+
     }
     // Update is called once per frame
     void Update()
     {
-        
+
         if (bomberState == State.Bombing)
         {
             Move(horizontalMovement, verticalMovement);
@@ -43,11 +42,14 @@ public class EnemyBomber : AgentMover
                 else
                 {
                     agent.enabled = true;
+                    FindPatrolNodes();
                     bomberState = State.Chasing;
                 }
             }
-        } else
+        }
+        else
         {
+            NavigateWaypoints();
             FindPlayer();
         }
     }

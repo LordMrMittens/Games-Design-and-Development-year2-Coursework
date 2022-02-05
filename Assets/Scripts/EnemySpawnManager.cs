@@ -14,61 +14,85 @@ public class EnemySpawnManager : MonoBehaviour
     int enemyDroneKillCount;
     [SerializeField] GameObject enemyHydraPrefab;
     int enemyHydraKillCount;
-    GameObject player;
-    PlayerMovementController playerMovementController;
-    int enemiesOnScreen;
-    int targetEnemiesOnScreen;
-    GameManager gameManager;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject player;
+   [SerializeField] PlayerMovementController playerMovementController;
+    [SerializeField] float timeBetweenEnemySpawns;
+    [SerializeField] float enemySpawnCounter =0;
+    
 
-    // Update is called once per frame
     void Update()
     {
-        if(player == null)// && gameManager.playerIsAlive)
+        if (GameManager.gameManager.playerIsAlive)
         {
-            player = GameObject.Find("Player");
-            playerMovementController = player.GetComponent<PlayerMovementController>();
+            CheckPlayerPosition();
+            CheckIfSpawningIsPossible();
         }
-        if (Input.GetKeyDown(KeyCode.P))
+    }
+
+    private void CheckIfSpawningIsPossible()
+    {
+        if (GameManager.gameManager.enemiesOnScreen < GameManager.gameManager.targetEnemiesOnScreen)
         {
-            Spawner spawnpoint = new Spawner() { rotation = playerMovementController.rotation + 180, altitude = playerMovementController.altitude + 10 };
-            int unitToSpawn = Random.Range(0, 5);
-            Debug.Log(unitToSpawn);
-            switch (unitToSpawn)
+            enemySpawnCounter += Time.deltaTime;
+            if (enemySpawnCounter > timeBetweenEnemySpawns)
             {
-                case 0:
-                    GameObject squad = Instantiate(enemySquadPrefab);
-                    squad.GetComponent<EnemyMarchController>().rotation = spawnpoint.rotation;
-                    squad.GetComponent<EnemyMarchController>().altitude = spawnpoint.altitude;
-                    break;
-                case 1:
-                    GameObject kamikaze = Instantiate(enemyKamikazePrefab);
-                    EnemyPatrol patrolManager = kamikaze.GetComponent<EnemyPatrol>();
-                    patrolManager.rotation = spawnpoint.rotation;
-                    patrolManager.altitude = spawnpoint.altitude;
-                    break;
-                case 2:
-                    GameObject bomber = Instantiate(enemyBomberPrefab);
-                    bomber.GetComponent<EnemyBomber>().rotation = spawnpoint.rotation;
-                    bomber.GetComponent<EnemyBomber>().altitude = spawnpoint.altitude;
-                    break;
-                case 3:
-                    GameObject drone = Instantiate(enemyDronePrefab);
-                    EnemyDrone droneManager = drone.GetComponent<EnemyDrone>();
-                    droneManager.rotation = spawnpoint.rotation;
-                    droneManager.altitude = spawnpoint.altitude;
-                    break;
-                case 4:
-                    GameObject hydra = Instantiate(enemyHydraPrefab);
-                    hydra.GetComponent<EnemyHydra>().rotation = spawnpoint.rotation;
-                    hydra.GetComponent<EnemyHydra>().altitude = spawnpoint.altitude;
-                    break;
+                Spawner spawnpoint;
+                int unitToSpawn;
+                ChooseEnemyAndSpawnLocation(out spawnpoint, out unitToSpawn);
+                SpawnEnemy(spawnpoint, unitToSpawn);
+                enemySpawnCounter = 0;
             }
         }
+    }
+
+    private void SpawnEnemy(Spawner spawnpoint, int unitToSpawn)
+    {
+        switch (unitToSpawn)
+        {
+            case 0:
+                GameObject squad = Instantiate(enemySquadPrefab);
+                squad.GetComponent<EnemyMarchController>().rotation = spawnpoint.rotation;
+                squad.GetComponent<EnemyMarchController>().altitude = spawnpoint.altitude;
+                break;
+            case 1:
+                GameObject kamikaze = Instantiate(enemyKamikazePrefab);
+                EnemyPatrol patrolManager = kamikaze.GetComponent<EnemyPatrol>();
+                patrolManager.rotation = spawnpoint.rotation;
+                patrolManager.altitude = spawnpoint.altitude;
+                break;
+            case 2:
+                GameObject bomber = Instantiate(enemyBomberPrefab);
+                bomber.GetComponent<EnemyBomber>().rotation = spawnpoint.rotation;
+                bomber.GetComponent<EnemyBomber>().altitude = spawnpoint.altitude;
+                break;
+            case 3:
+                GameObject drone = Instantiate(enemyDronePrefab);
+                EnemyDrone droneManager = drone.GetComponent<EnemyDrone>();
+                droneManager.rotation = spawnpoint.rotation;
+                droneManager.altitude = spawnpoint.altitude;
+                break;
+            case 4:
+                GameObject hydra = Instantiate(enemyHydraPrefab);
+                hydra.GetComponent<EnemyHydra>().rotation = spawnpoint.rotation;
+                hydra.GetComponent<EnemyHydra>().altitude = spawnpoint.altitude;
+                break;
+        }
+    }
+
+    private void ChooseEnemyAndSpawnLocation(out Spawner spawnpoint, out int unitToSpawn)
+    {
+        spawnpoint = new Spawner() { rotation = playerMovementController.rotation + Random.Range(-20, 20), altitude = playerMovementController.altitude + 5 };
+        unitToSpawn = Random.Range(0, 5);
+    }
+
+    private void CheckPlayerPosition()
+    {
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerMovementController = player.GetComponent<PlayerMovementController>();
+            }
+        
     }
 }
 class Spawner
