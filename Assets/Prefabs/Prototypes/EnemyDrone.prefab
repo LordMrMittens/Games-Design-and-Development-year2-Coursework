@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 5155387351334467264}
   - component: {fileID: -2397026441191911391}
   m_Layer: 8
-  m_Name: DronePrototype
+  m_Name: EnemyDrone
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
   maxBulletSpeed: 5
   bulletDamage: 5
   origin: {x: 0, y: 0, z: 0}
-  timeBetweenShots: 2
+  timeBetweenShots: 0
 --- !u!1 &8594700901554609909
 GameObject:
   m_ObjectHideFlags: 0

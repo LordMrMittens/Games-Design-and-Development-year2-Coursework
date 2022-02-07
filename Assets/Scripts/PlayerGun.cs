@@ -35,9 +35,15 @@ public class PlayerGun : Gun
             Vector3 target = hit.point;
             Vector3 targetDir = target - cannon.transform.position;
             float angle = Vector3.Angle(targetDir, cannon.transform.right);
-            GameObject Bullet = Instantiate(bulletTemplate, cannon.transform.position, Quaternion.identity);
-            Bullet.GetComponent<Rigidbody>().AddForce((target - transform.position).normalized * maxBulletSpeed, ForceMode.Impulse);
-            Bullet.GetComponent<RotateAroundProjectile>().damage = damage;
+            GameObject bullet = ObjectPooler.pooler.GetPooledObject(ObjectPooler.pooler.pooledPlayerBullets);
+            if (bullet != null)
+            {
+                bullet.transform.position = cannon.transform.position;
+                bullet.transform.rotation = cannon.transform.rotation;
+                bullet.SetActive(true);
+                bullet.GetComponent<Rigidbody>().AddForce((target - transform.position).normalized * maxBulletSpeed, ForceMode.Impulse);
+                bullet.GetComponent<RotateAroundProjectile>().damage = damage;
+            }
             canShoot = false;
         }
         shotTimer = 0;

@@ -66,33 +66,39 @@ public class EnemyDrone : EnemyPatrol
     }
     void Orbit()
     {
-        float distance = Vector3.Distance(transform.position, player.transform.position);
+        if (GameManager.gameManager.playerIsAlive)
+        {
+            float distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if (distance > orbitDistance)
-        {
-            navAgent.speed = chaseSpeed;
-            navAgent.acceleration = 20;
-        }
-        else
-        {
-            navAgent.speed = orbitSpeed;
-            transform.LookAt(player.transform, Vector3.forward);
-            gun.Shoot();
-        }
-        agent.SetDestination(targetFlankingPoint.transform.position);
-        if (Vector3.Distance(transform.position, targetFlankingPoint.position) < .5)
-        {
-            if ((currentFlankingPoint + 1) < flankingPoints.Count)
+            if (distance > orbitDistance)
             {
-                currentFlankingPoint++;
-                targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                navAgent.speed = chaseSpeed;
+                navAgent.acceleration = 20;
             }
             else
             {
-                currentFlankingPoint = 0;
-                targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                navAgent.speed = orbitSpeed;
+                transform.LookAt(player.transform, Vector3.forward);
+                gun.Shoot();
             }
-            agent.SetDestination(targetFlankingPoint.position);
+            agent.SetDestination(targetFlankingPoint.transform.position);
+            if (Vector3.Distance(transform.position, targetFlankingPoint.position) < .5)
+            {
+                if ((currentFlankingPoint + 1) < flankingPoints.Count)
+                {
+                    currentFlankingPoint++;
+                    targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                }
+                else
+                {
+                    currentFlankingPoint = 0;
+                    targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                }
+                agent.SetDestination(targetFlankingPoint.position);
+            }
+        } else
+        {
+            state = State.Patrolling;
         }
     }
 }

@@ -49,32 +49,43 @@ public class EnemySpawnManager : MonoBehaviour
     {
         switch (unitToSpawn)
         {
+
             case 0:
                 GameObject squad = Instantiate(enemySquadPrefab);
                 squad.GetComponent<EnemyMarchController>().rotation = spawnpoint.rotation;
                 squad.GetComponent<EnemyMarchController>().altitude = spawnpoint.altitude;
+                GameManager.gameManager.CountEnemyUp();
                 break;
             case 1:
+
                 GameObject kamikaze = Instantiate(enemyKamikazePrefab);
                 EnemyPatrol patrolManager = kamikaze.GetComponent<EnemyPatrol>();
                 patrolManager.rotation = spawnpoint.rotation;
                 patrolManager.altitude = spawnpoint.altitude;
+                GameManager.gameManager.CountEnemyUp();
+                
+                
                 break;
             case 2:
                 GameObject bomber = Instantiate(enemyBomberPrefab);
                 bomber.GetComponent<EnemyBomber>().rotation = spawnpoint.rotation;
                 bomber.GetComponent<EnemyBomber>().altitude = spawnpoint.altitude;
+                GameManager.gameManager.CountEnemyUp();
+
                 break;
             case 3:
                 GameObject drone = Instantiate(enemyDronePrefab);
                 EnemyDrone droneManager = drone.GetComponent<EnemyDrone>();
                 droneManager.rotation = spawnpoint.rotation;
                 droneManager.altitude = spawnpoint.altitude;
+                GameManager.gameManager.CountEnemyUp();
+                
                 break;
             case 4:
                 GameObject hydra = Instantiate(enemyHydraPrefab);
                 hydra.GetComponent<EnemyHydra>().rotation = spawnpoint.rotation;
                 hydra.GetComponent<EnemyHydra>().altitude = spawnpoint.altitude;
+                GameManager.gameManager.CountEnemyUp();
                 break;
         }
     }

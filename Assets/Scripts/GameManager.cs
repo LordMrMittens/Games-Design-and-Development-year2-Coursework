@@ -44,7 +44,14 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    public void CountEnemyUp()
+    {
+        enemiesOnScreen++;
+    }
+    public void CountEnemyDown()
+    {
+        enemiesOnScreen--;
+    }
     private void SpawnPlayer()
     {
         thePlayer = Instantiate(playerPrefab);

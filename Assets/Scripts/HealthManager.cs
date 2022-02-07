@@ -12,19 +12,22 @@ public class HealthManager : MonoBehaviour
     //GameManager gameManager;
     private void Start()
     {
+        ResetHealth();
+    }
+    private void OnEnable()
+    {
+        ResetHealth();
+    }
+    private void ResetHealth()
+    {
         health = maxHealth;
         if (gameObject.tag == "Player")
         {
             GameManager.gameManager.playerIsAlive = true;
         }
-        else if(gameObject.tag == "Enemy")
-        {
-            if (gameObject.name != "Enemy(Clone)")
-            {
-                GameManager.gameManager.enemiesOnScreen++;
-            }
-        }
+       
     }
+    
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -43,19 +46,20 @@ public class HealthManager : MonoBehaviour
         if (gameObject.tag == "Player")
         {
             GameManager.gameManager.playerIsAlive = false;
-
+            gameObject.SetActive(false);
+        }
+        else if (gameObject.name != "Enemy(Clone)")
+        {
+            GameManager.gameManager.CountEnemyDown();
+            Destroy(gameObject);
         }
         else
         {
-            if (gameObject.name != "Enemy(Clone)")
-            {
-                GameManager.gameManager.enemiesOnScreen--;
-            }
             
-        }
-        gameObject.SetActive(false);
+            gameObject.SetActive(false);
+        } 
     }
-    private void OnTriggerEnter(Collider other)
+     void OnTriggerEnter(Collider other)
     {
         if (other.tag != "City"||other.tag!="Bullet")
         {

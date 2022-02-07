@@ -7,15 +7,19 @@ public class EnemyPatrol : AgentMover
 {
     public override void Start()
     {
+        ResetStats();
+    }
+
+    private void ResetStats()
+    {
         base.Start();
         transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
-        patrolNodes.AddRange(GameObject.FindGameObjectsWithTag("patrol_node"));
-        if (patrolNodes.Count > 0)
-        {
-            currentNode = 0;
-            nextDestination = patrolNodes[currentNode].transform;
-            agent.SetDestination(nextDestination.position);
-        }
+        FindPatrolNodes();
+    }
+
+    private void OnEnable()
+    {
+        ResetStats();
     }
     public virtual void Update()
     {

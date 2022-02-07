@@ -1191,6 +1191,7 @@ MonoBehaviour:
   patrolNodes: []
   nextDestination: {fileID: 0}
   currentNode: 0
+  setViewDistance: 2
   viewDistance: 2
   player: {fileID: 0}
   searchInterval: 100
@@ -1200,6 +1201,7 @@ MonoBehaviour:
   hydraPrefab: {fileID: 5186032210790852289}
   offSpringHealth: 5
   offSpringSizeDividedBy: 3
+  givenDamage: 0
   damage: 2
   timeBetweenDamage: 1
 --- !u!195 &5186032210790852288
