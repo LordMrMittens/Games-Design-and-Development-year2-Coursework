@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public enum Phase { PhaseOne,PhaseTwo,PhaseThree}
+    public Phase levelPhase;
     public int score;
     public int targetScore;
     Transform spawnPoint;
@@ -17,18 +19,30 @@ public class GameManager : MonoBehaviour
     float playerSpawnCounter;
     GameObject thePlayer;
     PlayerMovementController playerMovementController;
-
+    [SerializeField] float constantScrollingSpeed;
+    
     void Start()
     {
         gameManager = this;
         SpawnPlayer();
         playerMovementController = thePlayer.GetComponent<PlayerMovementController>();
+        levelPhase = Phase.PhaseTwo;
     }
     void Update()
     {
-        if (score > targetScore)
+        if (levelPhase == Phase.PhaseOne)
         {
-            EndPhaseOne();
+            if (score > targetScore)
+            {
+                EndPhaseOne();
+                
+            }
+        } else if (levelPhase == Phase.PhaseTwo)
+        {
+            playerMovementController.verticalMovement = constantScrollingSpeed;
+        } else if (levelPhase == Phase.PhaseThree)
+        {
+
         }
         if (playerIsAlive == false)
         {
@@ -56,13 +70,21 @@ public class GameManager : MonoBehaviour
     {
         thePlayer = Instantiate(playerPrefab);
     }
-
     private void EndPhaseOne()
     {
         targetEnemiesOnScreen = -10000;
         if (enemiesOnScreen <= 0)
         {
-            Debug.Log("Phase 1 Won");
+            StartCoroutine(EndPhaseOneWait());
         }
+    }
+    IEnumerator EndPhaseOneWait()
+    {
+        yield return new WaitForSeconds(5);
+        //logic to prepare for phase2
+        //save spawnpoint
+        //save score
+        //set target enemies on screen
+        levelPhase = Phase.PhaseTwo;
     }
 }

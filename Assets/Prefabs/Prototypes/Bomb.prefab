@@ -15,8 +15,7 @@ GameObject:
   - component: {fileID: 2635340242330726738}
   - component: {fileID: 6405802457078173691}
   - component: {fileID: 1091999304724990110}
-  - component: {fileID: -450800320250416731}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Bomb
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -341,18 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  health: 0
   damageGiven: 20
   destroyOnTouch: 1
   pointsValue: 5
---- !u!114 &-450800320250416731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5767323927838946184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f1b0d9c606496a469a7a68bc138b5b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

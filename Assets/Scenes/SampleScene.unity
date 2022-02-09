@@ -5825,7 +5825,7 @@ GameObject:
   - component: {fileID: 300339552}
   - component: {fileID: 300339557}
   - component: {fileID: 300339556}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Ground
   m_TagString: City
   m_Icon: {fileID: 0}
@@ -5920,7 +5920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 500
+  health: 0
   damageGiven: 0
   destroyOnTouch: 0
   pointsValue: 0
@@ -27455,6 +27456,7 @@ MonoBehaviour:
   offset: 5
   verticalDeadZone: 0
   horizontalDeadZone: 0
+  verticalOffset: 1.5
 --- !u!81 &1035550958
 AudioListener:
   m_ObjectHideFlags: 0
@@ -34310,13 +34312,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55768995f0310db43ad5f752f332b472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelPhase: 0
   score: 0
-  targetScore: 1000
+  targetScore: 30
   playerIsAlive: 0
   enemiesOnScreen: 0
   targetEnemiesOnScreen: 10
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
+  constantScrollingSpeed: 0.05
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0

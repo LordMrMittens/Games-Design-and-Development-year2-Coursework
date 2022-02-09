@@ -29,7 +29,7 @@ public class EnemyDrone : EnemyPatrol
     {
         if (state == State.Patrolling)
         {
-            Navigate();
+            base.Update();
         }
         if (state == State.Chasing)
         {

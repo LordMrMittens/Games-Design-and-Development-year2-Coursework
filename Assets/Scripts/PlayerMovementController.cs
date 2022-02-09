@@ -13,20 +13,20 @@ public class PlayerMovementController : Mover
         altitude = -5;
         GameManager.gameManager.playerIsAlive = true;
     }
-    // Update is called once per frame
     void Update()
     {
-        Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        float verticalInput = Input.GetAxis("Vertical");
+        if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+        {
+            verticalInput = 0;
+        } 
+        Move(Input.GetAxis("Horizontal"), verticalInput+verticalMovement);
     }
     public override void Move(float horizontalMovement, float verticalMovement)
     {
         if (altitude <= -5)
         {
             altitude = -5;
-        }
-        else if (altitude >= 5)
-        {
-            altitude = 5;
         }
         base.Move(horizontalMovement, verticalMovement);
     }

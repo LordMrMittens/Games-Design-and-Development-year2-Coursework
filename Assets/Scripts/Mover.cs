@@ -18,15 +18,12 @@ public class Mover : MonoBehaviour
     public virtual void Start()
     {
         center = GameObject.Find("Center");
-        //rotation = transform.eulerAngles.y;
         origin = center.transform.position;
-
     }
     public void PlaceEnemy(float startRotation, float startAltitude)
     {
         rotation = startRotation;
         altitude = startAltitude;
-       // Move(0, 0);
     }
     public virtual void Move(float horizontalMovement, float verticalMovement)
     {

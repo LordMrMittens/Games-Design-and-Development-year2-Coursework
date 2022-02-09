@@ -5,8 +5,8 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     public int maxHealth;
-    public int health { get; set; }
-    [SerializeField] int damageGiven;
+    public int health;
+    public int damageGiven;
     [SerializeField] bool destroyOnTouch;
     [SerializeField] int pointsValue;
     //GameManager gameManager;
@@ -27,7 +27,6 @@ public class HealthManager : MonoBehaviour
         }
        
     }
-    
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -48,14 +47,13 @@ public class HealthManager : MonoBehaviour
             GameManager.gameManager.playerIsAlive = false;
             gameObject.SetActive(false);
         }
-        else if (gameObject.name != "Enemy(Clone)")
+        else if (gameObject.name != "Enemy(Clone)" && gameObject.name != "Bomb(Clone)")
         {
             GameManager.gameManager.CountEnemyDown();
             Destroy(gameObject);
         }
         else
         {
-            
             gameObject.SetActive(false);
         } 
     }

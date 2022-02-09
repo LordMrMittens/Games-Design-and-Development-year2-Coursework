@@ -26,6 +26,7 @@ public class EnemyHydra : AgentMover
         movementCounter = timeBetweenMovements;
         if (isDivided)
         {
+            agent.enabled = true;
             viewDistance = 100;
         }
         else
@@ -33,7 +34,7 @@ public class EnemyHydra : AgentMover
             agent.enabled = false;
         }
     }
-    void Update()
+    public override void Update()
     {
         switch (state)
         {
@@ -43,6 +44,7 @@ public class EnemyHydra : AgentMover
                 break;
             case status.Active:
                 ChasePlayer(player);
+                KeepFacingCenter();
                 break;
             case status.Attached:
                 damageCounter += Time.deltaTime;
@@ -91,16 +93,10 @@ public class EnemyHydra : AgentMover
             }
         }
     }
-    public override void ChasePlayer(GameObject target)
-    {
-        base.ChasePlayer(target);
-        KeepFacingCenter();
-    }
     public void DivideOnDeath()
     {
         if (!isDivided && !isAttached)
         {
-            Debug.Log("Divided");
             for (int i = 0; i < 2; i++)
             {
                 GameObject offspring = Instantiate(hydraPrefab, transform.position, Quaternion.identity);

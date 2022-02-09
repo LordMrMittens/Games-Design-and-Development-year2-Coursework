@@ -64,12 +64,12 @@
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\AgentMover.cs" />
     <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
-    <Compile Include="Assets\Scripts\Bomb.cs" />
     <Compile Include="Assets\Scripts\Obsolete\PlayerController.cs" />
     <Compile Include="Assets\Scripts\EnemyBomber.cs" />
     <Compile Include="Assets\Scripts\EnemyDrone.cs" />
     <Compile Include="Assets\Scripts\Obsolete\Gravity.cs" />
     <Compile Include="Assets\Scripts\EnemyMarch.cs" />
+    <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\EnemyMarchController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
@@ -79,7 +79,6 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\ObjectPooler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -15,7 +15,8 @@ public class CityController : MonoBehaviour
         if (other.tag != "Player" && other.tag != "Bullet")
         {
             other.gameObject.SetActive(false);
-            healthManager.TakeDamage(5);
+            
+            healthManager.TakeDamage(other.GetComponent<HealthManager>().damageGiven);
         }
     }
 }

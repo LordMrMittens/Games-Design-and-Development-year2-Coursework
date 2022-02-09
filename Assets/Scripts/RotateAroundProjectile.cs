@@ -24,12 +24,11 @@ public class RotateAroundProjectile : MonoBehaviour
     {
         StartCoroutine(DeactivateAfterSeconds());
     }
-    // Update is called once per frame
     void Update()
     {
+
         distanceFromCenter = centerCollider.radius +radiusOffset;
         transform.position = (transform.position - new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z)).normalized * distanceFromCenter + new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z);
-        //Destroy(gameObject, 2);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -37,29 +36,29 @@ public class RotateAroundProjectile : MonoBehaviour
         {
             if (other.tag == "Player")
             {
-
                 other.GetComponent<HealthManager>().TakeDamage(damage);
-                
-                // Destroy(gameObject);
                 gameObject.SetActive(false);
             }
         } else
         {
             if (other.tag == "Enemy")
             {
-                
                 other.GetComponent<HealthManager>().TakeDamage(damage);
-                //Destroy(gameObject);
                 gameObject.SetActive(false);
             }
         }
     }
-
     IEnumerator DeactivateAfterSeconds()
     {
         yield return new WaitForSeconds(2);
-        RB.velocity = Vector3.zero;
-        RB.angularVelocity = Vector3.zero;
         gameObject.SetActive(false);
+    }
+    private void OnDisable()
+    {
+        if (RB != null)
+        {
+            RB.velocity = Vector3.zero;
+            RB.angularVelocity = Vector3.zero;
+        }
     }
 }

@@ -38,7 +38,7 @@ public class ObjectPooler : MonoBehaviour
         CreateObjectPool(pooledPlayerBullets, playerBullets, playerBulletsToPool);
         CreateObjectPool(pooledEnemyBullets, enemyBullets, enemyBulletsToPool);
         //CreateObjectPool(pooledEnemySquads, enemySquad,enemySquadsToPool);
-        CreateObjectPool(pooledEnemyKamikazes, enemyKamikaze,enemyKamikazesToPool);
+        //CreateObjectPool(pooledEnemyKamikazes, enemyKamikaze,enemyKamikazesToPool);
         //CreateObjectPool(pooledEnemyBombers, enemyBomber,enemyBombersToPool);
        // CreateObjectPool(pooledEnemyDrones, enemyDrone,enemyDronesToPool);
         //CreateObjectPool(pooledEnemyHydras, enemyHydra, enemyHydrasToPool);

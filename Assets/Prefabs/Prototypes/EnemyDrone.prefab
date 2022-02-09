@@ -651,6 +651,7 @@ MonoBehaviour:
   patrolNodes: []
   nextDestination: {fileID: 0}
   currentNode: 0
+  setViewDistance: 0
   viewDistance: 5
   player: {fileID: 0}
   searchInterval: 100
@@ -693,6 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 15
+  health: 0
   damageGiven: 5
   destroyOnTouch: 0
   pointsValue: 25
@@ -726,7 +728,7 @@ MonoBehaviour:
   maxBulletSpeed: 5
   bulletDamage: 5
   origin: {x: 0, y: 0, z: 0}
-  timeBetweenShots: 0
+  timeBetweenShots: 1.3
 --- !u!1 &8594700901554609909
 GameObject:
   m_ObjectHideFlags: 0

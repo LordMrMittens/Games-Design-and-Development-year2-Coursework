@@ -11,21 +11,16 @@ public class EnemyBomber : AgentMover
     float bombCounter;
     [SerializeField] GameObject bombPrefab;
     bool hasBombs = true;
-
-    // Start is called before the first frame update
     public override void Start()
     {
         agent.enabled = false;
         base.Start();
-        rotation = 90;
         horizontalMovement = movementSpeed;
         bombCounter = timeBetweenBombDrops;
-
     }
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
-
         if (bomberState == State.Bombing)
         {
             Move(horizontalMovement, verticalMovement);
@@ -37,20 +32,16 @@ public class EnemyBomber : AgentMover
                     Instantiate(bombPrefab, new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z), Quaternion.identity);
                     bombCounter = timeBetweenBombDrops; //reset counter
                     numberOfBombs--;
-
                 }
                 else
                 {
-                    agent.enabled = true;
-                    FindPatrolNodes();
                     bomberState = State.Chasing;
                 }
             }
         }
         else
         {
-            NavigateWaypoints();
-            FindPlayer();
+            base.Update();
         }
     }
 }

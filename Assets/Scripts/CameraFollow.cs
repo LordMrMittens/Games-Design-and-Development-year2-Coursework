@@ -8,6 +8,7 @@ public class CameraFollow : Mover
     [SerializeField] float offset;
     [SerializeField] float verticalDeadZone;
     [SerializeField] float horizontalDeadZone;
+    [SerializeField] float verticalOffset;
     PlayerMovementController playerMovementController;
 
     public override void Start()
@@ -28,7 +29,7 @@ public class CameraFollow : Mover
         if (GameManager.gameManager.playerIsAlive && playerMovementController != null)
         {
             rotation = playerMovementController.rotation;
-            altitude = playerMovementController.altitude;
+            altitude = playerMovementController.altitude+verticalOffset;
             Move(0, 0);
         }
     }
