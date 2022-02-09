@@ -15,12 +15,16 @@ public class PlayerMovementController : Mover
     }
     void Update()
     {
-        float verticalInput = Input.GetAxis("Vertical");
-        if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+        if (GameManager.gameManager.playerCanMove)
         {
-            verticalInput = 0;
-        } 
-        Move(Input.GetAxis("Horizontal"), verticalInput+verticalMovement);
+            float verticalInput = Input.GetAxis("Vertical");
+            if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+            {
+                verticalInput = 0;
+            }
+            Move(Input.GetAxis("Horizontal"), verticalInput + verticalMovement);
+        }
+        else { Move(0, verticalMovement); }
     }
     public override void Move(float horizontalMovement, float verticalMovement)
     {

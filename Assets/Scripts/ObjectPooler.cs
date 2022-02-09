@@ -32,8 +32,8 @@ public class ObjectPooler : MonoBehaviour
     {
         pooler = this;
     }
-    // Start is called before the first frame update
-    void Start()
+    
+    public void Start()
     {
         CreateObjectPool(pooledPlayerBullets, playerBullets, playerBulletsToPool);
         CreateObjectPool(pooledEnemyBullets, enemyBullets, enemyBulletsToPool);

@@ -45,6 +45,8 @@ public class HealthManager : MonoBehaviour
         if (gameObject.tag == "Player")
         {
             GameManager.gameManager.playerIsAlive = false;
+            GameManager.gameManager.playerSpawnAltitude = gameObject.GetComponent<PlayerMovementController>().altitude;
+            GameManager.gameManager.playerSpawnRotation = gameObject.GetComponent<PlayerMovementController>().rotation;
             gameObject.SetActive(false);
         }
         else if (gameObject.name != "Enemy(Clone)" && gameObject.name != "Bomb(Clone)")

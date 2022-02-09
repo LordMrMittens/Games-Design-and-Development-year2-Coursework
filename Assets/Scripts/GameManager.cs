@@ -1,44 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public enum Phase { PhaseOne,PhaseTwo,PhaseThree}
-    public Phase levelPhase;
-    public int score;
+    public Phase levelPhase { get; set; }
+    public int score { get; set; }
     public int targetScore;
-    Transform spawnPoint;
-    public bool playerIsAlive = false;
+    public bool playerIsAlive = false; 
     public static GameManager gameManager;
-    public int enemiesOnScreen;
-    public int targetEnemiesOnScreen;
-    EnemySpawnManager enemySpawnManager;
+    public int enemiesOnScreen { get; set; }
+    public int targetEnemiesOnScreen { get; set; }
+    [SerializeField] int targetEnemiesOnScreenPhaseOne;
+    [SerializeField] int targetEnemiesOnScreenPhaseTwo;
     [SerializeField] GameObject playerPrefab;
     [SerializeField] float timeToSpawnPlayer;
     float playerSpawnCounter;
     GameObject thePlayer;
     PlayerMovementController playerMovementController;
     [SerializeField] float constantScrollingSpeed;
+    public bool playerCanMove { get; set; }
+    public float playerSpawnRotation { get; set; }
+    public float playerSpawnAltitude { get; set; }
+   
     
     void Start()
     {
         gameManager = this;
-        SpawnPlayer();
-        playerMovementController = thePlayer.GetComponent<PlayerMovementController>();
-        levelPhase = Phase.PhaseTwo;
+        
+        playerIsAlive = false;
+        playerCanMove = true;
+        levelPhase = Phase.PhaseOne;
+       
+        DontDestroyOnLoad(this.gameObject);
     }
+
     void Update()
     {
         if (levelPhase == Phase.PhaseOne)
         {
+            if (thePlayer == null)
+            {
+                SpawnPlayer(0, -5);
+            }
             if (score > targetScore)
             {
                 EndPhaseOne();
-                
+            }
+            else
+            {
+                targetEnemiesOnScreen = targetEnemiesOnScreenPhaseOne;
             }
         } else if (levelPhase == Phase.PhaseTwo)
         {
+            if (thePlayer == null)
+            {
+                SpawnPlayer(0, -5);
+            }
+            targetEnemiesOnScreen = targetEnemiesOnScreenPhaseTwo;
             playerMovementController.verticalMovement = constantScrollingSpeed;
         } else if (levelPhase == Phase.PhaseThree)
         {
@@ -49,9 +69,10 @@ public class GameManager : MonoBehaviour
             playerSpawnCounter += Time.deltaTime;
             if (playerSpawnCounter > timeToSpawnPlayer)
             {
+                
                 playerMovementController.ResetOnRespawn();
-                playerMovementController.rotation = 0;
-                playerMovementController.altitude = 0;
+                playerMovementController.rotation = playerSpawnRotation;
+                playerMovementController.altitude = playerSpawnAltitude;
                 thePlayer.SetActive(true);
                 playerSpawnCounter = 0;
                 playerIsAlive = true;
@@ -66,9 +87,11 @@ public class GameManager : MonoBehaviour
     {
         enemiesOnScreen--;
     }
-    private void SpawnPlayer()
+    private void SpawnPlayer(float pRotation, float pAltitude)
     {
         thePlayer = Instantiate(playerPrefab);
+        playerMovementController = thePlayer.GetComponent<PlayerMovementController>();
+        playerMovementController.PlaceEnemy(pRotation,pAltitude);
     }
     private void EndPhaseOne()
     {
@@ -80,11 +103,32 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator EndPhaseOneWait()
     {
-        yield return new WaitForSeconds(5);
+        playerCanMove = false;
+
+        yield return new WaitForSeconds(2);
+        playerMovementController.verticalMovement = constantScrollingSpeed * 5;
+        
         //logic to prepare for phase2
-        //save spawnpoint
         //save score
-        //set target enemies on screen
-        levelPhase = Phase.PhaseTwo;
+        
+        
     }
+    public void LoadPhaseOne()
+    {
+        levelPhase = Phase.PhaseOne;
+    }
+    public void LoadPhaseTwo()
+    {
+        Destroy(thePlayer);
+        SceneManager.LoadScene("Phase2");
+        
+        levelPhase = Phase.PhaseTwo;
+        playerCanMove = true;
+    }
+    public void LoadPhaseThree()
+    {
+        levelPhase = Phase.PhaseThree;
+    }
+    
 }
+

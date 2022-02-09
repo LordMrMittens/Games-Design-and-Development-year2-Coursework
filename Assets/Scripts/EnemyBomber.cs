@@ -30,11 +30,12 @@ public class EnemyBomber : AgentMover
                 if (numberOfBombs > 0)
                 {
                     Instantiate(bombPrefab, new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z), Quaternion.identity);
-                    bombCounter = timeBetweenBombDrops; //reset counter
+                    bombCounter = timeBetweenBombDrops; 
                     numberOfBombs--;
                 }
                 else
                 {
+                   
                     bomberState = State.Chasing;
                 }
             }

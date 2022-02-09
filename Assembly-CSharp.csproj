@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
+    <Compile Include="Assets\Scripts\SceneTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

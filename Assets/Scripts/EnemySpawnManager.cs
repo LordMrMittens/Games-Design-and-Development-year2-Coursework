@@ -81,16 +81,24 @@ public class EnemySpawnManager : MonoBehaviour
     }
     private void ChooseEnemyAndSpawnLocation(out Spawner spawnpoint, out int unitToSpawn)
     {
-        spawnpoint = new Spawner() { rotation = (playerMovementController.rotation + 180) + Random.Range(-125,125), altitude = playerMovementController.altitude + 5 };
-        if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+        if (GameManager.gameManager.playerIsAlive)
         {
-            unitToSpawn = Random.Range(0, 3);
+            spawnpoint = new Spawner() { rotation = (playerMovementController.rotation + 180) + Random.Range(-125, 125), altitude = playerMovementController.altitude + 5 };
+            if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+            {
+                unitToSpawn = Random.Range(0, 3);
+            }
+            else if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseTwo)
+            {
+                unitToSpawn = Random.Range(1, 5);
+            }
+            else { unitToSpawn = 5; }
         }
-        else if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseTwo)
+        else
         {
-            unitToSpawn = Random.Range(1, 5);
+            spawnpoint = new Spawner { rotation =0, altitude= 0 };
+            unitToSpawn = 5;
         }
-        else { unitToSpawn = 5; }
     }
     private void CheckPlayerPosition()
     {
