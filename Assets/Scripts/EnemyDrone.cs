@@ -39,7 +39,7 @@ public class EnemyDrone : EnemyPatrol
         {
             Orbit();
         }
-        if (!GameManager.gameManager.playerIsAlive)
+        if (!GameManager.TGM.playerIsAlive)
         {
             state = State.Patrolling;
         }
@@ -66,7 +66,7 @@ public class EnemyDrone : EnemyPatrol
     }
     void Orbit()
     {
-        if (GameManager.gameManager.playerIsAlive)
+        if (GameManager.TGM.playerIsAlive)
         {
             float distance = Vector3.Distance(transform.position, player.transform.position);
 

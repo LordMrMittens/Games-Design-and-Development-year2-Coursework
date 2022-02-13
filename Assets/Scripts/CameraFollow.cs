@@ -9,6 +9,8 @@ public class CameraFollow : Mover
     [SerializeField] float verticalDeadZone;
     [SerializeField] float horizontalDeadZone;
     [SerializeField] float verticalOffset;
+    public float playerLowerBounds;
+    public float playerUpperBounds;
     PlayerMovementController playerMovementController;
 
     public override void Start()
@@ -17,24 +19,53 @@ public class CameraFollow : Mover
         radiusOffset = offset;
     }
     void LateUpdate()
-    {
-        if (GameManager.gameManager.playerIsAlive)
+    {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
         {
-            player = GameObject.FindGameObjectWithTag("Player").transform;
-            if (/*player != null &&*/ playerMovementController == null)
+            if (GameManager.TGM.playerIsAlive)
             {
-                playerMovementController = player.GetComponent<PlayerMovementController>();
+
+                
+                if (player == null && playerMovementController == null)
+                {
+                    player = GameObject.FindGameObjectWithTag("Player").transform;
+                    playerMovementController = player.GetComponent<PlayerMovementController>();
+                    speed = playerMovementController.speed;
+                }
+            }
+            if (GameManager.TGM.playerIsAlive && playerMovementController != null)
+            {
+                rotation = playerMovementController.rotation;
+                altitude = playerMovementController.altitude + verticalOffset;
+                Move(0, 0);
             }
         }
-        if (GameManager.gameManager.playerIsAlive && playerMovementController != null)
+    if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
         {
-            rotation = playerMovementController.rotation;
-            altitude = playerMovementController.altitude+verticalOffset;
-            Move(0, 0);
+
+
+            if (GameManager.TGM.playerIsAlive)
+            {
+
+
+                if (player == null && playerMovementController == null)
+                {
+                    player = GameObject.FindGameObjectWithTag("Player").transform;
+                    playerMovementController = player.GetComponent<PlayerMovementController>();
+                    speed = playerMovementController.speed;
+                    altitude = playerMovementController.altitude + verticalOffset; //set this up the same as player then camera moves up independently;
+                    
+                }
+                rotation = playerMovementController.rotation;
+
+                Move(0, GameManager.TGM.constantScrollingSpeed);
+                
+
+            }
         }
     }
     public override void Move(float horizontalMovement, float verticalMovement)
     {
+        altitude += verticalMovement * (speed / 6) * Time.deltaTime;
         transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
 
         KeepFacingCenter();

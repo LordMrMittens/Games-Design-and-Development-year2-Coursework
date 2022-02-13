@@ -57,7 +57,7 @@ public class EnemyHydra : AgentMover
                 }
                 break;
         }
-        if (!GameManager.gameManager.playerIsAlive)
+        if (!GameManager.TGM.playerIsAlive)
         {
             state = status.Passive;
         }
@@ -108,7 +108,7 @@ public class EnemyHydra : AgentMover
                 hydraControl.state = state;
                 offspring.GetComponent<HealthManager>().health = offSpringHealth;
                 offspring.transform.localScale = transform.localScale / offSpringSizeDividedBy;
-                GameManager.gameManager.CountEnemyUp();
+                GameManager.TGM.CountEnemyUp();
             }
         }
     }

@@ -10,6 +10,14 @@ public class CityController : MonoBehaviour
     {
         healthManager = GetComponent<HealthManager>();
     }
+    private void Update()
+    {
+        if (healthManager.health <= 0)
+        {
+            GameManager.TGM.StopGame();
+            //GameOver
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag != "Player" && other.tag != "Bullet")

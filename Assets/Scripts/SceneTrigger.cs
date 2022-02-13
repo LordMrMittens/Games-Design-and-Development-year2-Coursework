@@ -7,6 +7,6 @@ public class SceneTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag=="Player")
-        GameManager.gameManager.LoadPhaseTwo();
+        GameManager.TGM.LoadPhaseTwo();
     }
 }

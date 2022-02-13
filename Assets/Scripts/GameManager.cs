@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public int score { get; set; }
     public int targetScore;
     public bool playerIsAlive = false; 
-    public static GameManager gameManager;
+    public static GameManager TGM;
     public int enemiesOnScreen { get; set; }
     public int targetEnemiesOnScreen { get; set; }
     [SerializeField] int targetEnemiesOnScreenPhaseOne;
@@ -19,25 +19,27 @@ public class GameManager : MonoBehaviour
     float playerSpawnCounter;
     GameObject thePlayer;
     PlayerMovementController playerMovementController;
-    [SerializeField] float constantScrollingSpeed;
+    PlayerTransformationController playerTransformation;
+    public float constantScrollingSpeed;
     public bool playerCanMove { get; set; }
     public float playerSpawnRotation { get; set; }
     public float playerSpawnAltitude { get; set; }
-   
-    
     void Start()
     {
-        gameManager = this;
+        TGM = this;
         
         playerIsAlive = false;
         playerCanMove = true;
         levelPhase = Phase.PhaseOne;
-       
         DontDestroyOnLoad(this.gameObject);
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(EndPhaseOneWait());
+        }
         if (levelPhase == Phase.PhaseOne)
         {
             if (thePlayer == null)
@@ -91,7 +93,8 @@ public class GameManager : MonoBehaviour
     {
         thePlayer = Instantiate(playerPrefab);
         playerMovementController = thePlayer.GetComponent<PlayerMovementController>();
-        playerMovementController.PlaceEnemy(pRotation,pAltitude);
+        playerTransformation = thePlayer.GetComponent<PlayerTransformationController>();
+        playerMovementController.PlaceObject(pRotation,pAltitude);
     }
     private void EndPhaseOne()
     {
@@ -106,12 +109,11 @@ public class GameManager : MonoBehaviour
         playerCanMove = false;
 
         yield return new WaitForSeconds(2);
-        playerMovementController.verticalMovement = constantScrollingSpeed * 5;
-        
+        playerTransformation.TransformIntoShip();
+        yield return new WaitForSeconds(1);
+        playerMovementController.verticalMovement = constantScrollingSpeed * 10;
         //logic to prepare for phase2
         //save score
-        
-        
     }
     public void LoadPhaseOne()
     {
@@ -121,7 +123,7 @@ public class GameManager : MonoBehaviour
     {
         Destroy(thePlayer);
         SceneManager.LoadScene("Phase2");
-        
+        OnLevelWasLoaded();
         levelPhase = Phase.PhaseTwo;
         playerCanMove = true;
     }
@@ -129,6 +131,15 @@ public class GameManager : MonoBehaviour
     {
         levelPhase = Phase.PhaseThree;
     }
+    public void StopGame()
+    {
+        Time.timeScale = 0;
+    }
+    private void OnLevelWasLoaded()
+    {
+        DynamicGI.UpdateEnvironment();   
+    }
     
+
 }
 

@@ -6,8 +6,8 @@ public class PlayerInventory : MonoBehaviour
 {
     public bool hasShield { get; set; }
     public int shieldHealth { get; set; }
-
-    public bool hasDoubleShot { get; set; }
+    PlayerTransformationController playerTransformation;
+    public bool hasDoubleShot;
     public bool hasFireRateUp { get; set; }
     public bool hasShotPowerUp; //{ get; set; }
 
@@ -20,12 +20,20 @@ public class PlayerInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        hasDoubleShot = false;
+        playerTransformation = GetComponent<PlayerTransformationController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (hasDoubleShot && !playerTransformation.sidegunsActive)
+        {
+            playerTransformation.ActivateSideGuns();
+        }
+        else if (!hasDoubleShot)
+        {
+            playerTransformation.DisableSideGuns();
+        }
     }
 }

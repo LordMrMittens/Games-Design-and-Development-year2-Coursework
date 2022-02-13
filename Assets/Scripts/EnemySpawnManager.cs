@@ -20,7 +20,7 @@ public class EnemySpawnManager : MonoBehaviour
     [SerializeField] float enemySpawnCounter =0;
     void Update()
     {
-        if (GameManager.gameManager.playerIsAlive)
+        if (GameManager.TGM.playerIsAlive)
         {
             CheckPlayerPosition();
             CheckIfSpawningIsPossible();
@@ -28,7 +28,7 @@ public class EnemySpawnManager : MonoBehaviour
     }
     private void CheckIfSpawningIsPossible()
     {
-        if (GameManager.gameManager.enemiesOnScreen < GameManager.gameManager.targetEnemiesOnScreen)
+        if (GameManager.TGM.enemiesOnScreen < GameManager.TGM.targetEnemiesOnScreen)
         {
             enemySpawnCounter += Time.deltaTime;
             if (enemySpawnCounter > timeBetweenEnemySpawns)
@@ -47,32 +47,32 @@ public class EnemySpawnManager : MonoBehaviour
         {
             case 0:
                 GameObject squad = Instantiate(enemySquadPrefab);
-                squad.GetComponent<EnemyMarchController>().PlaceEnemy(spawnpoint.rotation, spawnpoint.altitude);
-                GameManager.gameManager.CountEnemyUp();
+                squad.GetComponent<EnemyMarchController>().PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
+                GameManager.TGM.CountEnemyUp();
                 break;
             case 1:
 
                 GameObject kamikaze = Instantiate(enemyKamikazePrefab);
                 EnemyPatrol patrolManager = kamikaze.GetComponent<EnemyPatrol>();
-                patrolManager.PlaceEnemy(spawnpoint.rotation, spawnpoint.altitude);
-                GameManager.gameManager.CountEnemyUp();
+                patrolManager.PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
+                GameManager.TGM.CountEnemyUp();
                 break;
             case 2:
                 GameObject bomber = Instantiate(enemyBomberPrefab);
-                bomber.GetComponent<EnemyBomber>().PlaceEnemy(spawnpoint.rotation, spawnpoint.altitude);
-                GameManager.gameManager.CountEnemyUp();
+                bomber.GetComponent<EnemyBomber>().PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
+                GameManager.TGM.CountEnemyUp();
                 break;
             case 3:
                 GameObject drone = Instantiate(enemyDronePrefab);
                 EnemyDrone droneManager = drone.GetComponent<EnemyDrone>();
-                droneManager.PlaceEnemy(spawnpoint.rotation, spawnpoint.altitude);
-                GameManager.gameManager.CountEnemyUp();
+                droneManager.PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
+                GameManager.TGM.CountEnemyUp();
                 
                 break;
             case 4:
                 GameObject hydra = Instantiate(enemyHydraPrefab);
-                hydra.GetComponent<EnemyHydra>().PlaceEnemy(spawnpoint.rotation, spawnpoint.altitude);
-                GameManager.gameManager.CountEnemyUp();
+                hydra.GetComponent<EnemyHydra>().PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
+                GameManager.TGM.CountEnemyUp();
                 break;
             case 5:
                 Debug.Log("Phase 3");
@@ -81,14 +81,14 @@ public class EnemySpawnManager : MonoBehaviour
     }
     private void ChooseEnemyAndSpawnLocation(out Spawner spawnpoint, out int unitToSpawn)
     {
-        if (GameManager.gameManager.playerIsAlive)
+        if (GameManager.TGM.playerIsAlive)
         {
             spawnpoint = new Spawner() { rotation = (playerMovementController.rotation + 180) + Random.Range(-125, 125), altitude = playerMovementController.altitude + 5 };
-            if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+            if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
             {
                 unitToSpawn = Random.Range(0, 3);
             }
-            else if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseTwo)
+            else if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
             {
                 unitToSpawn = Random.Range(1, 5);
             }

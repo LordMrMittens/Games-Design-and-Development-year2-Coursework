@@ -23,7 +23,7 @@ public class HealthManager : MonoBehaviour
         health = maxHealth;
         if (gameObject.tag == "Player")
         {
-            GameManager.gameManager.playerIsAlive = true;
+            GameManager.TGM.playerIsAlive = true;
         }
        
     }
@@ -41,17 +41,17 @@ public class HealthManager : MonoBehaviour
         {
             gameObject.GetComponent<EnemyHydra>().DivideOnDeath();
         }
-        GameManager.gameManager.score += pointsValue;
+        GameManager.TGM.score += pointsValue;
         if (gameObject.tag == "Player")
         {
-            GameManager.gameManager.playerIsAlive = false;
-            GameManager.gameManager.playerSpawnAltitude = gameObject.GetComponent<PlayerMovementController>().altitude;
-            GameManager.gameManager.playerSpawnRotation = gameObject.GetComponent<PlayerMovementController>().rotation;
+            GameManager.TGM.playerIsAlive = false;
+            GameManager.TGM.playerSpawnAltitude = gameObject.GetComponent<PlayerMovementController>().altitude;
+            GameManager.TGM.playerSpawnRotation = gameObject.GetComponent<PlayerMovementController>().rotation;
             gameObject.SetActive(false);
         }
         else if (gameObject.name != "Enemy(Clone)" && gameObject.name != "Bomb(Clone)")
         {
-            GameManager.gameManager.CountEnemyDown();
+            GameManager.TGM.CountEnemyDown();
             Destroy(gameObject);
         }
         else

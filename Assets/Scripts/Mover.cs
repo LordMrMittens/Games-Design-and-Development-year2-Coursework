@@ -20,7 +20,7 @@ public class Mover : MonoBehaviour
         center = GameObject.Find("Center");
         origin = center.transform.position;
     }
-    public void PlaceEnemy(float startRotation, float startAltitude)
+    public void PlaceObject(float startRotation, float startAltitude)
     {
         rotation = startRotation;
         altitude = startAltitude;

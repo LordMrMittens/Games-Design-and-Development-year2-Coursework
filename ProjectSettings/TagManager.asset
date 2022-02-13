@@ -13,6 +13,9 @@ TagManager:
   - Bomb
   - Bullet
   - City
+  - PlayerTank
+  - PlayerWing
+  - Cannon
   layers:
   - Default
   - TransparentFX

@@ -5,32 +5,38 @@ using UnityEngine;
 public class PlayerMovementController : Mover
 {
     HealthManager healthManager;
+    CameraFollow cameraControls;
     public override void Start()
     {
         healthManager = GetComponent<HealthManager>();
         base.Start();
         rotation = 0;
         altitude = -5;
-        GameManager.gameManager.playerIsAlive = true;
+        GameManager.TGM.playerIsAlive = true;
+        cameraControls = Camera.main.GetComponent<CameraFollow>();
     }
     void Update()
     {
-        if (GameManager.gameManager.playerCanMove)
+        if (GameManager.TGM.playerCanMove)
         {
             float verticalInput = Input.GetAxis("Vertical");
-            if (GameManager.gameManager.levelPhase == GameManager.Phase.PhaseOne)
+            if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
             {
                 verticalInput = 0;
             }
             Move(Input.GetAxis("Horizontal"), verticalInput + verticalMovement);
         }
-        else { Move(0, verticalMovement); }
+        else { Move(0,verticalMovement); }
     }
     public override void Move(float horizontalMovement, float verticalMovement)
     {
-        if (altitude <= -5)
+        if (altitude < cameraControls.altitude - cameraControls.playerLowerBounds)
         {
-            altitude = -5;
+                altitude = cameraControls.altitude - cameraControls.playerLowerBounds;
+        }
+            if(altitude > cameraControls.altitude + cameraControls.playerUpperBounds)
+        {
+            altitude = cameraControls.altitude + cameraControls.playerUpperBounds;
         }
         base.Move(horizontalMovement, verticalMovement);
     }
