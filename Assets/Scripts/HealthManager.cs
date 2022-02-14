@@ -72,5 +72,10 @@ public class HealthManager : MonoBehaviour
                 Destroy();
             }
         }
+
+        if (transform.position.y < Camera.main.transform.position.y - 20)
+        {
+            Destroy(gameObject);
+        }
     }
 }

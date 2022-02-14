@@ -16,7 +16,8 @@ public class EnemySpawnManager : MonoBehaviour
     int enemyHydraKillCount;
     [SerializeField] GameObject player;
    [SerializeField] PlayerMovementController playerMovementController;
-    [SerializeField] float timeBetweenEnemySpawns;
+    [SerializeField] float timeBetweenEnemySpawnsPhaseOne;
+    [SerializeField] float timeBetweenEnemySpawnsPhaseTwo;
     [SerializeField] float enemySpawnCounter =0;
     void Update()
     {
@@ -25,22 +26,35 @@ public class EnemySpawnManager : MonoBehaviour
             CheckPlayerPosition();
             CheckIfSpawningIsPossible();
         }
+
     }
     private void CheckIfSpawningIsPossible()
     {
         if (GameManager.TGM.enemiesOnScreen < GameManager.TGM.targetEnemiesOnScreen)
         {
             enemySpawnCounter += Time.deltaTime;
-            if (enemySpawnCounter > timeBetweenEnemySpawns)
+            if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
             {
-                Spawner spawnpoint;
-                int unitToSpawn;
-                ChooseEnemyAndSpawnLocation(out spawnpoint, out unitToSpawn);
-                SpawnEnemy(spawnpoint, unitToSpawn);
-                enemySpawnCounter = 0;
+                TrySpawnEnemy(timeBetweenEnemySpawnsPhaseOne);
+            } else if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
+            {
+                TrySpawnEnemy(timeBetweenEnemySpawnsPhaseTwo);
             }
         }
     }
+
+    private void TrySpawnEnemy(float timeBetweenSpawns)
+    {
+        if (enemySpawnCounter > timeBetweenSpawns)
+        {
+            Spawner spawnpoint;
+            int unitToSpawn;
+            ChooseEnemyAndSpawnLocation(out spawnpoint, out unitToSpawn);
+            SpawnEnemy(spawnpoint, unitToSpawn);
+            enemySpawnCounter = 0;
+        }
+    }
+
     private void SpawnEnemy(Spawner spawnpoint, int unitToSpawn)
     {
         switch (unitToSpawn)
@@ -83,16 +97,22 @@ public class EnemySpawnManager : MonoBehaviour
     {
         if (GameManager.TGM.playerIsAlive)
         {
-            spawnpoint = new Spawner() { rotation = (playerMovementController.rotation + 180) + Random.Range(-125, 125), altitude = playerMovementController.altitude + 5 };
+ 
             if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
             {
+                spawnpoint = new Spawner() { rotation = (playerMovementController.rotation + 180) + Random.Range(-125, 125), altitude = playerMovementController.altitude + 5 };
                 unitToSpawn = Random.Range(0, 3);
             }
             else if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
             {
+              spawnpoint = new Spawner() { rotation = playerMovementController.rotation + Random.Range(-90, 90), altitude = playerMovementController.altitude + 5 };
+                
                 unitToSpawn = Random.Range(1, 5);
             }
-            else { unitToSpawn = 5; }
+            else
+            {
+                spawnpoint = null;
+                unitToSpawn = 5; }
         }
         else
         {
@@ -108,6 +128,7 @@ public class EnemySpawnManager : MonoBehaviour
                 playerMovementController = player.GetComponent<PlayerMovementController>();
             }
     }
+
 }
 class Spawner
 {

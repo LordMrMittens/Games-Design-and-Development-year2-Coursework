@@ -56,35 +56,39 @@
     <Analyzer Include="D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LookAtCenter.cs" />
     <Compile Include="Assets\Scripts\EnemyHydra.cs" />
+    <Compile Include="Assets\Scripts\HydraAnimationBehaviour.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\Obsolete\Projectiles.cs" />
+    <Compile Include="Assets\Scripts\ObstacleRotate.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\PlayerGun.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
+    <Compile Include="Assets\Scripts\ObstacleCollision.cs" />
     <Compile Include="Assets\Scripts\AgentMover.cs" />
     <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\Obsolete\PlayerController.cs" />
     <Compile Include="Assets\Scripts\EnemyBomber.cs" />
+    <Compile Include="Assets\Scripts\PatrolNodeController.cs" />
     <Compile Include="Assets\Scripts\EnemyDrone.cs" />
+    <Compile Include="Assets\Scripts\DecorationSpawner.cs" />
+    <Compile Include="Assets\Scripts\PlayerCannonLookAtController.cs" />
     <Compile Include="Assets\Scripts\Obsolete\Gravity.cs" />
     <Compile Include="Assets\Scripts\EnemyMarch.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
+    <Compile Include="Assets\Scripts\PlayerTransformationController.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\EnemyMarchController.cs" />
     <Compile Include="Assets\Scripts\SceneTrigger.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
+    <Compile Include="Assets\Scripts\PatrolNodeSpawnController.cs" />
     <Compile Include="Assets\Scripts\CityController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\PatrolNodeSpawnController.cs" />
-    <Compile Include="Assets\Scripts\PatrolNodeController.cs" />
-    <Compile Include="Assets\Scripts\PlayerTransformationController.cs" />
-    <Compile Include="Assets\Scripts\PlayerCannonLookAtController.cs" />
-    <Compile Include="Assets\Scripts\LookAtCenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

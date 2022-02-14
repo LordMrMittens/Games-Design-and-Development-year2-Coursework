@@ -43,6 +43,7 @@ public class PatrolNodeSpawnController : Mover
         {
             for (int i = 0; i < columnsToSpawn; i++)
             {
+
                 PatrolSpawnPoint patrolSpawn = new PatrolSpawnPoint { rotation = i * (360 / columnsToSpawn), altitude = (cameraController.altitude - bottomSpawnDistance) + j};
                 GameObject patrolNode = Instantiate(patrolNodePrefab);
                 patrolNode.GetComponent<PatrolNodeController>().PlaceObject(patrolSpawn.rotation, patrolSpawn.altitude);

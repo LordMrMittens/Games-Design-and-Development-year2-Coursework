@@ -46,11 +46,15 @@ public class RotateAroundProjectile : MonoBehaviour
                 other.GetComponent<HealthManager>().TakeDamage(damage);
                 gameObject.SetActive(false);
             }
+        } 
+        if(other.tag == "Obstacle")
+        {
+            gameObject.SetActive(false);
         }
     }
     IEnumerator DeactivateAfterSeconds()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }
     private void OnDisable()

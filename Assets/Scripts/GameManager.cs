@@ -27,11 +27,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         TGM = this;
-        
+        DontDestroyOnLoad(this.gameObject);
         playerIsAlive = false;
         playerCanMove = true;
         levelPhase = Phase.PhaseOne;
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     void Update()
@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
         {
             if (thePlayer == null)
             {
+                Debug.Log("Getting here");
                 SpawnPlayer(0, -5);
             }
             targetEnemiesOnScreen = targetEnemiesOnScreenPhaseTwo;
@@ -112,8 +113,6 @@ public class GameManager : MonoBehaviour
         playerTransformation.TransformIntoShip();
         yield return new WaitForSeconds(1);
         playerMovementController.verticalMovement = constantScrollingSpeed * 10;
-        //logic to prepare for phase2
-        //save score
     }
     public void LoadPhaseOne()
     {
@@ -137,9 +136,7 @@ public class GameManager : MonoBehaviour
     }
     private void OnLevelWasLoaded()
     {
-        DynamicGI.UpdateEnvironment();   
+        DynamicGI.UpdateEnvironment();
     }
-    
-
 }
 

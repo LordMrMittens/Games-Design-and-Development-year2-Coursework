@@ -6,6 +6,6 @@ public class LookAtCenter : Mover
 {
     private void Update()
     {
-        transform.localRotation = transform.parent.gameObject.transform.rotation;
+        transform.LookAt(Vector3.down, Vector3.up);
     }
 }
