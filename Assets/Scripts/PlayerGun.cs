@@ -8,15 +8,11 @@ public class PlayerGun : Gun
     PlayerTransformationController playerTransformation; 
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject[] cannons;
-    
-/*    [SerializeField] Transform mainTankCannon;
-    [SerializeField] Transform mainShipCannon;
-    [SerializeField] Transform leftShipCannon;
-    [SerializeField] Transform rightShipCannon;*/
-
     public LayerMask targetMask;
     PlayerInventory playerInventory;
     public Ray ray;
+    [SerializeField] float setTimeBetweenShots;
+    
     void Start()
     {
         playerMovementController = GetComponent<PlayerMovementController>();
@@ -25,6 +21,7 @@ public class PlayerGun : Gun
         cannons = GameObject.FindGameObjectsWithTag("Cannon");
         damage = bulletDamage;
         canShoot = true;
+        timeBetweenShots = setTimeBetweenShots;
         shotTimer = 0;
         mainCamera = Camera.main;
     }
@@ -36,9 +33,13 @@ public class PlayerGun : Gun
         {
             Shoot();
         }
-        
-    }
 
+    }
+    private void OnEnable()
+    {
+        ResetDamage();
+        ResetFireRate();
+    }
     public override void Shoot()
     {
         RaycastHit hit;
@@ -66,8 +67,20 @@ public class PlayerGun : Gun
         }
         shotTimer = 0;
     }
-    public void doubleDamage()
+    public void DoubleDamage()
     {
         damage = bulletDamage * 2;
+    }
+    public void ResetDamage()
+    {
+        damage = bulletDamage;
+    }
+    public void DubleFireRate()
+    {
+        timeBetweenShots  /= 3;
+    }
+    public void ResetFireRate()
+    {
+        timeBetweenShots = setTimeBetweenShots;
     }
 }

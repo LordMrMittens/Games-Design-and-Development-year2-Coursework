@@ -9,7 +9,7 @@ public class HealthManager : MonoBehaviour
     public int damageGiven;
     [SerializeField] bool destroyOnTouch;
     [SerializeField] int pointsValue;
-    //GameManager gameManager;
+    public bool shields;
     private void Start()
     {
         ResetHealth();
@@ -29,14 +29,29 @@ public class HealthManager : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        if (shields)
         {
-            Destroy();
+            shields = false;
+        }
+        else
+        {
+            health -= damage;
+            if (health <= 0)
+            {
+                Destroy();
+            }
         }
     }
     private void Destroy()
     {
+        if (gameObject.tag == "Enemy")
+        {
+            if (Random.Range(0, 3) == 1)
+            {
+                
+                PickupSpawnManager.PSM.DecideWhichPickUpToSpawn(transform.position);
+            }
+        }
         if (gameObject.GetComponent<EnemyHydra>() != null)
         {
             gameObject.GetComponent<EnemyHydra>().DivideOnDeath();
@@ -57,7 +72,8 @@ public class HealthManager : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-        } 
+        }
+
     }
      void OnTriggerEnter(Collider other)
     {

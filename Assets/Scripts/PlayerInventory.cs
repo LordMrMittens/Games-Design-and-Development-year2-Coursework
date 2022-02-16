@@ -4,26 +4,31 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public bool hasShield { get; set; }
-    public int shieldHealth { get; set; }
     PlayerTransformationController playerTransformation;
+    PlayerGun playerGun;
     public bool hasDoubleShot;
-    public bool hasFireRateUp { get; set; }
-    public bool hasShotPowerUp; //{ get; set; }
+    public bool hasFireRateUp;
+    public bool hasShotPowerUp;
 
     [SerializeField] GameObject missilePrefab;
-    int missiles;
+    public int missiles;
     [SerializeField] GameObject homingMissilePrefab;
-    int homingMissiles;
+    public int homingMissiles;
     [SerializeField] GameObject devastatorPrefab;
-    int devastators;
-    // Start is called before the first frame update
+    public int devastators;
+
     void Start()
     {
-        hasDoubleShot = false;
+        ResetInventory();
         playerTransformation = GetComponent<PlayerTransformationController>();
+        
     }
-
+    public void ResetInventory()
+    {
+        hasFireRateUp = false;
+        hasDoubleShot = false;
+        hasShotPowerUp = false;
+    }
     // Update is called once per frame
     void Update()
     {

@@ -11,8 +11,13 @@ public class PlayerTransformationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetPlayerTransformation();
+    }
+
+    private void ResetPlayerTransformation()
+    {
         sidegunsActive = false;
-        if(GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
+        if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
         {
             TransformIntoTank();
         }

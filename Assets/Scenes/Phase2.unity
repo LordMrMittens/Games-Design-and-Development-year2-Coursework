@@ -549,7 +549,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -586,7 +586,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -847,7 +847,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -884,7 +884,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1247,7 +1247,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -1284,7 +1284,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1902,7 +1902,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -1939,7 +1939,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2284,7 +2284,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -2338,7 +2338,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2803,7 +2803,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -2840,7 +2840,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3134,7 +3134,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -3188,7 +3188,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4010,7 +4010,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -4047,7 +4047,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4869,7 +4869,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -4906,7 +4906,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4996,7 +4996,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -5050,7 +5050,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5260,7 +5260,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -5297,7 +5297,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5387,7 +5387,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -5441,7 +5441,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6008,7 +6008,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -6045,7 +6045,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6459,7 +6459,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -6496,7 +6496,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6604,7 +6604,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -6641,7 +6641,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6749,7 +6749,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -6786,7 +6786,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7200,7 +7200,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -7237,7 +7237,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7600,7 +7600,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -7637,7 +7637,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7898,7 +7898,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -7935,7 +7935,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8280,7 +8280,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -8334,7 +8334,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8646,7 +8646,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -8683,7 +8683,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8977,7 +8977,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -9031,7 +9031,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9547,7 +9547,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -9584,7 +9584,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10151,7 +10151,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -10188,7 +10188,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10329,7 +10329,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -10383,7 +10383,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10524,7 +10524,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -10578,7 +10578,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10992,7 +10992,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -11029,7 +11029,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11188,7 +11188,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -11225,7 +11225,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11468,7 +11468,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -11522,7 +11522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11681,7 +11681,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -11718,7 +11718,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12234,7 +12234,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -12271,7 +12271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13024,7 +13024,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -13078,7 +13078,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13729,7 +13729,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -13783,7 +13783,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14299,7 +14299,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -14336,7 +14336,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15005,7 +15005,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -15042,7 +15042,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15609,7 +15609,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -15646,7 +15646,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16009,7 +16009,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -16046,7 +16046,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16664,7 +16664,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -16701,7 +16701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17064,7 +17064,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -17101,7 +17101,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17191,7 +17191,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -17245,7 +17245,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17506,7 +17506,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -17543,7 +17543,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17804,7 +17804,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -17841,7 +17841,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18357,7 +18357,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -18394,7 +18394,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18655,7 +18655,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -18692,7 +18692,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19343,7 +19343,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -19397,7 +19397,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19538,7 +19538,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -19592,7 +19592,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20210,7 +20210,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -20247,7 +20247,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20457,7 +20457,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -20494,7 +20494,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20992,7 +20992,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -21046,7 +21046,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21307,7 +21307,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -21344,7 +21344,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22013,7 +22013,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -22050,7 +22050,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30698,7 +30698,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -30735,7 +30735,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31159,7 +31159,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -31196,7 +31196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31508,7 +31508,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -31545,7 +31545,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31806,7 +31806,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -31843,7 +31843,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32239,7 +32239,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -32293,7 +32293,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32860,7 +32860,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -32897,7 +32897,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33209,7 +33209,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -33246,7 +33246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33456,7 +33456,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -33493,7 +33493,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34162,7 +34162,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -34199,7 +34199,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34919,7 +34919,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -34956,7 +34956,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36627,7 +36627,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -36681,7 +36681,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36873,7 +36873,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -36927,7 +36927,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37035,7 +37035,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -37072,7 +37072,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37499,7 +37499,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -37536,7 +37536,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38052,7 +38052,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -38089,7 +38089,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39107,7 +39107,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -39161,7 +39161,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39269,7 +39269,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -39306,7 +39306,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39822,7 +39822,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -39859,7 +39859,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40306,7 +40306,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -40360,7 +40360,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40468,7 +40468,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -40505,7 +40505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40595,7 +40595,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -40649,7 +40649,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40739,7 +40739,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -40793,7 +40793,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41921,7 +41921,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -41958,7 +41958,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42423,7 +42423,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -42460,7 +42460,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42550,7 +42550,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -42604,7 +42604,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42694,7 +42694,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -42748,7 +42748,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43427,7 +43427,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -43464,7 +43464,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43809,7 +43809,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -43863,7 +43863,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44175,7 +44175,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -44212,7 +44212,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44965,7 +44965,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -45019,7 +45019,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45262,7 +45262,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -45316,7 +45316,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45457,7 +45457,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -45511,7 +45511,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45670,7 +45670,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -45707,7 +45707,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45968,7 +45968,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -46005,7 +46005,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46521,7 +46521,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -46558,7 +46558,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46750,7 +46750,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -46804,7 +46804,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47014,7 +47014,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -47051,7 +47051,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47261,7 +47261,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -47298,7 +47298,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47388,7 +47388,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -47442,7 +47442,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47736,7 +47736,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -47790,7 +47790,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48969,7 +48969,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -49006,7 +49006,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49300,7 +49300,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -49354,7 +49354,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49615,7 +49615,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -49652,7 +49652,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49844,7 +49844,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -49898,7 +49898,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50159,7 +50159,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -50196,7 +50196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50304,7 +50304,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -50341,7 +50341,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50493,7 +50493,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -50530,7 +50530,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50689,7 +50689,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -50726,7 +50726,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50885,7 +50885,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -50922,7 +50922,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51063,7 +51063,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -51117,7 +51117,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51666,7 +51666,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -51720,7 +51720,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51879,7 +51879,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -51916,7 +51916,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52006,7 +52006,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -52060,7 +52060,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52609,7 +52609,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -52663,7 +52663,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54659,7 +54659,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -54696,7 +54696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54906,7 +54906,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -54943,7 +54943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55084,7 +55084,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -55138,7 +55138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55348,7 +55348,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -55385,7 +55385,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56699,7 +56699,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -56753,7 +56753,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57075,7 +57075,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -57112,7 +57112,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57730,7 +57730,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -57767,7 +57767,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57875,7 +57875,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -57912,7 +57912,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58173,7 +58173,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -58210,7 +58210,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59134,7 +59134,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -59171,7 +59171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59261,7 +59261,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -59315,7 +59315,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59678,7 +59678,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -59715,7 +59715,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60129,7 +60129,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -60166,7 +60166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60325,7 +60325,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -60362,7 +60362,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60623,7 +60623,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -60660,7 +60660,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60819,7 +60819,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -60856,7 +60856,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61048,7 +61048,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -61102,7 +61102,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61312,7 +61312,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -61349,7 +61349,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -61949,7 +61949,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -62003,7 +62003,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -62519,7 +62519,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -62556,7 +62556,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -62664,7 +62664,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -62701,7 +62701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63097,7 +63097,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -63151,7 +63151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63412,7 +63412,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -63449,7 +63449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63812,7 +63812,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -63849,7 +63849,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64110,7 +64110,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -64147,7 +64147,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64408,7 +64408,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -64445,7 +64445,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64808,7 +64808,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -64845,7 +64845,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65361,7 +65361,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -65398,7 +65398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -65608,7 +65608,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -65645,7 +65645,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66306,7 +66306,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -66360,7 +66360,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66519,7 +66519,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -66556,7 +66556,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66664,7 +66664,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -66701,7 +66701,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66893,7 +66893,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -66947,7 +66947,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67088,7 +67088,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -67142,7 +67142,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67385,7 +67385,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -67439,7 +67439,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67598,7 +67598,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -67635,7 +67635,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67794,7 +67794,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -67831,7 +67831,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68839,7 +68839,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -68893,7 +68893,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -69493,7 +69493,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -69547,7 +69547,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -69854,7 +69854,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -69908,7 +69908,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70373,7 +70373,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -70410,7 +70410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70876,7 +70876,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -70913,7 +70913,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71582,7 +71582,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -71619,7 +71619,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72288,7 +72288,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -72325,7 +72325,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72688,7 +72688,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -72725,7 +72725,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73376,7 +73376,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -73430,7 +73430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73844,7 +73844,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -73881,7 +73881,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73971,7 +73971,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -74025,7 +74025,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74643,7 +74643,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -74680,7 +74680,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75043,7 +75043,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -75080,7 +75080,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75239,7 +75239,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -75276,7 +75276,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75519,7 +75519,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -75573,7 +75573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75918,7 +75918,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -75972,7 +75972,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76692,7 +76692,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -76729,7 +76729,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76837,7 +76837,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -76874,7 +76874,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76982,7 +76982,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -77019,7 +77019,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77229,7 +77229,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -77266,7 +77266,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79272,7 +79272,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -79309,7 +79309,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79417,7 +79417,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -79454,7 +79454,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79868,7 +79868,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -79905,7 +79905,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80811,7 +80811,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -80865,7 +80865,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81432,7 +81432,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -81469,7 +81469,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81712,7 +81712,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -81766,7 +81766,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82231,7 +82231,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -82268,7 +82268,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83345,7 +83345,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -83382,7 +83382,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83745,7 +83745,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -83782,7 +83782,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83974,7 +83974,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -84028,7 +84028,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84442,7 +84442,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -84479,7 +84479,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84587,7 +84587,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -84624,7 +84624,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85530,7 +85530,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -85584,7 +85584,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85674,7 +85674,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -85728,7 +85728,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85938,7 +85938,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -85975,7 +85975,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87317,7 +87317,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -87354,7 +87354,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87768,7 +87768,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -87805,7 +87805,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88099,7 +88099,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -88153,7 +88153,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88243,7 +88243,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -88297,7 +88297,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88489,7 +88489,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -88543,7 +88543,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88651,7 +88651,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -88688,7 +88688,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89084,7 +89084,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -89138,7 +89138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90444,7 +90444,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 0.5, y: 1, z: 0.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
@@ -90667,7 +90667,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -90704,7 +90704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91169,7 +91169,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -91206,7 +91206,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91314,7 +91314,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -91351,7 +91351,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91543,7 +91543,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -91597,7 +91597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91738,7 +91738,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -91792,7 +91792,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91933,7 +91933,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -91987,7 +91987,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92077,7 +92077,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -92131,7 +92131,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92935,7 +92935,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -92989,7 +92989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93097,7 +93097,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -93134,7 +93134,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93395,7 +93395,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -93432,7 +93432,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93540,7 +93540,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -93577,7 +93577,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93973,7 +93973,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -94027,7 +94027,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94423,7 +94423,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -94477,7 +94477,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94585,7 +94585,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -94622,7 +94622,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94712,7 +94712,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -94766,7 +94766,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94874,7 +94874,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -94911,7 +94911,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95121,7 +95121,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -95158,7 +95158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95503,7 +95503,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -95557,7 +95557,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96310,7 +96310,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -96364,7 +96364,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96472,7 +96472,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -96509,7 +96509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96770,7 +96770,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -96807,7 +96807,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97050,7 +97050,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -97104,7 +97104,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97314,7 +97314,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -97351,7 +97351,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97492,7 +97492,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -97546,7 +97546,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97756,7 +97756,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -97793,7 +97793,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97901,7 +97901,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -97938,7 +97938,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98556,7 +98556,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -98593,7 +98593,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98956,7 +98956,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -98993,7 +98993,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99254,7 +99254,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -99291,7 +99291,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100419,7 +100419,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -100456,7 +100456,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100615,7 +100615,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -100652,7 +100652,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101219,7 +101219,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -101256,7 +101256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101619,7 +101619,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -101656,7 +101656,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101797,7 +101797,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -101851,7 +101851,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102277,7 +102277,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -102331,7 +102331,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102847,7 +102847,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -102884,7 +102884,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103094,7 +103094,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -103131,7 +103131,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103502,7 +103502,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.4, y: 2.25, z: 2.2}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.35, z: -0.3}
   m_TimeToStationary: 0.5
@@ -103584,7 +103584,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.2, y: 2.4, z: 2.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: -0.2, y: -1.5000001, z: 0.15}
   m_TimeToStationary: 0.5
@@ -103665,7 +103665,7 @@ NavMeshObstacle:
   m_Shape: 1
   m_Extents: {x: 1.25, y: 5, z: 1.25}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0.05, y: 1, z: 0.05}
   m_TimeToStationary: 0.5
@@ -103714,7 +103714,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103763,7 +103763,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103859,7 +103859,7 @@ NavMeshObstacle:
   m_Shape: 0
   m_Extents: {x: 2.5, y: 2.45, z: 2.5}
   m_MoveThreshold: 0.1
-  m_Carve: 1
+  m_Carve: 0
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: -1.5500001, z: 0}
   m_TimeToStationary: 0.5
@@ -103936,7 +103936,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103977,7 +103977,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b3b2776a38e0a548872c075d4dfb32e, type: 2}
+  - {fileID: 2100000, guid: ff0f0cc699418a24db430e991f1adaa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
