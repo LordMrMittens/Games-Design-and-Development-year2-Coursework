@@ -12,6 +12,7 @@ public class PlayerGun : Gun
     PlayerInventory playerInventory;
     public Ray ray;
     [SerializeField] float setTimeBetweenShots;
+    [SerializeField] GameObject missilePrefab;
     
     void Start()
     {
@@ -32,6 +33,9 @@ public class PlayerGun : Gun
         if (Input.GetKey(KeyCode.Mouse0)&&canShoot)
         {
             Shoot();
+        }
+        if (Input.GetKeyDown(KeyCode.Q)){
+            ShootMissiles();
         }
 
     }
@@ -82,5 +86,24 @@ public class PlayerGun : Gun
     public void ResetFireRate()
     {
         timeBetweenShots = setTimeBetweenShots;
+    }
+
+    public void ShootMissiles()
+    {
+        float shortestDistance = 1000;
+        float distance;
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject closestEnemy = null;
+        foreach (GameObject enemy in enemies)
+        {
+            distance = Vector3.Distance(transform.position, enemy.transform.position);
+            if (shortestDistance > distance)
+            {
+                shortestDistance = distance;
+                closestEnemy = enemy;
+            }
+        }
+        GameObject missile = Instantiate(missilePrefab, cannon.transform.position, Quaternion.identity);
+        missile.GetComponent<Missile>().Fire(closestEnemy.transform);
     }
 }
