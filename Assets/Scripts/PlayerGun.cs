@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerGun : Gun
 {
     PlayerMovementController playerMovementController;
-    PlayerTransformationController playerTransformation; 
+    PlayerTransformationController playerTransformation;
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject[] cannons;
     public LayerMask targetMask;
@@ -13,8 +13,8 @@ public class PlayerGun : Gun
     public Ray ray;
     [SerializeField] float setTimeBetweenShots;
     [SerializeField] GameObject missilePrefab;
-    
-    void Start()
+
+    new void Start()
     {
         playerMovementController = GetComponent<PlayerMovementController>();
         playerTransformation = GetComponent<PlayerTransformationController>();
@@ -30,11 +30,12 @@ public class PlayerGun : Gun
     {
         ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         base.Update();
-        if (Input.GetKey(KeyCode.Mouse0)&&canShoot)
+        if (Input.GetKey(KeyCode.Mouse0) && canShoot)
         {
             Shoot();
         }
-        if (Input.GetKeyDown(KeyCode.Q)){
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
             ShootMissiles();
         }
 
@@ -81,7 +82,7 @@ public class PlayerGun : Gun
     }
     public void DubleFireRate()
     {
-        timeBetweenShots  /= 3;
+        timeBetweenShots /= 3;
     }
     public void ResetFireRate()
     {
@@ -94,16 +95,22 @@ public class PlayerGun : Gun
         float distance;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject closestEnemy = null;
-        foreach (GameObject enemy in enemies)
+        if (enemies.Length > 0)
         {
-            distance = Vector3.Distance(transform.position, enemy.transform.position);
-            if (shortestDistance > distance)
+            foreach (GameObject enemy in enemies)
             {
-                shortestDistance = distance;
-                closestEnemy = enemy;
+                distance = Vector3.Distance(transform.position, enemy.transform.position);
+                if (shortestDistance > distance)
+                {
+                    shortestDistance = distance;
+                    closestEnemy = enemy;
+                }
+
             }
+            GameObject missile = Instantiate(missilePrefab, cannon.transform.position, Quaternion.identity);
+            missile.GetComponent<Missile>().Fire(closestEnemy.transform);
         }
-        GameObject missile = Instantiate(missilePrefab, cannon.transform.position, Quaternion.identity);
-        missile.GetComponent<Missile>().Fire(closestEnemy.transform);
+
+        
     }
 }

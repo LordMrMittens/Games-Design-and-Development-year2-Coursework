@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    GameObject player;
+    public GameObject player;
     public GameObject bulletTemplate;
     public GameObject cannon;
 
@@ -16,7 +16,7 @@ public class Gun : MonoBehaviour
     public float timeBetweenShots;
     public float shotTimer { get; set; }
     public bool canShoot { get; set; }
-    void Start()
+    public virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         damage = bulletDamage;

@@ -77,9 +77,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   health: 0
-  damageGiven: 20
+  damageGiven: 3
   destroyOnTouch: 1
   pointsValue: 5
+  shields: 0
 --- !u!1001 &8973395572740311486
 PrefabInstance:
   m_ObjectHideFlags: 0

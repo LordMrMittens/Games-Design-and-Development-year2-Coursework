@@ -58,7 +58,7 @@ MonoBehaviour:
   viewDistance: 5
   player: {fileID: 0}
   searchInterval: 100
-  numberOfBombs: 1
+  numberOfBombs: 6
   timeBetweenBombDrops: 1
   bombPrefab: {fileID: 5767323927838946184, guid: 054bc7dd88017cf44a3da54b49358a20, type: 3}
 --- !u!195 &1217946140921175830
@@ -100,6 +100,7 @@ MonoBehaviour:
   damageGiven: 5
   destroyOnTouch: 1
   pointsValue: 10
+  shields: 0
 --- !u!65 &1217946140921175826
 BoxCollider:
   m_ObjectHideFlags: 0

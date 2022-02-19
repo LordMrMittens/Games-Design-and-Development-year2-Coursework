@@ -10,17 +10,20 @@ public class Missile : AgentMover
     public override void Start()
     {
         agent.enabled = true;
+        Destroy(gameObject, aliveTimer);
     }
     public override void Update()
     {
-
+        
         if (homing && target != null)
         {
-            if (transform.position == target.transform.position)
+            float distance = Vector3.Distance(transform.position, target.transform.position);
+            agent.SetDestination(target.transform.position);
+            if (distance < 1)
             {
-                Destroy(gameObject);
+                Destroy(gameObject,.5f);
             }
-            transform.LookAt(target);
+            //transform.LookAt(target);
         }
         if (target == null)
         {
@@ -31,9 +34,9 @@ public class Missile : AgentMover
     public void Fire(Transform newTarget)
     {
         target = newTarget;
-        agent.SetDestination(target.transform.position);
+        
         homing = true;
-        Destroy(gameObject, aliveTimer);
+        
     }
 
     private void OnTriggerEnter(Collider other)
