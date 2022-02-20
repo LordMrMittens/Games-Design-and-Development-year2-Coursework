@@ -6,7 +6,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public pickupType pickup;
-
+    [SerializeField] GameObject[] pickUpMeshes;
 
     public float moveSpeed;
     public float timeActive;
@@ -15,6 +15,33 @@ public class PickUp : MonoBehaviour
     {
         destructionConter = 0;
        PickupSpawnManager.PSM.pickupIsPresent = true;
+        switch (pickup)
+        {
+            case pickupType.Repair:
+                pickUpMeshes[2].SetActive(true);
+                break;
+            case pickupType.Shield:
+                pickUpMeshes[2].SetActive(true);
+                break;
+            case pickupType.Devastator:
+                pickUpMeshes[0].SetActive(true);
+                break;
+            case pickupType.Missile:
+                pickUpMeshes[3].SetActive(true);
+                break;
+            case pickupType.HomingMissile:
+                pickUpMeshes[3].SetActive(true);
+                break;
+            case pickupType.DoubleShot:
+                pickUpMeshes[1].SetActive(true);
+                break;
+            case pickupType.RateOfFireUp:
+                pickUpMeshes[1].SetActive(true);
+                break;
+            case pickupType.ShotPowerUp:
+                pickUpMeshes[1].SetActive(true);
+                break;
+        }
     }
     void Update()
     {
@@ -61,14 +88,17 @@ public class PickUp : MonoBehaviour
                     break;
                 case pickupType.DoubleShot:
                     playerInventory.hasDoubleShot = true;
+                    playerInventory.upgrades = PlayerUpgrades.doubleShot;
                     break;
                 case pickupType.RateOfFireUp:
                     playerInventory.hasFireRateUp = true;
                     playerGun.DubleFireRate();
+                    playerInventory.upgrades = PlayerUpgrades.fireRate;
                     break;
                 case pickupType.ShotPowerUp:
                     playerInventory.hasShotPowerUp = true;
                     playerGun.DoubleDamage();
+                    playerInventory.upgrades = PlayerUpgrades.doubleDamage;
                     break;
             }
             DestroyPickUp();

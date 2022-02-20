@@ -32,7 +32,25 @@ public class PlayerGun : Gun
         base.Update();
         if (Input.GetKey(KeyCode.Mouse0) && canShoot)
         {
-            Shoot();
+            switch (playerInventory.upgrades)
+            {
+                case PlayerUpgrades.none:
+                    Shoot(bulletType.normal);
+                    Debug.Log("Shooting Normal");
+                    break;
+                case PlayerUpgrades.doubleShot:
+                    Shoot(bulletType.normal);
+                    Debug.Log("Shooting Double");
+                    break;
+                case PlayerUpgrades.fireRate:
+                    Shoot(bulletType.fast);
+                    Debug.Log("Shooting Fast");
+                    break;
+                case PlayerUpgrades.doubleDamage:
+                    Shoot(bulletType.doublePower);
+                    Debug.Log("Shooting Power");
+                    break;
+            }
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -45,7 +63,7 @@ public class PlayerGun : Gun
         ResetDamage();
         ResetFireRate();
     }
-    public override void Shoot()
+    public void Shoot(bulletType type)
     {
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, targetMask))
@@ -64,7 +82,9 @@ public class PlayerGun : Gun
                         bullet.transform.rotation = cannon.transform.rotation;
                         bullet.SetActive(true);
                         bullet.GetComponent<Rigidbody>().AddForce((target - transform.position).normalized * maxBulletSpeed, ForceMode.Impulse);
-                        bullet.GetComponent<RotateAroundProjectile>().damage = damage;
+                        RotateAroundProjectile bulletManager = bullet.GetComponent<RotateAroundProjectile>();
+                        bulletManager.damage = damage;
+                        bulletManager.bullet = type;
                     }
                 }
             }

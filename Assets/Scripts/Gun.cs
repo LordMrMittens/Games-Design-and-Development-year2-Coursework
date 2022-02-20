@@ -46,8 +46,10 @@ public class Gun : MonoBehaviour
                 bullet.transform.position = cannon.transform.position;
                 bullet.transform.rotation = cannon.transform.rotation;
                 bullet.SetActive(true);
+                RotateAroundProjectile bulletManager = bullet.GetComponent<RotateAroundProjectile>();
                 bullet.GetComponent<Rigidbody>().AddForce((player.transform.position - transform.position).normalized * maxBulletSpeed, ForceMode.Impulse);
-                bullet.GetComponent<RotateAroundProjectile>().damage = damage;
+                bulletManager.damage = damage;
+                bulletManager.bullet = bulletType.enemy;
             }
             shotTimer = 0;
         }

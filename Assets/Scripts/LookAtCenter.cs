@@ -6,6 +6,6 @@ public class LookAtCenter : Mover
 {
     private void Update()
     {
-        transform.LookAt(Vector3.down, Vector3.up);
+        transform.LookAt(new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z));
     }
 }

@@ -10,7 +10,7 @@ public class PickupSpawnManager : MonoBehaviour
     [SerializeField] GameObject pickupPrefab;
     public static PickupSpawnManager PSM;
     public bool pickupIsPresent = false;
-
+    public bool debug = true;/// delete this after
     private void Start()
     {
         PSM = this;
@@ -28,7 +28,7 @@ public class PickupSpawnManager : MonoBehaviour
 
     public void DecideWhichPickUpToSpawn(Vector3 location)
     {
-        if (!pickupIsPresent)
+        if (debug)
         {
             int powerUpSelection = Random.Range(0, 5);
             if (powerUpSelection == 0)
