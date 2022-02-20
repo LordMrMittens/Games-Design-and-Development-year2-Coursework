@@ -20,6 +20,6 @@ public class BossGun : Gun
             transform.LookAt(player.transform);
             Shoot();
         }
-        Debug.Log(canShoot);
+        
     }
 }

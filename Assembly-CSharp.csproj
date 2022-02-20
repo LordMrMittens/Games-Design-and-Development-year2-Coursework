@@ -68,9 +68,11 @@
     <Compile Include="Assets\Scripts\Missile.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PickupSpawnManager.cs" />
+    <Compile Include="Assets\Scripts\BossElectricNodes.cs" />
     <Compile Include="Assets\Scripts\ObstacleCollision.cs" />
     <Compile Include="Assets\Scripts\AgentMover.cs" />
     <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
+    <Compile Include="Assets\Scripts\BossMissileLauncher.cs" />
     <Compile Include="Assets\Scripts\Obsolete\PlayerController.cs" />
     <Compile Include="Assets\Scripts\EnemyBomber.cs" />
     <Compile Include="Assets\Scripts\PatrolNodeController.cs" />
@@ -93,8 +95,7 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\BossMissileLauncher.cs" />
-    <Compile Include="Assets\Scripts\BossElectricNodes.cs" />
+    <Compile Include="Assets\Scripts\BossController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

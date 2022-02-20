@@ -16,7 +16,12 @@ public class BossMissileLauncher : MonoBehaviour
     public float timeBetweenShots;
     public float shotTimer { get; set; }
     public bool canShoot { get; set; }
+    public float rotationSpeed ;
 
+    Vector3 currentEulerAngles = new Vector3 (0,0,180);
+    float z;
+    bool launcherIsClosed;
+    bool launcherIsOpen;
     public void ShootMissiles()
     {
 
@@ -26,8 +31,15 @@ public class BossMissileLauncher : MonoBehaviour
                 missile.GetComponent<Missile>().Fire(player.transform);
             }
     }
+    private void Start()
+    {
+        StartCoroutine(ShootingSequence());
+    }
     private void Update()
     {
+
+        currentEulerAngles += new Vector3(0, 0, z) * Time.deltaTime * rotationSpeed;
+        transform.localEulerAngles = currentEulerAngles;
         shotTimer += Time.deltaTime;
         if (shotTimer > timeBetweenShots)
         {
@@ -41,11 +53,26 @@ public class BossMissileLauncher : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
+        
         if (player != null&&canShoot)
         {
-            ShootMissiles();
+
+
+            
             canShoot = false;
             shotTimer = 0;
         }
+    }
+    IEnumerator ShootingSequence()
+    {
+            z = 1;
+            yield return new WaitUntil(() => currentEulerAngles.z >= 270);
+            z = 0;
+            yield return new WaitForSeconds(1);
+            ShootMissiles();
+            yield return new WaitForSeconds(1);
+            z = -1;
+            yield return new WaitUntil(() => currentEulerAngles.z <= 180);
+            z = 0;
     }
 }
