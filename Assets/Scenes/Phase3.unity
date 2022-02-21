@@ -2112,6 +2112,36 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &210830806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210830807}
+  m_Layer: 11
+  m_Name: Target - Laser (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &210830807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210830806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.824, y: 1.973, z: -10.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &213546745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +2998,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 58.341, y: -2.578, z: 33.164}
 --- !u!1 &300339551
 GameObject:
@@ -3085,6 +3115,7 @@ MonoBehaviour:
   destroyOnTouch: 0
   pointsValue: 0
   shields: 0
+  isBossComponent: 0
 --- !u!114 &300339557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3719,7 +3750,8 @@ GameObject:
   m_Component:
   - component: {fileID: 362845945}
   - component: {fileID: 362845946}
-  m_Layer: 0
+  - component: {fileID: 362845947}
+  m_Layer: 11
   m_Name: Boss Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3734,12 +3766,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362845944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.019999385, y: 4, z: -10.782}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.01999923, y: 4, z: -10.781999}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 886108142}
-  m_Father: {fileID: 1151388028675846592}
-  m_RootOrder: 2
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &362845946
 MonoBehaviour:
@@ -3754,12 +3786,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  bulletTemplate: {fileID: 7280299743685637164, guid: a798e92d3b4436241a402e2a7c7ea396, type: 3}
+  bulletTemplate: {fileID: 7280299743685637164, guid: 4244fdc84e4681944a0ee07b109007a4, type: 3}
   cannon: {fileID: 1807465698}
   maxBulletSpeed: 10
   bulletDamage: 1
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
+  laserTarget: {fileID: 1241756075}
+  bulletHellTargets:
+  - {fileID: 471107254}
+  - {fileID: 506413207}
+  - {fileID: 210830807}
+  - {fileID: 375147909}
+  - {fileID: 2095730743}
+  laserDuration: 5
+--- !u!135 &362845947
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362845944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &363944396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,6 +4221,36 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &375147908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375147909}
+  m_Layer: 11
+  m_Name: Target - Laser (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375147909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375147908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.307, y: 1.973, z: -10.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &379657561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,6 +4302,63 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &380597475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380597476}
+  - component: {fileID: 380597477}
+  m_Layer: 11
+  m_Name: Boss Gun Unit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &380597476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380597475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 362845945}
+  - {fileID: 1241756075}
+  - {fileID: 471107254}
+  - {fileID: 506413207}
+  - {fileID: 210830807}
+  - {fileID: 375147909}
+  - {fileID: 2095730743}
+  m_Father: {fileID: 1151388028675846592}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &380597477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380597475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  health: 0
+  damageGiven: 5
+  destroyOnTouch: 0
+  pointsValue: 100
+  shields: 0
+  isBossComponent: 1
 --- !u!1 &381930893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,7 +4725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415057412}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CannonTR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5660,6 +5800,36 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &471107253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471107254}
+  m_Layer: 11
+  m_Name: Target - Laser (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &471107254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471107253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.054, y: 1.973, z: -10.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473017249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6374,6 +6544,36 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &506413206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506413207}
+  m_Layer: 11
+  m_Name: Target - Laser (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &506413207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506413206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.652, y: 1.973, z: -10.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &507806111
 GameObject:
   m_ObjectHideFlags: 0
@@ -16882,7 +17082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16959,11 +17159,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.91858834, y: -0.2960359, z: 0.06858722, w: 0.2526935}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 10.499999, y: -27.621426, z: 0.020506635}
+  m_LocalScale: {x: 0.7142857, y: 0.71428573, z: 0.7142858}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 543450653608984728}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 30.322, y: -178.433, z: -143.85}
 --- !u!1 &707537975
 GameObject:
@@ -18985,7 +19185,7 @@ GameObject:
   - component: {fileID: 822583831}
   - component: {fileID: 822583833}
   - component: {fileID: 822583832}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boss Electric Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19625,7 +19825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886108142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pivot Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21281,7 +21481,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1040228243
 GameObject:
@@ -21929,7 +22129,7 @@ Transform:
   - {fileID: 881972741}
   - {fileID: 1562152980}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1063085538
 GameObject:
@@ -24083,6 +24283,36 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &1241756074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241756075}
+  m_Layer: 11
+  m_Name: Target - Laser
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241756075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241756074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.054, y: 1.321, z: -10.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242594367
 GameObject:
   m_ObjectHideFlags: 0
@@ -24449,7 +24679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1271400197}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CannonBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24785,7 +25015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1304322432}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CannonBL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24959,94 +25189,6 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
---- !u!1 &1327713126
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1327713128}
-  - component: {fileID: 1327713127}
-  - component: {fileID: 1327713129}
-  - component: {fileID: 1327713130}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1327713127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327713126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97abde20d53f24b4fbd7d78ae322923c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySquadPrefab: {fileID: 1858611078498325371, guid: 7e3f0b1b7987ced4f9bab8cb0a206a04, type: 3}
-  enemyKamikazePrefab: {fileID: 5169049856102662169, guid: 0e37a6a18ae513a4997fcd9cced34a56, type: 3}
-  enemyBomberPrefab: {fileID: 1217946140921175829, guid: 79e973ef7594ac3409baf0541e76fa0a, type: 3}
-  enemyDronePrefab: {fileID: 5155387351334467271, guid: 88e9456f7e607d240b9c8a3eb5331843, type: 3}
-  enemyHydraPrefab: {fileID: 5186032210790852289, guid: 9f1668b8233c4be43ad90096fbd106f6, type: 3}
-  player: {fileID: 0}
-  playerMovementController: {fileID: 0}
-  timeBetweenEnemySpawnsPhaseOne: 1
-  timeBetweenEnemySpawnsPhaseTwo: 0.5
-  enemySpawnCounter: 0
---- !u!4 &1327713128
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327713126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.45, y: 15.82, z: 5.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1327713129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327713126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55768995f0310db43ad5f752f332b472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetScore: 10000
-  playerIsAlive: 0
-  targetEnemiesOnScreenPhaseOne: 0
-  targetEnemiesOnScreenPhaseTwo: 0
-  playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
-  timeToSpawnPlayer: 2
-  constantScrollingSpeed: 0.05
---- !u!114 &1327713130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327713126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b48401c32d375984986925e5e1e2e57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickupPrefab: {fileID: 4113817141523154883, guid: 4afcd0ef1d35af34496203fd95e17f44, type: 3}
-  pickupIsPresent: 0
 --- !u!1 &1330081525
 GameObject:
   m_ObjectHideFlags: 0
@@ -26740,7 +26882,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1454671197}
   - component: {fileID: 1454671198}
-  m_Layer: 0
+  - component: {fileID: 1454671199}
+  - component: {fileID: 1454671200}
+  m_Layer: 11
   m_Name: Boss Electric Node (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26780,6 +26924,38 @@ MonoBehaviour:
   positionTwoOffset: 2
   moveSpeed: 3
   isParentNode: 0
+--- !u!135 &1454671199
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454671196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.85325056
+  m_Center: {x: 0, y: 0, z: -0.124786414}
+--- !u!114 &1454671200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454671196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  health: 0
+  damageGiven: 5
+  destroyOnTouch: 0
+  pointsValue: 100
+  shields: 0
+  isBossComponent: 1
 --- !u!1 &1461575967
 GameObject:
   m_ObjectHideFlags: 0
@@ -32126,7 +32302,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18248
+  m_Name: pb_Mesh22552
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32599,7 +32775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1807465699}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
@@ -32875,63 +33051,6 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
---- !u!1 &1837535003
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1837535006}
-  - component: {fileID: 1837535005}
-  - component: {fileID: 1837535004}
-  m_Layer: 15
-  m_Name: SceneLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1837535004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837535003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1620f36ff2bd14dab1b9cb780123fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1837535005
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837535003}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: -51.88, y: 1, z: 50.05}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1837535006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837535003}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.63, y: 38.15, z: 1.1601849}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1842454203
 GameObject:
   m_ObjectHideFlags: 0
@@ -33934,8 +34053,8 @@ MonoBehaviour:
   playerBullets: {fileID: 7280299743685637164, guid: a798e92d3b4436241a402e2a7c7ea396, type: 3}
   playerBulletsToPool: 30
   pooledEnemyBullets: []
-  enemyBullets: {fileID: 7280299743685637164, guid: 6394a0e73fe069848a4fb7cf75460cbd, type: 3}
-  enemyBulletsToPool: 10
+  enemyBullets: {fileID: 7280299743685637164, guid: 4244fdc84e4681944a0ee07b109007a4, type: 3}
+  enemyBulletsToPool: 10000
   pooledEnemySquads: []
   enemySquad: {fileID: 1858611078498325371, guid: 7e3f0b1b7987ced4f9bab8cb0a206a04, type: 3}
   enemySquadsToPool: 10
@@ -33963,7 +34082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940730164
 GameObject:
@@ -34281,7 +34400,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1952839893}
   - component: {fileID: 1952839894}
-  m_Layer: 0
+  - component: {fileID: 1952839895}
+  - component: {fileID: 1952839896}
+  m_Layer: 11
   m_Name: Boss Electric Node (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34320,6 +34441,38 @@ MonoBehaviour:
   positionTwoOffset: 2
   moveSpeed: 3
   isParentNode: 0
+--- !u!135 &1952839895
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952839892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.85325056
+  m_Center: {x: 0, y: 0, z: -0.124786414}
+--- !u!114 &1952839896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952839892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  health: 0
+  damageGiven: 5
+  destroyOnTouch: 0
+  pointsValue: 100
+  shields: 0
+  isBossComponent: 1
 --- !u!1 &1954477539
 GameObject:
   m_ObjectHideFlags: 0
@@ -34882,7 +35035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2002312600
 GameObject:
@@ -35250,7 +35403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043244808}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CannonTL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36200,7 +36353,7 @@ GameObject:
   - component: {fileID: 2082529766}
   - component: {fileID: 2082529768}
   - component: {fileID: 2082529767}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boss Electric Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36423,6 +36576,36 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &2095730742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095730743}
+  m_Layer: 11
+  m_Name: Target - Laser (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2095730743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095730742}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.602, y: 1.973, z: -10.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 380597476}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2097607006
 GameObject:
   m_ObjectHideFlags: 0
@@ -36455,7 +36638,7 @@ Transform:
   - {fileID: 526325168}
   - {fileID: 526601917}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2100296600
 GameObject:
@@ -36822,13 +37005,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147771985469}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.837, y: 5.5, z: 0.009}
+  m_LocalPosition: {x: -9.97, y: 5.5, z: -4.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1151388028370560479}
   - {fileID: 1454671197}
   m_Father: {fileID: 1151388028675846592}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450652252801569
 Transform:
@@ -36837,14 +37020,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148329074843}
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 0.498, y: 4.31, z: 11.066}
+  m_LocalRotation: {x: -0.2337847, y: 0, z: -0.9722884, w: 0}
+  m_LocalPosition: {x: 4.7, y: 4.31, z: 10.18}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1151388027855485817}
   m_Father: {fileID: 1151388028675846592}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 27.04, z: -180}
 --- !u!4 &543450653608984728
 Transform:
   m_ObjectHideFlags: 0
@@ -36857,8 +37040,9 @@ Transform:
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 1151388028675846592}
+  - {fileID: 705507995}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919132147771985469
 GameObject:
@@ -36870,7 +37054,9 @@ GameObject:
   m_Component:
   - component: {fileID: 543450651760727175}
   - component: {fileID: 919132147771985470}
-  m_Layer: 0
+  - component: {fileID: 919132147771985471}
+  - component: {fileID: 919132147771985472}
+  m_Layer: 11
   m_Name: Boss Electric Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36892,8 +37078,40 @@ MonoBehaviour:
   positionOne: 0
   positionTwo: 0
   positionTwoOffset: 4
-  moveSpeed: 3
+  moveSpeed: 5
   isParentNode: 1
+--- !u!135 &919132147771985471
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147771985469}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.85325056
+  m_Center: {x: 0, y: 0, z: -0.124786414}
+--- !u!114 &919132147771985472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147771985469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  health: 0
+  damageGiven: 5
+  destroyOnTouch: 0
+  pointsValue: 100
+  shields: 0
+  isBossComponent: 1
 --- !u!1 &919132148329074843
 GameObject:
   m_ObjectHideFlags: 0
@@ -36904,7 +37122,9 @@ GameObject:
   m_Component:
   - component: {fileID: 543450652252801569}
   - component: {fileID: 919132148329074844}
-  m_Layer: 0
+  - component: {fileID: 919132148329074845}
+  - component: {fileID: 919132148329074846}
+  m_Layer: 11
   m_Name: Boss Missile Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36935,6 +37155,38 @@ MonoBehaviour:
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 2
   rotationSpeed: 20
+--- !u!65 &919132148329074845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148329074843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9086359, y: 1.8374244, z: 1.7660853}
+  m_Center: {x: 0.4543207, y: -0.75053626, z: -0.38304767}
+--- !u!114 &919132148329074846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148329074843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  health: 0
+  damageGiven: 5
+  destroyOnTouch: 0
+  pointsValue: 100
+  shields: 0
+  isBossComponent: 1
 --- !u!1 &919132149152553506
 GameObject:
   m_ObjectHideFlags: 0
@@ -36944,13 +37196,56 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653608984728}
-  m_Layer: 0
+  - component: {fileID: 919132149152553507}
+  - component: {fileID: 919132149152553508}
+  m_Layer: 11
   m_Name: Boss_UFO-3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132149152553507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149152553506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8962868567fd476459e2ce52a5ed2376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossGuns:
+  - {fileID: 362845946}
+  missileLaunchers:
+  - {fileID: 919132148329074844}
+  electricnodes:
+  - {fileID: 919132147771985470}
+  timeBetweenLasers: 15
+  laserIsReady: 0
+  timeBetweenBulletHell: 15
+  buletHellIsReady: 0
+  timeBetweenMissiles: 10
+  missileIsReady: 0
+  timeBetweenElectric: 30
+  electricIsReady: 0
+  timeBetweenAttacks: 5
+  rotateSpeed: 30
+--- !u!114 &919132149152553508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149152553506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8716847eeea5a14ab5099a3cb1b1196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHealth: 0
 --- !u!4 &1151388027855485817
 Transform:
   m_ObjectHideFlags: 0
@@ -36994,9 +37289,9 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 543450651760727175}
+  - {fileID: 380597476}
   - {fileID: 543450652252801569}
-  - {fileID: 362845945}
+  - {fileID: 543450651760727175}
   m_Father: {fileID: 543450653608984728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37011,7 +37306,7 @@ GameObject:
   - component: {fileID: 7766690089564536025}
   - component: {fileID: 4836861742512883091}
   - component: {fileID: 8230968242580709639}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boss Default Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37199,7 +37494,7 @@ GameObject:
   - component: {fileID: 1151388028675846592}
   - component: {fileID: 2823090746418940042}
   - component: {fileID: 1587545473862691870}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: UFOBOSS MAIN BOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37217,7 +37512,7 @@ GameObject:
   - component: {fileID: 1151388028370560479}
   - component: {fileID: 2823090747786927253}
   - component: {fileID: 1587545475704895489}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Boss Electric Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37235,7 +37530,7 @@ GameObject:
   - component: {fileID: 1151388027855485817}
   - component: {fileID: 2823090747238285875}
   - component: {fileID: 1587545475223365287}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Missile Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}

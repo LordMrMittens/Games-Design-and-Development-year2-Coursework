@@ -58,14 +58,20 @@ public class GameManager : MonoBehaviour
         {
             if (thePlayer == null)
             {
-                Debug.Log("Getting here");
+                
                 SpawnPlayer(0, -5);
             }
             targetEnemiesOnScreen = targetEnemiesOnScreenPhaseTwo;
             playerMovementController.verticalMovement = constantScrollingSpeed;
         } else if (levelPhase == Phase.PhaseThree)
         {
+            if (thePlayer == null)
+            {
 
+                SpawnPlayer(0, -5);
+            }
+            targetEnemiesOnScreen = targetEnemiesOnScreenPhaseTwo;
+            
         }
         if (playerIsAlive == false)
         {
@@ -128,7 +134,11 @@ public class GameManager : MonoBehaviour
     }
     public void LoadPhaseThree()
     {
+        Destroy(thePlayer);
+        SceneManager.LoadScene("Phase3");
+        OnLevelWasLoaded();
         levelPhase = Phase.PhaseThree;
+        playerCanMove = true;
     }
     public void StopGame()
     {

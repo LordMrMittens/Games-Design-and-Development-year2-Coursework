@@ -50393,6 +50393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 989200559}
   - component: {fileID: 989200558}
+  - component: {fileID: 989200560}
   m_Layer: 0
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -50411,8 +50412,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 38.189957, y: 1, z: 40.378334}
-  m_Center: {x: -14.508293, y: 0, z: 1.4389076}
+  m_Size: {x: 60.91823, y: 11.869063, z: 71.68475}
+  m_Center: {x: -16.542503, y: -2.9645314, z: 2.1376247}
 --- !u!4 &989200559
 Transform:
   m_ObjectHideFlags: 0
@@ -50421,12 +50422,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989200557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 100, z: 0}
+  m_LocalPosition: {x: 0, y: 40.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989200560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989200557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1620f36ff2bd14dab1b9cb780123fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &990750065
 GameObject:
   m_ObjectHideFlags: 0
@@ -69687,8 +69700,8 @@ MonoBehaviour:
   playerBullets: {fileID: 7280299743685637164, guid: a798e92d3b4436241a402e2a7c7ea396, type: 3}
   playerBulletsToPool: 30
   pooledEnemyBullets: []
-  enemyBullets: {fileID: 7280299743685637164, guid: 6394a0e73fe069848a4fb7cf75460cbd, type: 3}
-  enemyBulletsToPool: 10
+  enemyBullets: {fileID: 7280299743685637164, guid: 4244fdc84e4681944a0ee07b109007a4, type: 3}
+  enemyBulletsToPool: 20
   pooledEnemySquads: []
   enemySquad: {fileID: 1858611078498325371, guid: 7e3f0b1b7987ced4f9bab8cb0a206a04, type: 3}
   enemySquadsToPool: 10

@@ -103,6 +103,8 @@ MonoBehaviour:
   damageGiven: 5
   destroyOnTouch: 0
   pointsValue: 25
+  shields: 0
+  isBossComponent: 0
 --- !u!65 &5155387351334467264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -128,7 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ad1e8a2c4b98943aa5d178cd16add4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletTemplate: {fileID: 7280299743685637164, guid: 6394a0e73fe069848a4fb7cf75460cbd, type: 3}
+  player: {fileID: 0}
+  bulletTemplate: {fileID: 7280299743685637164, guid: 4244fdc84e4681944a0ee07b109007a4, type: 3}
   cannon: {fileID: 8594700901554609909}
   maxBulletSpeed: 5
   bulletDamage: 5

@@ -3085,6 +3085,7 @@ MonoBehaviour:
   destroyOnTouch: 0
   pointsValue: 0
   shields: 0
+  isBossComponent: 0
 --- !u!114 &300339557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24779,7 +24780,7 @@ MonoBehaviour:
   targetEnemiesOnScreenPhaseTwo: 30
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
-  constantScrollingSpeed: 0.05
+  constantScrollingSpeed: 0.1
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24794,6 +24795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupPrefab: {fileID: 4528866405195527369, guid: 4afcd0ef1d35af34496203fd95e17f44, type: 3}
   pickupIsPresent: 0
+  debug: 1
 --- !u!1 &1330081525
 GameObject:
   m_ObjectHideFlags: 0
@@ -33601,8 +33603,8 @@ MonoBehaviour:
   playerBullets: {fileID: 7280299743685637164, guid: a798e92d3b4436241a402e2a7c7ea396, type: 3}
   playerBulletsToPool: 30
   pooledEnemyBullets: []
-  enemyBullets: {fileID: 7280299743685637164, guid: 6394a0e73fe069848a4fb7cf75460cbd, type: 3}
-  enemyBulletsToPool: 10
+  enemyBullets: {fileID: 7280299743685637164, guid: 4244fdc84e4681944a0ee07b109007a4, type: 3}
+  enemyBulletsToPool: 0
   pooledEnemySquads: []
   enemySquad: {fileID: 1858611078498325371, guid: 7e3f0b1b7987ced4f9bab8cb0a206a04, type: 3}
   enemySquadsToPool: 10

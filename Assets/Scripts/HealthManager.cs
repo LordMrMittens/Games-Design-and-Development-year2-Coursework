@@ -10,9 +10,15 @@ public class HealthManager : MonoBehaviour
     [SerializeField] bool destroyOnTouch;
     [SerializeField] int pointsValue;
     public bool shields;
+    public bool isBossComponent;
+    BossHealth bossHealth;
     private void Start()
     {
         ResetHealth();
+        if (isBossComponent)
+        {
+            bossHealth = GetComponentInParent<BossHealth>();
+        }
     }
     private void OnEnable()
     {
@@ -36,22 +42,33 @@ public class HealthManager : MonoBehaviour
         else
         {
             health -= damage;
+            if (isBossComponent)
+            {
+                bossHealth.DamageHealth(damage);
+            }
             if (health <= 0)
             {
                 Destroy();
             }
         }
+
     }
     private void Destroy()
     {
         if (gameObject.tag == "Enemy")
         {
-            if (Random.Range(0, 3) == 1)
+            if (isBossComponent)
+            {
+                gameObject.SetActive(false);
+            }
+            if (Random.Range(0, 10) == 1)
             {
                 
                 PickupSpawnManager.PSM.DecideWhichPickUpToSpawn(transform.position);
             }
+            
         }
+       
         if (gameObject.GetComponent<EnemyHydra>() != null)
         {
             gameObject.GetComponent<EnemyHydra>().DivideOnDeath();

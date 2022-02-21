@@ -10,10 +10,11 @@ public class BossElectricNodes : MonoBehaviour
     public float moveSpeed;
     float speed;
     public bool isParentNode;
-
+    BossController bossController;
     // Start is called before the first frame update
     void Start()
     {
+        bossController = GetComponentInParent<BossController>();
         speed = 0;
         positionOne = transform.localPosition.y;
         if (isParentNode)
@@ -25,23 +26,20 @@ public class BossElectricNodes : MonoBehaviour
             positionTwo = gameObject.GetComponentInParent<BossElectricNodes>().positionTwo - positionTwoOffset;
             moveSpeed /= gameObject.GetComponentInParent<BossElectricNodes>().moveSpeed;
         }
-
-        StartCoroutine(ElectricAttackSequence());
     }
-
-    // Update is called once per frame
     void Update()
     {
         transform.Translate((Vector3.down * speed) * Time.deltaTime, Space.World);
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            StartCoroutine(ElectricAttackSequence());
-        }
+    }
+    public void ElectricAttack()
+    {
+        StartCoroutine(ElectricAttackSequence());
     }
 
-    public IEnumerator ElectricAttackSequence()
+    IEnumerator ElectricAttackSequence()
     {
-
+        bossController.electricTimer = -1000;
+        bossController.electricIsReady = false;
         speed = moveSpeed;
         yield return new WaitUntil(() => transform.localPosition.y <= positionTwo);
         speed = 0;
@@ -52,6 +50,9 @@ public class BossElectricNodes : MonoBehaviour
         speed = 0;
         Debug.Log("EndofRoutine");
         yield return new WaitForSeconds(3);
+        bossController.electricTimer = 0;
+        bossController.electricIsReady = false;
+        
     }
 
 }
