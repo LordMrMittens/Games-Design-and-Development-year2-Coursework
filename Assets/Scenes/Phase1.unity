@@ -24780,7 +24780,7 @@ MonoBehaviour:
   targetEnemiesOnScreenPhaseTwo: 30
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
-  constantScrollingSpeed: 0.1
+  constantScrollingSpeed: 0.13
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0

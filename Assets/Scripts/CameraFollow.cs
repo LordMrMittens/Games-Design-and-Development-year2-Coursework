@@ -19,7 +19,7 @@ public class CameraFollow : Mover
         radiusOffset = offset;
     }
     void LateUpdate()
-    {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
+    {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne || GameManager.TGM.levelPhase == GameManager.Phase.PhaseThree)
         {
             if (GameManager.TGM.playerIsAlive)
             {
@@ -41,12 +41,8 @@ public class CameraFollow : Mover
         }
     if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
         {
-
-
             if (GameManager.TGM.playerIsAlive)
             {
-
-
                 if (player == null && playerMovementController == null)
                 {
                     player = GameObject.FindGameObjectWithTag("Player").transform;

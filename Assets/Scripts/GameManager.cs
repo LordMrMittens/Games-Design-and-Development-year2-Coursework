@@ -134,6 +134,7 @@ public class GameManager : MonoBehaviour
     }
     public void LoadPhaseThree()
     {
+        playerIsAlive = false;
         Destroy(thePlayer);
         SceneManager.LoadScene("Phase3");
         OnLevelWasLoaded();

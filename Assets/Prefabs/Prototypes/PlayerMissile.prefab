@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5058306623682464367}
   - component: {fileID: 7990960577410986789}
   - component: {fileID: 6899552492222699441}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 4048831172045317555}
   - component: {fileID: -3210020618439703213}
   - component: {fileID: 4136978610796518331}
-  m_Layer: 0
-  m_Name: Missile
+  m_Layer: 7
+  m_Name: PlayerMissile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   player: {fileID: 0}
   searchInterval: 100
   aliveTimer: 10
+  isPlayerMissile: 1
 --- !u!195 &4048831172045317555
 NavMeshAgent:
   m_ObjectHideFlags: 0

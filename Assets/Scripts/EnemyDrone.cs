@@ -33,7 +33,10 @@ public class EnemyDrone : EnemyPatrol
         }
         if (state == State.Chasing)
         {
-            ChasePlayer(player);
+            if (GameManager.TGM.playerIsAlive)
+            {
+                ChasePlayer(player);
+            }
         }
         if (state == State.Orbiting)
         {
@@ -49,7 +52,7 @@ public class EnemyDrone : EnemyPatrol
         state = State.Chasing;
         flankingPoints.AddRange(GameObject.FindGameObjectsWithTag("FlankingPoint"));
 
-        if (Vector3.Distance(transform.position, player.transform.position) > orbitDistance)
+        if (Vector3.Distance(transform.position, player.transform.position) > orbitDistance && target != null)
         {
             base.ChasePlayer(target);
         }
@@ -68,33 +71,36 @@ public class EnemyDrone : EnemyPatrol
     {
         if (GameManager.TGM.playerIsAlive)
         {
-            float distance = Vector3.Distance(transform.position, player.transform.position);
+            if (player != null)
+            {
+                float distance = Vector3.Distance(transform.position, player.transform.position);
 
-            if (distance > orbitDistance)
-            {
-                navAgent.speed = chaseSpeed;
-                navAgent.acceleration = 20;
-            }
-            else
-            {
-                navAgent.speed = orbitSpeed;
-                transform.LookAt(player.transform, Vector3.forward);
-                gun.Shoot();
-            }
-            agent.SetDestination(targetFlankingPoint.transform.position);
-            if (Vector3.Distance(transform.position, targetFlankingPoint.position) < .5)
-            {
-                if ((currentFlankingPoint + 1) < flankingPoints.Count)
+                if (distance > orbitDistance)
                 {
-                    currentFlankingPoint++;
-                    targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                    navAgent.speed = chaseSpeed;
+                    navAgent.acceleration = 20;
                 }
                 else
                 {
-                    currentFlankingPoint = 0;
-                    targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                    navAgent.speed = orbitSpeed;
+                    transform.LookAt(player.transform, Vector3.forward);
+                    gun.Shoot();
                 }
-                agent.SetDestination(targetFlankingPoint.position);
+                agent.SetDestination(targetFlankingPoint.transform.position);
+                if (Vector3.Distance(transform.position, targetFlankingPoint.position) < .5)
+                {
+                    if ((currentFlankingPoint + 1) < flankingPoints.Count)
+                    {
+                        currentFlankingPoint++;
+                        targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                    }
+                    else
+                    {
+                        currentFlankingPoint = 0;
+                        targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                    }
+                    agent.SetDestination(targetFlankingPoint.position);
+                }
             }
         } else
         {

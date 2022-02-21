@@ -7,6 +7,7 @@ public class Missile : AgentMover
     [SerializeField] private float aliveTimer;
     bool homing;
     Transform target;
+    [SerializeField]bool isPlayerMissile;
     public override void Start()
     {
         agent.enabled = true;
@@ -43,11 +44,21 @@ public class Missile : AgentMover
     {
         if (target != null)
         {
-            if (other.gameObject.tag =="Enemy")
+            if (isPlayerMissile)
             {
-                other.gameObject.GetComponent<HealthManager>().TakeDamage(100);
-                Destroy(gameObject);
-                
+                if (other.gameObject.tag == "Enemy")
+                {
+                    other.gameObject.GetComponent<HealthManager>().TakeDamage(100);
+                    Destroy(gameObject);
+
+                }
+            } else
+            {
+                if(other.gameObject.tag == "Player")
+                {
+                    other.gameObject.GetComponent<HealthManager>().TakeDamage(10);
+                    Destroy(gameObject);
+                }
             }
         }
     }

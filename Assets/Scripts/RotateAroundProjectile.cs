@@ -23,7 +23,6 @@ public class RotateAroundProjectile : MonoBehaviour
         center = GameObject.Find("Center").transform;
         centerCollider = center.GetComponent<CapsuleCollider>();
         RB = GetComponent<Rigidbody>();
-
     }
     private void OnEnable()
     {
@@ -84,6 +83,10 @@ public class RotateAroundProjectile : MonoBehaviour
     }
     private void OnDisable()
     {
+        if (!isPlayerBullet)
+        {
+            bullet = bulletType.enemy;
+        }
         if (RB != null)
         {
             RB.velocity = Vector3.zero;

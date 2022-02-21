@@ -96,7 +96,10 @@ public class AgentMover : Mover
     }
     public virtual void ChasePlayer(GameObject target)
     {
-        agent.SetDestination(target.transform.position);
+        if (target != null)
+        {
+            agent.SetDestination(target.transform.position);
+        }
     }
     /*public NavMeshAgent agent;
     public List<GameObject> patrolNodes = new List<GameObject>();

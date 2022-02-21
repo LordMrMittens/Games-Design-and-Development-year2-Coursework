@@ -3751,9 +3751,10 @@ GameObject:
   - component: {fileID: 362845945}
   - component: {fileID: 362845946}
   - component: {fileID: 362845947}
+  - component: {fileID: 362845948}
   m_Layer: 11
   m_Name: Boss Gun
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3813,6 +3814,25 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &362845948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362845944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  health: 0
+  damageGiven: 5
+  destroyOnTouch: 0
+  pointsValue: 100
+  shields: 0
+  isBossComponent: 1
 --- !u!1 &363944396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,10 +4331,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 380597476}
-  - component: {fileID: 380597477}
   m_Layer: 11
   m_Name: Boss Gun Unit
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4340,25 +4359,6 @@ Transform:
   m_Father: {fileID: 1151388028675846592}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &380597477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380597475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 75
-  health: 0
-  damageGiven: 5
-  destroyOnTouch: 0
-  pointsValue: 100
-  shields: 0
-  isBossComponent: 1
 --- !u!1 &381930893
 GameObject:
   m_ObjectHideFlags: 0
@@ -37036,7 +37036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149152553506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.7, y: 41.67, z: -0.028709292}
+  m_LocalPosition: {x: -14.7, y: 23.22, z: -0.028709292}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 1151388028675846592}
@@ -37058,7 +37058,7 @@ GameObject:
   - component: {fileID: 919132147771985472}
   m_Layer: 11
   m_Name: Boss Electric Node
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37088,7 +37088,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147771985469}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.85325056
@@ -37126,7 +37126,7 @@ GameObject:
   - component: {fileID: 919132148329074846}
   m_Layer: 11
   m_Name: Boss Missile Launcher
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37144,7 +37144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  missilePrefab: {fileID: 4974599127685144973, guid: 8724df4961e76a54684bcb557a04149f, type: 3}
+  missilePrefab: {fileID: 4974599127685144973, guid: 5af78be69a222354bb45f6fb2466157f, type: 3}
   cannons:
   - {fileID: 2043244807}
   - {fileID: 415057411}
