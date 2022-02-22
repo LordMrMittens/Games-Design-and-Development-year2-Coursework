@@ -16,6 +16,7 @@ public class RotateAroundProjectile : MonoBehaviour
     public bool isPlayerBullet;
     public Light pointLight;
     public ParticleSystem ps;
+    [SerializeField] ParticleSystem explosion;
     
     // Start is called before the first frame update
     void Start()
@@ -56,8 +57,10 @@ public class RotateAroundProjectile : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Instantiate(explosion, transform.position, Quaternion.identity);
         if (!isPlayerBullet)
         {
+            
             if (other.tag == "Player")
             {
                 other.GetComponent<HealthManager>().TakeDamage(damage);
@@ -92,5 +95,6 @@ public class RotateAroundProjectile : MonoBehaviour
             RB.velocity = Vector3.zero;
             RB.angularVelocity = Vector3.zero;
         }
+        
     }
 }

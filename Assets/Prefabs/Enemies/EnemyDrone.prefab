@@ -105,6 +105,7 @@ MonoBehaviour:
   pointsValue: 25
   shields: 0
   isBossComponent: 0
+  explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
 --- !u!65 &5155387351334467264
 BoxCollider:
   m_ObjectHideFlags: 0

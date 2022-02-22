@@ -8,6 +8,7 @@ public class Missile : AgentMover
     bool homing;
     Transform target;
     [SerializeField]bool isPlayerMissile;
+    [SerializeField] ParticleSystem explosion;
     public override void Start()
     {
         agent.enabled = true;
@@ -44,6 +45,7 @@ public class Missile : AgentMover
     {
         if (target != null)
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
             if (isPlayerMissile)
             {
                 if (other.gameObject.tag == "Enemy")

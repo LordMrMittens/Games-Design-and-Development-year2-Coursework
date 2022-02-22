@@ -97,6 +97,9 @@ MonoBehaviour:
   damageGiven: 15
   destroyOnTouch: 1
   pointsValue: 10
+  shields: 0
+  isBossComponent: 0
+  explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
 --- !u!65 &5169049856102662146
 BoxCollider:
   m_ObjectHideFlags: 0

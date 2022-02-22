@@ -574,6 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3582a9e06b78362418ae4987c47e6414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   bulletTemplate: {fileID: 7280299743685637164, guid: a798e92d3b4436241a402e2a7c7ea396, type: 3}
   cannon: {fileID: 3615325743648377286}
   maxBulletSpeed: 10
@@ -600,6 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f748e6369b6403e408a696679434f49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgrades: 0
   hasDoubleShot: 0
   hasFireRateUp: 0
   hasShotPowerUp: 0
@@ -627,6 +629,8 @@ MonoBehaviour:
   destroyOnTouch: 0
   pointsValue: 0
   shields: 0
+  isBossComponent: 0
+  explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
 --- !u!54 &3615325743660499494
 Rigidbody:
   m_ObjectHideFlags: 0

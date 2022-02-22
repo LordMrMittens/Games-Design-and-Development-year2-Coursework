@@ -5020,6 +5020,7 @@ MonoBehaviour:
   isPlayerBullet: 0
   pointLight: {fileID: 7448219216887358693}
   ps: {fileID: 5842863777432026178}
+  explosion: {fileID: 934168684570871974, guid: b823b88502c40774caebc8f6cf2fad5b, type: 3}
 --- !u!54 &-7301726225194568337
 Rigidbody:
   m_ObjectHideFlags: 0

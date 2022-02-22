@@ -56,6 +56,7 @@
     <Analyzer Include="D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BossHealth.cs" />
     <Compile Include="Assets\Scripts\LookAtCenter.cs" />
     <Compile Include="Assets\Scripts\EnemyHydra.cs" />
     <Compile Include="Assets\Scripts\HydraAnimationBehaviour.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Scripts\Obsolete\Projectiles.cs" />
     <Compile Include="Assets\Scripts\ObstacleRotate.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
+    <Compile Include="Assets\Scripts\BossComponentHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerGun.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
     <Compile Include="Assets\Scripts\Missile.cs" />
@@ -96,8 +98,8 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\BossComponentHealth.cs" />
-    <Compile Include="Assets\Scripts\BossHealth.cs" />
+    <Compile Include="Assets\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

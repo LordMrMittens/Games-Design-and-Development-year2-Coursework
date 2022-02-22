@@ -12,6 +12,7 @@ public class HealthManager : MonoBehaviour
     public bool shields;
     public bool isBossComponent;
     BossHealth bossHealth;
+    [SerializeField] ParticleSystem explosion;
     private void Start()
     {
         ResetHealth();
@@ -55,6 +56,7 @@ public class HealthManager : MonoBehaviour
     }
     private void Destroy()
     {
+        Instantiate(explosion, transform.position, Quaternion.identity);
         if (gameObject.tag == "Enemy")
         {
             if (isBossComponent)
