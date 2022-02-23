@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public enum Phase { PhaseOne,PhaseTwo,PhaseThree}
     public Phase levelPhase { get; set; }
     public int score { get; set; }
+    [SerializeField] Text scoreText;
     public int targetScore;
     public bool playerIsAlive = false; 
     public static GameManager TGM;
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        scoreText.text = "Score: " + score.ToString();
         if (Input.GetKeyDown(KeyCode.L))
         {
             StartCoroutine(EndPhaseOneWait());
@@ -134,11 +137,13 @@ public class GameManager : MonoBehaviour
     }
     public void LoadPhaseThree()
     {
+
         playerIsAlive = false;
         Destroy(thePlayer);
         SceneManager.LoadScene("Phase3");
         OnLevelWasLoaded();
         levelPhase = Phase.PhaseThree;
+        
         playerCanMove = true;
     }
     public void StopGame()

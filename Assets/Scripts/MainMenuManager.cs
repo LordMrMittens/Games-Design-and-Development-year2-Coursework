@@ -21,6 +21,8 @@ public class MainMenuManager : MonoBehaviour
     public void QuitToMenu()
     {
         UnPause();
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
     }
     private void Update()
     {

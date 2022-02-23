@@ -12,14 +12,15 @@ public class CameraFollow : Mover
     public float playerLowerBounds;
     public float playerUpperBounds;
     PlayerMovementController playerMovementController;
-
+    [SerializeField] LevelProgressBar levelProgress;
     public override void Start()
     {
         base.Start();
         radiusOffset = offset;
+        levelProgress = GetComponent<LevelProgressBar>();
     }
     void LateUpdate()
-    {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne || GameManager.TGM.levelPhase == GameManager.Phase.PhaseThree)
+    {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
         {
             if (GameManager.TGM.playerIsAlive)
             {
@@ -54,7 +55,26 @@ public class CameraFollow : Mover
                 rotation = playerMovementController.rotation;
 
                 Move(0, GameManager.TGM.constantScrollingSpeed);
-                
+                levelProgress.SetProgress((int)transform.position.y);
+
+            }
+        }
+        if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseThree)
+        {
+            if (GameManager.TGM.playerIsAlive)
+            {
+                if (player == null && playerMovementController == null)
+                {
+                    player = GameObject.FindGameObjectWithTag("Player").transform;
+                    playerMovementController = player.GetComponent<PlayerMovementController>();
+                    speed = playerMovementController.speed;
+                    altitude = playerMovementController.altitude + verticalOffset; //set this up the same as player then camera moves up independently;
+
+                }
+                rotation = playerMovementController.rotation;
+
+                Move(0,0);
+
 
             }
         }

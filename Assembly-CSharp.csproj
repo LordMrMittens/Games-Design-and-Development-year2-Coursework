@@ -82,9 +82,11 @@
     <Compile Include="Assets\Scripts\EnemyDrone.cs" />
     <Compile Include="Assets\Scripts\DecorationSpawner.cs" />
     <Compile Include="Assets\Scripts\PlayerCannonLookAtController.cs" />
+    <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\Obsolete\Gravity.cs" />
     <Compile Include="Assets\Scripts\EnemyMarch.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\PlayerTransformationController.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\EnemyMarchController.cs" />
@@ -98,8 +100,8 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\Explosion.cs" />
-    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
+    <Compile Include="Assets\Scripts\BossHealthBar.cs" />
+    <Compile Include="Assets\Scripts\LevelProgressBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
