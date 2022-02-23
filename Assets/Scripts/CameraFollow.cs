@@ -55,7 +55,7 @@ public class CameraFollow : Mover
                 rotation = playerMovementController.rotation;
 
                 Move(0, GameManager.TGM.constantScrollingSpeed);
-                levelProgress.SetProgress((int)transform.position.y);
+                levelProgress.SetProgress(Mathf.RoundToInt(transform.position.y));
 
             }
         }

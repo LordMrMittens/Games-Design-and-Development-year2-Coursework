@@ -19,13 +19,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playerPrefab;
     [SerializeField] float timeToSpawnPlayer;
     float playerSpawnCounter;
-    GameObject thePlayer;
+    public GameObject thePlayer { get; set; }
     PlayerMovementController playerMovementController;
     PlayerTransformationController playerTransformation;
     public float constantScrollingSpeed;
     public bool playerCanMove { get; set; }
     public float playerSpawnRotation { get; set; }
     public float playerSpawnAltitude { get; set; }
+
+    public bool playerhasDoubleShot;
+    public bool playerhasFireRate;
+    public bool playerhasDoubleDamage;
+    public int missiles;
+    public int homingMissiles;
+    public int Devastators;
     void Start()
     {
         TGM = this;

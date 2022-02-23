@@ -6,6 +6,7 @@ public class PlayerInventory : MonoBehaviour
 {
     public PlayerUpgrades upgrades;
     PlayerTransformationController playerTransformation;
+  
     PlayerGun playerGun;
     public bool hasDoubleShot;
     public bool hasFireRateUp;
@@ -20,10 +21,22 @@ public class PlayerInventory : MonoBehaviour
 
     void Start()
     {
-        ResetInventory();
+        UpdateFromGameManager();
+
         playerTransformation = GetComponent<PlayerTransformationController>();
-        
+
     }
+
+    private void UpdateFromGameManager()
+    {
+        hasDoubleShot = GameManager.TGM.playerhasDoubleShot;
+        hasFireRateUp = GameManager.TGM.playerhasFireRate;
+        hasShotPowerUp = GameManager.TGM.playerhasDoubleDamage;
+        missiles = GameManager.TGM.missiles;
+        homingMissiles = GameManager.TGM.homingMissiles;
+        devastators = GameManager.TGM.Devastators;
+    }
+
     public void ResetInventory()
     {
         hasFireRateUp = false;
@@ -37,12 +50,38 @@ public class PlayerInventory : MonoBehaviour
         if (hasDoubleShot && !playerTransformation.sidegunsActive)
         {
             playerTransformation.ActivateSideGuns();
-            
+
         }
         else if (!hasDoubleShot)
         {
             playerTransformation.DisableSideGuns();
         }
+        if (hasDoubleShot)
+        {
+            upgrades = PlayerUpgrades.doubleShot;
+        }
+        if (hasFireRateUp)
+        {
+            upgrades = PlayerUpgrades.fireRate;
+        }
+        if (hasShotPowerUp)
+        {
+            upgrades = PlayerUpgrades.doubleDamage;
+        } else
+        {
+            upgrades = PlayerUpgrades.none;
+        }
+        UpdateGameManager();
+    }
 
+    private void UpdateGameManager()
+    {
+
+        GameManager.TGM.playerhasDoubleShot = hasDoubleShot;
+        GameManager.TGM.playerhasFireRate = hasFireRateUp;
+        GameManager.TGM.playerhasDoubleDamage = hasShotPowerUp;
+        GameManager.TGM.missiles = missiles;
+        GameManager.TGM.homingMissiles = homingMissiles;
+        GameManager.TGM.Devastators = devastators;
     }
 }
