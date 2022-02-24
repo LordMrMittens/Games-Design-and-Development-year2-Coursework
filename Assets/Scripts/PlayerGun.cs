@@ -13,6 +13,7 @@ public class PlayerGun : Gun
     public Ray ray;
     [SerializeField] float setTimeBetweenShots;
     [SerializeField] GameObject missilePrefab;
+    [SerializeField] GameObject devastatorPrefab;
 
     new void Start()
     {
@@ -63,7 +64,18 @@ public class PlayerGun : Gun
                 //play sounds
             }
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (playerInventory.devastators > 0)
+            {
+                Instantiate(devastatorPrefab, transform.position, Quaternion.identity);
+            }
+            else
+            {
+                //play sounds
+            }
 
+        }
     }
     private void OnEnable()
     {

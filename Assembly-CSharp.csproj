@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\HydraAnimationBehaviour.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\Obsolete\Projectiles.cs" />
+    <Compile Include="Assets\Scripts\LevelProgressBar.cs" />
     <Compile Include="Assets\Scripts\ObstacleRotate.cs" />
     <Compile Include="Assets\Scripts\Mover.cs" />
     <Compile Include="Assets\Scripts\BossComponentHealth.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\EnemyMarchController.cs" />
     <Compile Include="Assets\Scripts\SceneTrigger.cs" />
+    <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
     <Compile Include="Assets\Scripts\PatrolNodeSpawnController.cs" />
     <Compile Include="Assets\Scripts\CityController.cs" />
@@ -100,8 +102,7 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\BossHealthBar.cs" />
-    <Compile Include="Assets\Scripts\LevelProgressBar.cs" />
+    <Compile Include="Assets\Scripts\Devastator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

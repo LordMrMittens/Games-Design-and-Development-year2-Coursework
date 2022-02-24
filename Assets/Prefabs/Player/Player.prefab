@@ -5894,6 +5894,7 @@ MonoBehaviour:
     m_Bits: 8
   setTimeBetweenShots: 0.5
   missilePrefab: {fileID: 4974599127685144973, guid: 8724df4961e76a54684bcb557a04149f, type: 3}
+  devastatorPrefab: {fileID: 3410848907728580190, guid: f57f4a2d436a17144b8d1e95a5a8362a, type: 3}
 --- !u!114 &3615325743660499501
 MonoBehaviour:
   m_ObjectHideFlags: 0

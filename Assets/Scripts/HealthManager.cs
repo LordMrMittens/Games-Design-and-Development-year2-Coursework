@@ -14,6 +14,7 @@ public class HealthManager : MonoBehaviour
     BossHealth bossHealth;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] PlayerInventory inventory;
+    [SerializeField] GameObject devastator;
     public bool isBomb;
     
     private void Start()
@@ -87,6 +88,7 @@ public class HealthManager : MonoBehaviour
             GameManager.TGM.playerSpawnAltitude = gameObject.GetComponent<PlayerMovementController>().altitude;
             GameManager.TGM.playerSpawnRotation = gameObject.GetComponent<PlayerMovementController>().rotation;
             gameObject.SetActive(false);
+            Instantiate(devastator, transform.position, Quaternion.identity);
         }
         else if (gameObject.name != "Enemy(Clone)")
         {
