@@ -141,7 +141,9 @@ MonoBehaviour:
   searchInterval: 100
   aliveTimer: 10
   isPlayerMissile: 1
-  explosion: {fileID: 934168684570871974, guid: 904e46b531765c94ca333f1749fda5c8, type: 3}
+  explosion: {fileID: 934168684570871974, guid: 4211428b4a11bda4fb4e50e8070f90cd, type: 3}
+  manualTargetLocation: {x: 0, y: 0, z: 0}
+  closeExplosionTimer: 1
 --- !u!195 &4048831172045317555
 NavMeshAgent:
   m_ObjectHideFlags: 0

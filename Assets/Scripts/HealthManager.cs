@@ -13,6 +13,9 @@ public class HealthManager : MonoBehaviour
     public bool isBossComponent;
     BossHealth bossHealth;
     [SerializeField] ParticleSystem explosion;
+    [SerializeField] PlayerInventory inventory;
+    public bool isBomb;
+    
     private void Start()
     {
         ResetHealth();
@@ -20,6 +23,7 @@ public class HealthManager : MonoBehaviour
         {
             bossHealth = GetComponentInParent<BossHealth>();
         }
+
     }
     private void OnEnable()
     {
@@ -39,6 +43,7 @@ public class HealthManager : MonoBehaviour
         if (shields)
         {
             shields = false;
+            inventory.hasShield = false;
         }
         else
         {
@@ -49,12 +54,12 @@ public class HealthManager : MonoBehaviour
             }
             if (health <= 0)
             {
-                Destroy();
+                DestroyThisObject();
             }
         }
 
     }
-    private void Destroy()
+    private void DestroyThisObject()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
         if (gameObject.tag == "Enemy")
@@ -63,7 +68,7 @@ public class HealthManager : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
-            if (Random.Range(0, 10) == 1)
+            if (Random.Range(0, 10) == 1 && !isBomb)
             {
                 
                 PickupSpawnManager.PSM.DecideWhichPickUpToSpawn(transform.position);
@@ -83,9 +88,12 @@ public class HealthManager : MonoBehaviour
             GameManager.TGM.playerSpawnRotation = gameObject.GetComponent<PlayerMovementController>().rotation;
             gameObject.SetActive(false);
         }
-        else if (gameObject.name != "Enemy(Clone)" && gameObject.name != "Bomb(Clone)")
+        else if (gameObject.name != "Enemy(Clone)")
         {
-            GameManager.TGM.CountEnemyDown();
+            if (!isBomb)
+            {
+                GameManager.TGM.CountEnemyDown();
+            }
             Destroy(gameObject);
         }
         else
@@ -104,7 +112,7 @@ public class HealthManager : MonoBehaviour
             }
             if (destroyOnTouch)
             {
-                Destroy();
+                DestroyThisObject();
             }
         }
 

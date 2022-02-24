@@ -17,8 +17,9 @@ public class CameraFollow : Mover
     {
         base.Start();
         radiusOffset = offset;
-        levelProgress = GetComponent<LevelProgressBar>();
+        
     }
+
     void LateUpdate()
     {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
         {
@@ -55,7 +56,10 @@ public class CameraFollow : Mover
                 rotation = playerMovementController.rotation;
 
                 Move(0, GameManager.TGM.constantScrollingSpeed);
-                levelProgress.SetProgress(Mathf.RoundToInt(transform.position.y));
+                if (levelProgress != null)
+                {
+                    levelProgress.SetProgress(Mathf.RoundToInt(transform.position.y));
+                }
 
             }
         }

@@ -36,25 +36,32 @@ public class PlayerGun : Gun
             {
                 case PlayerUpgrades.none:
                     Shoot(bulletType.normal);
-                    Debug.Log("Shooting Normal");
+                    
                     break;
                 case PlayerUpgrades.doubleShot:
                     Shoot(bulletType.normal);
-                    Debug.Log("Shooting Double");
+                    
                     break;
                 case PlayerUpgrades.fireRate:
                     Shoot(bulletType.fast);
-                    Debug.Log("Shooting Fast");
+                    
                     break;
                 case PlayerUpgrades.doubleDamage:
                     Shoot(bulletType.doublePower);
-                    Debug.Log("Shooting Power");
+                    
                     break;
             }
         }
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            ShootMissiles();
+            if (playerInventory.missiles > 0)
+            {
+                ShootMissiles();
+            }
+            else
+            {
+                //play sounds
+            }
         }
 
     }
@@ -122,13 +129,22 @@ public class PlayerGun : Gun
                 distance = Vector3.Distance(transform.position, enemy.transform.position);
                 if (shortestDistance > distance)
                 {
+                    if (enemy.GetComponent<HealthManager>().isBomb == false)
                     shortestDistance = distance;
                     closestEnemy = enemy;
                 }
 
             }
             GameObject missile = Instantiate(missilePrefab, cannon.transform.position, Quaternion.identity);
-            missile.GetComponent<Missile>().Fire(closestEnemy.transform);
+            Missile missileController = missile.GetComponent<Missile>();
+            missileController.Fire(closestEnemy.transform);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, targetMask))
+            {
+                Vector3 target = hit.point;
+                missileController.manualTargetLocation = target;
+                    }
+            playerInventory.missiles--;
         }
 
         

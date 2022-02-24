@@ -76,6 +76,7 @@ public class PickUp : MonoBehaviour
                     break;
                 case pickupType.Shield:
                     healthManager.shields = true;
+                    playerInventory.hasShield = true;
                     break;
                 case pickupType.Devastator:
                     playerInventory.devastators++;

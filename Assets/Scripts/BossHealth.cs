@@ -11,10 +11,19 @@ public class BossHealth : MonoBehaviour
 
     private void Start()
     {
-
-        healthbar = GetComponent<BossHealthBar>();
         health = totalHealth;
         healthbar.SetMaxHealth(totalHealth);
+    }
+    private void Update()
+    {
+        if (healthbar!= null)
+        {
+            Debug.Log("healthbar");
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            DamageHealth(100);
+        }
     }
     public void DamageHealth(int damage)
     {

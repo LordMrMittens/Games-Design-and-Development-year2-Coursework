@@ -18,13 +18,15 @@ public class PlayerInventory : MonoBehaviour
     public int homingMissiles;
     [SerializeField] GameObject devastatorPrefab;
     public int devastators;
-
+    public bool hasShield;
+    public ParticleSystem shield;
+    public ParticleSystem.EmissionModule emmiter;
     void Start()
     {
         UpdateFromGameManager();
 
         playerTransformation = GetComponent<PlayerTransformationController>();
-
+        emmiter = shield.emission;
     }
 
     private void UpdateFromGameManager()
@@ -47,6 +49,13 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hasShield)
+        {
+            emmiter.rateOverTime = 30;
+        } else
+        {
+            emmiter.rateOverTime = 0;
+        }
         if (hasDoubleShot && !playerTransformation.sidegunsActive)
         {
             playerTransformation.ActivateSideGuns();

@@ -3298,6 +3298,8 @@ MonoBehaviour:
   shields: 0
   isBossComponent: 0
   explosion: {fileID: 0}
+  inventory: {fileID: 0}
+  isBomb: 0
 --- !u!114 &300339557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25492,6 +25494,12 @@ MonoBehaviour:
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
   constantScrollingSpeed: 0.13
+  playerhasDoubleShot: 0
+  playerhasFireRate: 0
+  playerhasDoubleDamage: 0
+  missiles: 0
+  homingMissiles: 0
+  Devastators: 0
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29026,7 +29034,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh89970
+  m_Name: pb_Mesh157388
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

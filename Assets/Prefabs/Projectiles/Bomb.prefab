@@ -83,6 +83,8 @@ MonoBehaviour:
   shields: 0
   isBossComponent: 0
   explosion: {fileID: 934168684570871974, guid: 372dccc493252794cbfd4eaca8910505, type: 3}
+  inventory: {fileID: 0}
+  isBomb: 1
 --- !u!1001 &8973395572740311486
 PrefabInstance:
   m_ObjectHideFlags: 0

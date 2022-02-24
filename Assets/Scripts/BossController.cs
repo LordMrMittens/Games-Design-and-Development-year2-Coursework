@@ -55,7 +55,7 @@ public class BossController : MonoBehaviour
         {
             int attackChosen = ChooseAttack();
 
-            Debug.Log(attackChosen);
+            
             switch (attackChosen)
             {
                 case 0: case 1:

@@ -19600,6 +19600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 460413522}
   - component: {fileID: 460413524}
+  - component: {fileID: 460413523}
   m_Layer: 5
   m_Name: LevelprogressController
   m_TagString: Untagged
@@ -19628,6 +19629,19 @@ RectTransform:
   m_AnchoredPosition: {x: 460.6246, y: -4.5462}
   m_SizeDelta: {x: -953.0771, y: -44.0095}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &460413523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460413521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a77a943770887468b95167947858c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 460413524}
 --- !u!114 &460413524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53023,7 +53037,7 @@ MonoBehaviour:
   verticalOffset: 1.5
   playerLowerBounds: 2.5
   playerUpperBounds: 2.5
-  levelProgress: {fileID: 0}
+  levelProgress: {fileID: 460413523}
 --- !u!81 &1035550958
 AudioListener:
   m_ObjectHideFlags: 0
@@ -66496,6 +66510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55768995f0310db43ad5f752f332b472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
   targetScore: 1
   playerIsAlive: 0
   targetEnemiesOnScreenPhaseOne: 0
@@ -66503,6 +66518,12 @@ MonoBehaviour:
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
   constantScrollingSpeed: 0.08
+  playerhasDoubleShot: 0
+  playerhasFireRate: 0
+  playerhasDoubleDamage: 0
+  missiles: 0
+  homingMissiles: 0
+  Devastators: 0
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78102,7 +78123,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59172
+  m_Name: pb_Mesh35588
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

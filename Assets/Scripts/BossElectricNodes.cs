@@ -45,10 +45,10 @@ public class BossElectricNodes : MonoBehaviour
         speed = 0;
         yield return new WaitForSeconds(3);
         speed = moveSpeed * -1;
-        Debug.Log("Changing Speed");
+        
         yield return new WaitUntil(() => transform.localPosition.y >= positionOne);
         speed = 0;
-        Debug.Log("EndofRoutine");
+        
         yield return new WaitForSeconds(3);
         bossController.electricTimer = 0;
         bossController.electricIsReady = false;
