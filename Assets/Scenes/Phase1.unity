@@ -60932,7 +60932,7 @@ MonoBehaviour:
   targetScore: 1000
   playerIsAlive: 0
   targetEnemiesOnScreenPhaseOne: 10
-  targetEnemiesOnScreenPhaseTwo: 30
+  targetEnemiesOnScreenPhaseTwo: 20
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
   constantScrollingSpeed: 0.13

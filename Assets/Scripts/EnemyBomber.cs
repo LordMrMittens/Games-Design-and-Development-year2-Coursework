@@ -17,6 +17,10 @@ public class EnemyBomber : AgentMover
         base.Start();
         horizontalMovement = movementSpeed;
         bombCounter = timeBetweenBombDrops;
+        if (Random.Range(0, 2)!=0)
+        {
+            horizontalMovement *= -1;
+        }
     }
     // Update is called once per frame
     public override void Update()

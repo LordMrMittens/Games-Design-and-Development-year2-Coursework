@@ -6,7 +6,7 @@ public class EnemyDrone : EnemyPatrol
 {
     enum State { Patrolling, Chasing, Orbiting }
     State state;
-    List<GameObject> flankingPoints = new List<GameObject>();
+    public List<GameObject> flankingPoints = new List<GameObject>();
     [SerializeField] float chaseSpeed;
     [SerializeField] float orbitDistance;
     [SerializeField] float orbitSpeed;
@@ -24,6 +24,7 @@ public class EnemyDrone : EnemyPatrol
         navAgent = GetComponent<NavMeshAgent>();
         gun = GetComponent<Gun>();
         transform.position = origin + Quaternion.Euler(0, rotation, 0) * new Vector3(0, altitude, (center.GetComponent<CapsuleCollider>().radius + radiusOffset));
+        flankingPoints.AddRange(GameObject.FindGameObjectsWithTag("FlankingPoint"));
     }
     public override void Update()
     {
@@ -50,7 +51,7 @@ public class EnemyDrone : EnemyPatrol
     public override void ChasePlayer(GameObject target)
     {
         state = State.Chasing;
-        flankingPoints.AddRange(GameObject.FindGameObjectsWithTag("FlankingPoint"));
+        
 
         if (Vector3.Distance(transform.position, player.transform.position) > orbitDistance && target != null)
         {
@@ -61,7 +62,7 @@ public class EnemyDrone : EnemyPatrol
 
             if (flankingPoints.Count > 0)
             {
-                currentFlankingPoint = 0;
+                currentFlankingPoint = Random.Range(0,flankingPoints.Count);
                 targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
                 state = State.Orbiting;
             }
@@ -89,14 +90,26 @@ public class EnemyDrone : EnemyPatrol
                 agent.SetDestination(targetFlankingPoint.transform.position);
                 if (Vector3.Distance(transform.position, targetFlankingPoint.position) < .5)
                 {
-                    if ((currentFlankingPoint + 1) < flankingPoints.Count)
+                    if (Random.Range(0, 2) != 0)
                     {
-                        currentFlankingPoint++;
-                        targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                        if ((currentFlankingPoint + 1) < flankingPoints.Count)
+                        {
+                            currentFlankingPoint++;
+                            targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                        }
+                        else
+                        {
+                            currentFlankingPoint = 0;
+                            targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
+                        }
                     }
                     else
                     {
-                        currentFlankingPoint = 0;
+                        currentFlankingPoint--;
+                        if (currentFlankingPoint < 0)
+                        {
+                            currentFlankingPoint = flankingPoints.Count-1;
+                        }
                         targetFlankingPoint = flankingPoints[currentFlankingPoint].transform;
                     }
                     agent.SetDestination(targetFlankingPoint.position);
