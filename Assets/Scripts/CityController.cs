@@ -4,18 +4,31 @@ using UnityEngine;
 
 public class CityController : MonoBehaviour
 {
-    HealthManager healthManager;
-    // Start is called before the first frame update
+    [SerializeField] GameObject fullHealthCity;
+    [SerializeField] GameObject midHealthCity;
+    [SerializeField] GameObject lowHealthCity;
+    [SerializeField] HealthManager healthManager;
+    
     void Start()
     {
-        healthManager = GetComponent<HealthManager>();
+        
+        fullHealthCity.SetActive(true);
+        midHealthCity.SetActive(false);
+        lowHealthCity.SetActive(false);
     }
     private void Update()
     {
-        if (healthManager.health <= 0)
+        if (healthManager.health <= healthManager.maxHealth/1.43f && midHealthCity.activeSelf ==false)
         {
-            GameManager.TGM.StopGame();
-            //GameOver
+            fullHealthCity.SetActive(false);
+            midHealthCity.SetActive(true);
+            lowHealthCity.SetActive(false);
+        }
+        if (healthManager.health <= healthManager.maxHealth / 10 && lowHealthCity.activeSelf == false)
+        {
+            fullHealthCity.SetActive(false);
+            midHealthCity.SetActive(false);
+            lowHealthCity.SetActive(true);
         }
     }
     private void OnTriggerEnter(Collider other)

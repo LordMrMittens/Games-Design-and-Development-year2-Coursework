@@ -8,13 +8,10 @@ public class Devastator : MonoBehaviour
     float speed = 10;
     Vector3 sizeScale;
     [SerializeField]float timeActive;
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(EndDevastator());
     }
-
-    // Update is called once per frame
     void Update()
     {
         size += (Time.deltaTime *speed);

@@ -19,6 +19,7 @@ public class EnemySpawnManager : MonoBehaviour
     [SerializeField] float timeBetweenEnemySpawnsPhaseOne;
     [SerializeField] float timeBetweenEnemySpawnsPhaseTwo;
     [SerializeField] float enemySpawnCounter =0;
+    [SerializeField] Transform initialSpawnPoint;
     void Update()
     {
         if (GameManager.TGM.playerIsAlive)
@@ -60,31 +61,31 @@ public class EnemySpawnManager : MonoBehaviour
         switch (unitToSpawn)
         {
             case 0:
-                GameObject squad = Instantiate(enemySquadPrefab);
+                GameObject squad = Instantiate(enemySquadPrefab, initialSpawnPoint.position,Quaternion.identity);
                 squad.GetComponent<EnemyMarchController>().PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
                 GameManager.TGM.CountEnemyUp();
                 break;
             case 1:
 
-                GameObject kamikaze = Instantiate(enemyKamikazePrefab);
+                GameObject kamikaze = Instantiate(enemyKamikazePrefab, initialSpawnPoint.position, Quaternion.identity);
                 EnemyPatrol patrolManager = kamikaze.GetComponent<EnemyPatrol>();
                 patrolManager.PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
                 GameManager.TGM.CountEnemyUp();
                 break;
             case 2:
-                GameObject bomber = Instantiate(enemyBomberPrefab);
+                GameObject bomber = Instantiate(enemyBomberPrefab, initialSpawnPoint.position, Quaternion.identity);
                 bomber.GetComponent<EnemyBomber>().PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
                 GameManager.TGM.CountEnemyUp();
                 break;
             case 3:
-                GameObject drone = Instantiate(enemyDronePrefab);
+                GameObject drone = Instantiate(enemyDronePrefab, initialSpawnPoint.position, Quaternion.identity);
                 EnemyDrone droneManager = drone.GetComponent<EnemyDrone>();
                 droneManager.PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
                 GameManager.TGM.CountEnemyUp();
                 
                 break;
             case 4:
-                GameObject hydra = Instantiate(enemyHydraPrefab);
+                GameObject hydra = Instantiate(enemyHydraPrefab, initialSpawnPoint.position, Quaternion.identity);
                 hydra.GetComponent<EnemyHydra>().PlaceObject(spawnpoint.rotation, spawnpoint.altitude);
                 GameManager.TGM.CountEnemyUp();
                 break;
@@ -97,7 +98,6 @@ public class EnemySpawnManager : MonoBehaviour
     {
         if (GameManager.TGM.playerIsAlive)
         {
- 
             if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
             {
                 spawnpoint = new Spawner() { rotation = (playerMovementController.rotation + 180) + Random.Range(-125, 125), altitude = playerMovementController.altitude + 5 };

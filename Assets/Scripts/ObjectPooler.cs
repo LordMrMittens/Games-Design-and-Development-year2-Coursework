@@ -11,7 +11,7 @@ public class ObjectPooler : MonoBehaviour
     public List<GameObject> pooledEnemyBullets = new List<GameObject>();
     public GameObject enemyBullets;
     public int enemyBulletsToPool;
-    public List<GameObject> pooledEnemySquads = new List<GameObject>();
+/*    public List<GameObject> pooledEnemySquads = new List<GameObject>();
     public GameObject enemySquad;
     public int enemySquadsToPool;
     public List<GameObject> pooledEnemyKamikazes = new List<GameObject>();
@@ -25,7 +25,7 @@ public class ObjectPooler : MonoBehaviour
     public int enemyDronesToPool;
     public List<GameObject> pooledEnemyHydras = new List<GameObject>();
     public GameObject enemyHydra;
-    public int enemyHydrasToPool;
+    public int enemyHydrasToPool;*/
 
 
     private void Awake()
