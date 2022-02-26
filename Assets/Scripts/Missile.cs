@@ -81,6 +81,7 @@ public class Missile : AgentMover
                 }
             }
         }
+        Debug.Log(other.name);
     }
     public void ExplodeMissile()
     {

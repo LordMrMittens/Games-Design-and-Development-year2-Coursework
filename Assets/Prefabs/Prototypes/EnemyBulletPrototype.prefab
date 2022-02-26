@@ -4949,7 +4949,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7280299743685637164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5015,7 +5015,7 @@ MonoBehaviour:
   distanceFromCenter: 0
   centerCollider: {fileID: 0}
   RB: {fileID: 0}
-  damage: 0
+  damage: 5
   radiusOffset: 0.4
   isPlayerBullet: 0
   pointLight: {fileID: 7448219216887358693}

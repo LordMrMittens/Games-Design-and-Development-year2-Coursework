@@ -14,17 +14,6 @@ public class BossHealth : MonoBehaviour
         health = totalHealth;
         healthbar.SetMaxHealth(totalHealth);
     }
-    private void Update()
-    {
-        if (healthbar!= null)
-        {
-            Debug.Log("healthbar");
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            DamageHealth(100);
-        }
-    }
     public void DamageHealth(int damage)
     {
         health -= damage;

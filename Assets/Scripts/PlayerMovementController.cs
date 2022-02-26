@@ -10,8 +10,6 @@ public class PlayerMovementController : Mover
     {
         healthManager = GetComponent<HealthManager>();
         base.Start();
-        rotation = 0;
-        altitude = -5;
         GameManager.TGM.playerIsAlive = true;
         cameraControls = Camera.main.GetComponent<CameraFollow>();
     }

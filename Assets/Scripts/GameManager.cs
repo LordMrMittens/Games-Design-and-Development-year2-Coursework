@@ -50,6 +50,10 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(EndPhaseOneWait());
         }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            LoadPhaseThree();
+        }
         if (levelPhase == Phase.PhaseOne)
         {
             if (thePlayer == null)
@@ -78,7 +82,7 @@ public class GameManager : MonoBehaviour
             if (thePlayer == null)
             {
 
-                SpawnPlayer(0, -5);
+                SpawnPlayer(0, 8);
             }
             targetEnemiesOnScreen = targetEnemiesOnScreenPhaseTwo;
             

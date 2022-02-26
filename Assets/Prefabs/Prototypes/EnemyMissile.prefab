@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5058306623682464367}
   - component: {fileID: 7990960577410986789}
   - component: {fileID: 6899552492222699441}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: -3210020618439703213}
   - component: {fileID: 4136978610796518331}
   - component: {fileID: -3264506524029075110}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: EnemyMissile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   isPlayerMissile: 0
   explosion: {fileID: 934168684570871974, guid: 904e46b531765c94ca333f1749fda5c8, type: 3}
   manualTargetLocation: {x: 0, y: 0, z: 0}
-  closeExplosionTimer: 0
+  closeExplosionTimer: 3
 --- !u!195 &4048831172045317555
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -177,10 +177,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.42343
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.7117149, z: 0}
+  m_Radius: 1.03
+  m_Height: 1.82
+  m_Direction: 2
+  m_Center: {x: 0, y: 1.2, z: 0}
 --- !u!54 &4136978610796518331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -218,4 +218,5 @@ MonoBehaviour:
   isBossComponent: 0
   explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
   inventory: {fileID: 0}
+  devastator: {fileID: 0}
   isBomb: 0

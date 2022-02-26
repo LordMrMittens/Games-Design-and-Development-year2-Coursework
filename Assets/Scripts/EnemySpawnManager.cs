@@ -29,6 +29,7 @@ public class EnemySpawnManager : MonoBehaviour
         }
 
     }
+
     private void CheckIfSpawningIsPossible()
     {
         if (GameManager.TGM.enemiesOnScreen < GameManager.TGM.targetEnemiesOnScreen)

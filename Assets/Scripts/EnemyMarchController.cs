@@ -19,7 +19,7 @@ public class EnemyMarchController : Mover
     {
         for(int i = 0; i < enemiesToSpawn; i++)
         {
-            GameObject enemy = Instantiate(enemyPrefab);
+            GameObject enemy = Instantiate(enemyPrefab,transform.position, Quaternion.identity);
             enemiesInSquad.Add(enemy);
             enemy.transform.parent = gameObject.transform;
         }

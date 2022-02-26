@@ -31,8 +31,7 @@ public class BossGun : Gun
     }
     public void Shoot(Transform target)
     {
-        transform.LookAt(target.transform);
-        GameObject bullet = ObjectPooler.pooler.GetPooledObject(ObjectPooler.pooler.pooledEnemyBullets);
+        GameObject bullet = ObjectPooler.pooler.GetPooledObject(ObjectPooler.pooler.pooledBossBullets);
             if (bullet != null)
             {
                 bullet.transform.position = cannon.transform.position;
