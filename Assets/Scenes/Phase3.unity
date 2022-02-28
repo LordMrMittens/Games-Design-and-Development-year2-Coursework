@@ -69625,7 +69625,7 @@ MonoBehaviour:
   horizontalDeadZone: 0
   verticalOffset: 1.5
   playerLowerBounds: 2.5
-  playerUpperBounds: 2.5
+  playerUpperBounds: 0.4
   levelProgress: {fileID: 0}
 --- !u!81 &1035550958
 AudioListener:
