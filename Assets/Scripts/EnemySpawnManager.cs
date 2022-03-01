@@ -110,7 +110,7 @@ public class EnemySpawnManager : MonoBehaviour
                 {
                     spawnpoint = new Spawner() { rotation = playerMovementController.rotation + Random.Range(-90, 90), altitude = playerMovementController.altitude + 5 };
 
-                    unitToSpawn = 2; //Random.Range(1, 5);
+                    unitToSpawn = Random.Range(1, 5);
                 }
                 else
                 {

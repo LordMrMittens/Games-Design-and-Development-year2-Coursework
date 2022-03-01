@@ -99,11 +99,12 @@
     <Compile Include="Assets\Scripts\CityController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\BossGun.cs" />
+    <Compile Include="Assets\Scripts\EnemyMine.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\EnemyMine.cs" />
+    <Compile Include="Assets\Scripts\ColorLerper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
