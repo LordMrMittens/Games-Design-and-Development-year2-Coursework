@@ -19,6 +19,6 @@ public class ColorLerper : MonoBehaviour
         material.EnableKeyword("_EMISSION");
         lerpedColor = Color.Lerp(firstColor, secondColor, Mathf.PingPong(Time.time, .6f));
         material.SetColor("_EmissionColor", lerpedColor);
-        Debug.Log(gameObject.GetComponent<Renderer>().material.color);
+       
     }
 }
