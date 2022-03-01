@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
     <Compile Include="Assets\Scripts\PatrolNodeSpawnController.cs" />
+    <Compile Include="Assets\Scripts\Devastator.cs" />
     <Compile Include="Assets\Scripts\CityController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\BossGun.cs" />
@@ -102,7 +103,7 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\Devastator.cs" />
+    <Compile Include="Assets\Scripts\EnemyMine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

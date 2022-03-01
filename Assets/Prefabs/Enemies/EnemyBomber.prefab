@@ -61,6 +61,7 @@ MonoBehaviour:
   numberOfBombs: 6
   timeBetweenBombDrops: 1
   bombPrefab: {fileID: 5767323927838946184, guid: 054bc7dd88017cf44a3da54b49358a20, type: 3}
+  minePrefab: {fileID: 3179361438549746522, guid: e74827e51e6dfe044b098bc7fbb6fb55, type: 3}
 --- !u!195 &1217946140921175830
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -103,6 +104,9 @@ MonoBehaviour:
   shields: 0
   isBossComponent: 0
   explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
+  inventory: {fileID: 0}
+  devastator: {fileID: 0}
+  isBomb: 0
 --- !u!65 &1217946140921175826
 BoxCollider:
   m_ObjectHideFlags: 0

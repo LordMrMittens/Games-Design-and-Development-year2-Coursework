@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
             if (thePlayer == null)
             {
 
-                SpawnPlayer(0, 8);
+                SpawnPlayer(0, 7.5f);
             }
             targetEnemiesOnScreen = targetEnemiesOnScreenPhaseTwo;
             

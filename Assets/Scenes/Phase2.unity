@@ -50700,7 +50700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989200557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 40.4, z: 0}
+  m_LocalPosition: {x: 0, y: 109.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66543,6 +66543,9 @@ MonoBehaviour:
   pooledEnemyBullets: []
   enemyBullets: {fileID: 7280299743685637164, guid: 6394a0e73fe069848a4fb7cf75460cbd, type: 3}
   enemyBulletsToPool: 10
+  pooledBossBullets: []
+  bossBullets: {fileID: 0}
+  bossBulletsToPool: 0
 --- !u!1 &1329923489
 GameObject:
   m_ObjectHideFlags: 0
@@ -69974,6 +69977,9 @@ MonoBehaviour:
   pooledEnemyBullets: []
   enemyBullets: {fileID: 7280299743685637164, guid: 4244fdc84e4681944a0ee07b109007a4, type: 3}
   enemyBulletsToPool: 20
+  pooledBossBullets: []
+  bossBullets: {fileID: 0}
+  bossBulletsToPool: 0
 --- !u!1 &1388239681
 GameObject:
   m_ObjectHideFlags: 0

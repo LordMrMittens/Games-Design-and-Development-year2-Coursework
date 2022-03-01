@@ -10,6 +10,7 @@ public class EnemyBomber : AgentMover
     [SerializeField] float timeBetweenBombDrops;
     float bombCounter;
     [SerializeField] GameObject bombPrefab;
+    [SerializeField] GameObject minePrefab;
     bool hasBombs = true;
     public override void Start()
     {
@@ -33,9 +34,19 @@ public class EnemyBomber : AgentMover
             {
                 if (numberOfBombs > 0)
                 {
-                    Instantiate(bombPrefab, new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z), Quaternion.identity);
-                    bombCounter = timeBetweenBombDrops; 
-                    numberOfBombs--;
+                    if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
+                    {
+                        GameObject mine = Instantiate(minePrefab, new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z), Quaternion.identity);
+                        mine.GetComponent<EnemyMine>().PlaceObject(rotation, altitude);
+                        bombCounter = timeBetweenBombDrops;
+                        numberOfBombs--;
+                    }
+                    else
+                    {
+                        Instantiate(bombPrefab, new Vector3(transform.position.x, transform.position.y - .5f, transform.position.z), Quaternion.identity);
+                        bombCounter = timeBetweenBombDrops;
+                        numberOfBombs--;
+                    }
                 }
                 else
                 {
