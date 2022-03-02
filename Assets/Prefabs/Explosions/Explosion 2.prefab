@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 25087055892399762}
   - component: {fileID: -6937943810390780689}
   m_Layer: 0
-  m_Name: Explosion 1
+  m_Name: Explosion 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1424,7 +1424,7 @@ ParticleSystem:
     enabled: 1
     mode: 0
     timeMode: 2
-    fps: 56
+    fps: 32
     frameOverTime:
       serializedVersion: 2
       minMaxState: 1
@@ -1533,7 +1533,7 @@ ParticleSystem:
         m_RotationOrder: 4
     speedRange: {x: 5, y: 1}
     tilesX: 8
-    tilesY: 8
+    tilesY: 4
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -4818,7 +4818,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c349b2d72e60a824ab4f1d0b26be5549, type: 2}
+  - {fileID: 2100000, guid: 43fb75cb44e10a24ba7715ac8840ce9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4876,6 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d4d93eea1c36047940471b7e62fc35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyAfterTime: 1.1
 --- !u!1 &7727013715142567962
 GameObject:
   m_ObjectHideFlags: 0

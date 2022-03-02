@@ -17,8 +17,6 @@ public class RotateAroundProjectile : MonoBehaviour
     public Light pointLight;
     public ParticleSystem ps;
     [SerializeField] ParticleSystem explosion;
-    
-    // Start is called before the first frame update
     void Start()
     {
         center = GameObject.Find("Center").transform;
@@ -51,7 +49,6 @@ public class RotateAroundProjectile : MonoBehaviour
     }
     void Update()
     {
-
         distanceFromCenter = centerCollider.radius +radiusOffset;
         transform.position = (transform.position - new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z)).normalized * distanceFromCenter + new Vector3(center.transform.position.x, transform.position.y, center.transform.position.z);
     }
@@ -60,12 +57,12 @@ public class RotateAroundProjectile : MonoBehaviour
         Instantiate(explosion, transform.position, Quaternion.identity);
         if (!isPlayerBullet)
         {
-            
             if (other.tag == "Player")
             {
                 other.GetComponent<HealthManager>().TakeDamage(damage);
                 gameObject.SetActive(false);
             }
+            Debug.Log(other.name);
         } else
         {
             if (other.tag == "Enemy")
@@ -95,6 +92,5 @@ public class RotateAroundProjectile : MonoBehaviour
             RB.velocity = Vector3.zero;
             RB.angularVelocity = Vector3.zero;
         }
-        
     }
 }

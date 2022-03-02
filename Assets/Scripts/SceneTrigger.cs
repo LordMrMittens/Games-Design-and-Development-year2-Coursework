@@ -8,6 +8,7 @@ public class SceneTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            
             if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
             {
                 GameManager.TGM.LoadPhaseTwo();

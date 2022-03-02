@@ -7,6 +7,7 @@ public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject gameOverMenu;
+    [SerializeField] GameObject victoryMenu;
     bool isPaused = false;
     public void Quit()
     {
@@ -54,6 +55,12 @@ public class MainMenuManager : MonoBehaviour
     public void GameOverMenu()
     {
         gameOverMenu.SetActive(true);
+        Time.timeScale = 0;
+        isPaused = true;
+    }
+    public void VictoryMenu()
+    {
+        victoryMenu.SetActive(true);
         Time.timeScale = 0;
         isPaused = true;
     }

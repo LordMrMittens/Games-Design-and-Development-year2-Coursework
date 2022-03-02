@@ -20,13 +20,14 @@ public class BossMissileLauncher : MonoBehaviour
     BossController bossController;
     public void ShootMissiles()
     {
-        
+
             foreach (GameObject cannon in cannons)
             {
                 GameObject missile = Instantiate(missilePrefab, cannon.transform.position, Quaternion.identity);
                 missile.GetComponent<Missile>().Fire(player.transform);
             }
-        canShoot = false;
+            canShoot = false;
+        
     }
     private void Start()
     {
@@ -34,7 +35,10 @@ public class BossMissileLauncher : MonoBehaviour
     }
     public void FireMissiles()
     {
-        StartCoroutine(ShootingSequence());
+        if (gameObject.activeInHierarchy == true)
+        {
+            StartCoroutine(ShootingSequence());
+        }
     }
     private void Update()
     {
@@ -55,7 +59,9 @@ public class BossMissileLauncher : MonoBehaviour
             z = 0;
         canShoot = true;
             yield return new WaitForSeconds(1);
-        if (canShoot)
+        if (gameObject.activeInHierarchy == false)
+        { yield break; }
+            if (canShoot)
         {
             ShootMissiles();
         }

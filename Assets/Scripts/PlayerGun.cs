@@ -24,6 +24,7 @@ public class PlayerGun : Gun
         damage = bulletDamage;
         canShoot = true;
         timeBetweenShots = setTimeBetweenShots;
+
         shotTimer = 0;
         mainCamera = Camera.main;
     }
@@ -31,6 +32,23 @@ public class PlayerGun : Gun
     {
         ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         base.Update();
+        if (playerInventory.hasFireRateUp)
+        {
+            DubleFireRate();
+            if (playerInventory.hasShotPowerUp)
+            {
+                DoubleDamage();
+            }
+            else
+            {
+                ResetDamage();
+            }
+        }
+        else
+        {
+            ResetFireRate();
+        }
+   
         if (Input.GetKey(KeyCode.Mouse0) && canShoot)
         {
             switch (playerInventory.upgrades)
@@ -121,7 +139,7 @@ public class PlayerGun : Gun
     }
     public void DubleFireRate()
     {
-        timeBetweenShots /= 3;
+        timeBetweenShots = setTimeBetweenShots/ 3;
     }
     public void ResetFireRate()
     {

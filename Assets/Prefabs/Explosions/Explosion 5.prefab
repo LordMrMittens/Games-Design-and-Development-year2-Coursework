@@ -105,9 +105,8 @@ GameObject:
   - component: {fileID: 934168684570871974}
   - component: {fileID: 25087055892399762}
   - component: {fileID: 8986397890572179301}
-  - component: {fileID: 5082746369154587280}
   m_Layer: 0
-  m_Name: Explosion 6
+  m_Name: Explosion 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4970,16 +4969,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d4d93eea1c36047940471b7e62fc35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &5082746369154587280
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3410848907728580190}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3
-  m_Center: {x: 0, y: 0, z: 0}
+  destroyAfterTime: 1.1

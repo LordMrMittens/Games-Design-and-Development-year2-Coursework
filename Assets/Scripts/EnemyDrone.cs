@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+public enum State { Patrolling, Chasing, Orbiting }
 public class EnemyDrone : EnemyPatrol
 {
-    enum State { Patrolling, Chasing, Orbiting }
-    State state;
+    
+    public State state;
     public List<GameObject> flankingPoints = new List<GameObject>();
     [SerializeField] float chaseSpeed;
     [SerializeField] float orbitDistance;
@@ -84,7 +85,7 @@ public class EnemyDrone : EnemyPatrol
                 else
                 {
                     navAgent.speed = orbitSpeed;
-                    transform.LookAt(player.transform, Vector3.forward);
+                    
                     gun.Shoot();
                 }
                 agent.SetDestination(targetFlankingPoint.transform.position);

@@ -40,4 +40,12 @@ public class CityController : MonoBehaviour
             healthManager.TakeDamage(other.GetComponent<HealthManager>().damageGiven);
         }
     }
+    public int GetHealth()
+    {
+        return healthManager.health;
+    }
+    public void SetHealth(int health)
+    {
+        healthManager.health = health;
+    }
 }

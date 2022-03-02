@@ -7,6 +7,7 @@ public class PlayerTransformationController : MonoBehaviour
     [SerializeField] GameObject[] spaceShipModels;
     [SerializeField] GameObject[] sideGuns;
     [SerializeField] GameObject[] tankModels;
+    [SerializeField] ParticleSystem transformParticles;
     public bool sidegunsActive;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,12 @@ public class PlayerTransformationController : MonoBehaviour
     {
         foreach (GameObject shipPart in spaceShipModels)
         {
-           shipPart.SetActive(true);
+            if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
+            {
+                Instantiate(transformParticles, transform.position, Quaternion.identity);
+            }
+                shipPart.SetActive(true);
+            
         }
         foreach (GameObject tankPart in tankModels)
         {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5058306623682464367}
   - component: {fileID: 7990960577410986789}
   - component: {fileID: 6899552492222699441}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: -3210020618439703213}
   - component: {fileID: 4136978610796518331}
   - component: {fileID: -3264506524029075110}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: EnemyMissile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -275,6 +275,10 @@ PrefabInstance:
     - target: {fileID: 4781360891285398716, guid: d149e58399199014b850e5fc88b79fb0, type: 3}
       propertyPath: m_Name
       value: Fire Trail
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781360891285398716, guid: d149e58399199014b850e5fc88b79fb0, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d149e58399199014b850e5fc88b79fb0, type: 3}

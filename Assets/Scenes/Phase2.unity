@@ -50673,7 +50673,7 @@ GameObject:
   - component: {fileID: 989200558}
   - component: {fileID: 989200560}
   m_Layer: 0
-  m_Name: SceneLoader
+  m_Name: EndOfScene
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -50687,7 +50687,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989200557}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 60.91823, y: 11.869063, z: 71.68475}
@@ -50715,7 +50715,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 989200557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac1620f36ff2bd14dab1b9cb780123fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e659609bd8289c48822775ee25577ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &990750065
@@ -53038,6 +53038,7 @@ MonoBehaviour:
   playerLowerBounds: 2.5
   playerUpperBounds: 2.5
   levelProgress: {fileID: 460413523}
+  cameraIsFrozen: 0
 --- !u!81 &1035550958
 AudioListener:
   m_ObjectHideFlags: 0
@@ -66511,7 +66512,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55768995f0310db43ad5f752f332b472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuManager: {fileID: 0}
   scoreText: {fileID: 0}
+  livesText: {fileID: 0}
+  missilesText: {fileID: 0}
+  devastatorText: {fileID: 0}
   targetScore: 1
   playerIsAlive: 0
   targetEnemiesOnScreenPhaseOne: 0
@@ -66525,6 +66530,7 @@ MonoBehaviour:
   missiles: 0
   homingMissiles: 0
   Devastators: 0
+  lives: 0
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78100,7 +78106,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh122556
+  m_Name: pb_Mesh585926
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -89864,6 +89870,63 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &1842320748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842320751}
+  - component: {fileID: 1842320750}
+  - component: {fileID: 1842320749}
+  m_Layer: 0
+  m_Name: SceneLoader (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1842320749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842320748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1620f36ff2bd14dab1b9cb780123fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1842320750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842320748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60.91823, y: 11.869063, z: 71.68475}
+  m_Center: {x: -16.542503, y: -2.9645314, z: 2.1376247}
+--- !u!4 &1842320751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842320748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 115.54, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1842454203
 GameObject:
   m_ObjectHideFlags: 0

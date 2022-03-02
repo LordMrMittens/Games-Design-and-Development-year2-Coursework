@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
+    [SerializeField] BossController bossController;
     [SerializeField] int totalHealth;
     public BossHealthBar healthbar;
     public int health { get; set; }
@@ -20,6 +21,8 @@ public class BossHealth : MonoBehaviour
         healthbar.SetHealth(health);
         if (health < 0)
         {
+            GameManager.TGM.EndPhaseThree();
+            bossController.EnableExplosions();
             Debug.Log("Boss destroyed");
         }
     }

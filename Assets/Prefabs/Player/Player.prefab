@@ -679,6 +679,7 @@ MonoBehaviour:
   tankModels:
   - {fileID: 8887434843401470475}
   - {fileID: 6414945001831631046}
+  transformParticles: {fileID: 4221874777837371163, guid: 25781528b1705b1409b3adaff9863633, type: 3}
   sidegunsActive: 0
 --- !u!199 &3477469130298083019
 ParticleSystemRenderer:
@@ -1579,7 +1580,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 40
+      scalar: 0
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6597,6 +6598,10 @@ PrefabInstance:
     - target: {fileID: 4781360891285398716, guid: d149e58399199014b850e5fc88b79fb0, type: 3}
       propertyPath: m_Name
       value: Fire Trail
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781360891285398716, guid: d149e58399199014b850e5fc88b79fb0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d149e58399199014b850e5fc88b79fb0, type: 3}

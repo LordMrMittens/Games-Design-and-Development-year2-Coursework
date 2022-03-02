@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
+    [SerializeField] float destroyAfterTime;
     public int damageDone { get; set; }
     void Start()
     {
-        Destroy(gameObject, 1.1f);
+        Destroy(gameObject, destroyAfterTime);
     }
     private void OnTriggerEnter(Collider other)
     {

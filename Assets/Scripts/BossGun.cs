@@ -17,13 +17,18 @@ public class BossGun : Gun
     }
     public void BulletHellAttack()
     {
-        StartCoroutine(bulletHell());
+        if (gameObject.activeInHierarchy == true)
+        {
+            StartCoroutine(bulletHell());
+        }
     }
     public void LaserAttack()
     {
-        laserDurationTimer = 0;
-        StartCoroutine(LaserSequence());
-        
+        if (gameObject.activeInHierarchy == true)
+        {
+            laserDurationTimer = 0;
+            StartCoroutine(LaserSequence());
+        }
     }
     public override void Update()
     {
@@ -50,7 +55,11 @@ public class BossGun : Gun
         bossController.laserIsReady = false;
         for (int i = 0; i < 20; i++)
         {
-            foreach (Transform target in bulletHellTargets)
+            if (gameObject.activeInHierarchy == false)
+            {
+                break;
+            }
+                foreach (Transform target in bulletHellTargets)
             {
                 Shoot(target);
             }
@@ -58,7 +67,6 @@ public class BossGun : Gun
         }
         bossController.bulletHellTimer = 0;
         bossController.buletHellIsReady = false;
-        
     }
     IEnumerator LaserSequence()
     {

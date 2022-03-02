@@ -28,13 +28,16 @@ public class PlayerMovementController : Mover
     }
     public override void Move(float horizontalMovement, float verticalMovement)
     {
-        if (altitude < cameraControls.altitude - cameraControls.playerLowerBounds)
+        if (!cameraControls.cameraIsFrozen)
         {
+            if (altitude < cameraControls.altitude - cameraControls.playerLowerBounds)
+            {
                 altitude = cameraControls.altitude - cameraControls.playerLowerBounds;
-        }
-            if(altitude > cameraControls.altitude + cameraControls.playerUpperBounds)
-        {
-            altitude = cameraControls.altitude + cameraControls.playerUpperBounds;
+            }
+            if (altitude > cameraControls.altitude + cameraControls.playerUpperBounds)
+            {
+                altitude = cameraControls.altitude + cameraControls.playerUpperBounds;
+            }
         }
         base.Move(horizontalMovement, verticalMovement);
     }

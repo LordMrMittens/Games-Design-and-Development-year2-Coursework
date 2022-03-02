@@ -14,22 +14,6 @@ public class ObjectPooler : MonoBehaviour
     public List<GameObject> pooledBossBullets = new List<GameObject>();
     public GameObject bossBullets;
     public int bossBulletsToPool;
-    /*    public List<GameObject> pooledEnemySquads = new List<GameObject>();
-        public GameObject enemySquad;
-        public int enemySquadsToPool;
-        public List<GameObject> pooledEnemyKamikazes = new List<GameObject>();
-        public GameObject enemyKamikaze;
-        public int enemyKamikazesToPool;
-        public List<GameObject> pooledEnemyBombers = new List<GameObject>();
-        public GameObject enemyBomber;
-        public int enemyBombersToPool;
-        public List<GameObject> pooledEnemyDrones = new List<GameObject>();
-        public GameObject enemyDrone;
-        public int enemyDronesToPool;
-        public List<GameObject> pooledEnemyHydras = new List<GameObject>();
-        public GameObject enemyHydra;
-        public int enemyHydrasToPool;*/
-
 
     private void Awake()
     {
@@ -41,11 +25,6 @@ public class ObjectPooler : MonoBehaviour
         CreateObjectPool(pooledPlayerBullets, playerBullets, playerBulletsToPool);
         CreateObjectPool(pooledEnemyBullets, enemyBullets, enemyBulletsToPool);
         CreateObjectPool(pooledBossBullets, bossBullets, bossBulletsToPool);
-        //CreateObjectPool(pooledEnemySquads, enemySquad,enemySquadsToPool);
-        //CreateObjectPool(pooledEnemyKamikazes, enemyKamikaze,enemyKamikazesToPool);
-        //CreateObjectPool(pooledEnemyBombers, enemyBomber,enemyBombersToPool);
-        // CreateObjectPool(pooledEnemyDrones, enemyDrone,enemyDronesToPool);
-        //CreateObjectPool(pooledEnemyHydras, enemyHydra, enemyHydrasToPool);
     }
 
     private void CreateObjectPool(List<GameObject> listOfObjects, GameObject prefab, int numberToPool)

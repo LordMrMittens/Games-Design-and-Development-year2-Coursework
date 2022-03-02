@@ -23,20 +23,19 @@ public class PlayerInventory : MonoBehaviour
     public ParticleSystem.EmissionModule emmiter;
     void Start()
     {
-        UpdateFromGameManager();
-
         playerTransformation = GetComponent<PlayerTransformationController>();
         emmiter = shield.emission;
+        UpdateFromGameManager();
     }
 
     private void UpdateFromGameManager()
     {
-        hasDoubleShot = GameManager.TGM.playerhasDoubleShot;
-        hasFireRateUp = GameManager.TGM.playerhasFireRate;
-        hasShotPowerUp = GameManager.TGM.playerhasDoubleDamage;
+        hasDoubleShot = GameManager.TGM.playerHasDoubleShot;
+        hasFireRateUp = GameManager.TGM.playerHasFireRate;
+        hasShotPowerUp = GameManager.TGM.playerHasDoubleDamage;
         missiles = GameManager.TGM.missiles;
         homingMissiles = GameManager.TGM.homingMissiles;
-        devastators = GameManager.TGM.Devastators;
+        devastators = GameManager.TGM.devastators;
     }
 
     public void ResetInventory()
@@ -67,16 +66,24 @@ public class PlayerInventory : MonoBehaviour
         }
         if (hasDoubleShot)
         {
-            upgrades = PlayerUpgrades.doubleShot;
+            
+            if (hasFireRateUp)
+            {
+                
+                if (hasShotPowerUp)
+                {
+                    upgrades = PlayerUpgrades.doubleDamage;
+                }
+                else
+                {
+                    upgrades = PlayerUpgrades.fireRate;
+                }
+            } else
+            {
+                upgrades = PlayerUpgrades.doubleShot;
+            }
         }
-        if (hasFireRateUp)
-        {
-            upgrades = PlayerUpgrades.fireRate;
-        }
-        if (hasShotPowerUp)
-        {
-            upgrades = PlayerUpgrades.doubleDamage;
-        } else
+ else
         {
             upgrades = PlayerUpgrades.none;
         }
@@ -86,11 +93,11 @@ public class PlayerInventory : MonoBehaviour
     private void UpdateGameManager()
     {
 
-        GameManager.TGM.playerhasDoubleShot = hasDoubleShot;
-        GameManager.TGM.playerhasFireRate = hasFireRateUp;
-        GameManager.TGM.playerhasDoubleDamage = hasShotPowerUp;
+        GameManager.TGM.playerHasDoubleShot = hasDoubleShot;
+        GameManager.TGM.playerHasFireRate = hasFireRateUp;
+        GameManager.TGM.playerHasDoubleDamage = hasShotPowerUp;
         GameManager.TGM.missiles = missiles;
         GameManager.TGM.homingMissiles = homingMissiles;
-        GameManager.TGM.Devastators = devastators;
+        GameManager.TGM.devastators = devastators;
     }
 }

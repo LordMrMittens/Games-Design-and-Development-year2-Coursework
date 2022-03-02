@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241988363947543999}
   - component: {fileID: 7448219216887358693}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4702533700937220365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalPosition: {x: -0.081, y: -0, z: -0.05}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 7280299743685637171}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4061140153766801564}
   - component: {fileID: 5842863777432026178}
   - component: {fileID: 5501815595940521381}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6777615333557091811}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.152, z: 0}
+  m_LocalPosition: {x: 0.03, y: -0.08, z: 0.13}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 7280299743685637171}
@@ -377,7 +377,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 25
+      scalar: 10
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4911,8 +4911,8 @@ GameObject:
   - component: {fileID: 7280299743685637167}
   - component: {fileID: 5381575578663692849}
   - component: {fileID: -7301726225194568337}
-  m_Layer: 12
-  m_Name: BossBulletPrototype
+  m_Layer: 9
+  m_Name: EnemyBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4927,7 +4927,7 @@ Transform:
   m_GameObject: {fileID: 7280299743685637164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -34.7, y: 6.85, z: 9.88}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4061140153766801564}
   - {fileID: 1241988363947543999}

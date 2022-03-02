@@ -13,13 +13,13 @@ public class CameraFollow : Mover
     public float playerUpperBounds;
     PlayerMovementController playerMovementController;
     [SerializeField] LevelProgressBar levelProgress;
+    public bool cameraIsFrozen;
     public override void Start()
     {
         base.Start();
         radiusOffset = offset;
         
     }
-
     void LateUpdate()
     {if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseOne)
         {
@@ -54,8 +54,10 @@ public class CameraFollow : Mover
                     
                 }
                 rotation = playerMovementController.rotation;
-
-                Move(0, GameManager.TGM.constantScrollingSpeed);
+                if (!cameraIsFrozen)
+                {
+                    Move(0, GameManager.TGM.constantScrollingSpeed);
+                }
                 if (levelProgress != null)
                 {
                     levelProgress.SetProgress(Mathf.RoundToInt(transform.position.y));
@@ -90,4 +92,5 @@ public class CameraFollow : Mover
 
         KeepFacingCenter();
     }
+    
 }

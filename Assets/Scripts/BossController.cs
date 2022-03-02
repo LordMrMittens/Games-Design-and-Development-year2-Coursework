@@ -25,8 +25,8 @@ public class BossController : MonoBehaviour
     bool attackIsReady = false;
     [SerializeField] float rotateSpeed;
     Vector3 currentEulerAngles = new Vector3(0, 0, 0);
+    [SerializeField] ParticleSystem bossExplosion;
     public float z {get;set;}
-    
     void Start()
     {
         bossGuns = GetComponentsInChildren<BossGun>();
@@ -37,9 +37,7 @@ public class BossController : MonoBehaviour
         bulletHellTimer = 0;
         missileTimer = 0;
         electricTimer = 0;
-
     }
-
     void Update()
     {
         UpdateAttackTimers();
@@ -47,15 +45,11 @@ public class BossController : MonoBehaviour
         currentEulerAngles += new Vector3(0, z, 0) * Time.deltaTime * rotateSpeed;
         transform.localEulerAngles = currentEulerAngles;
     }
-
     private void TryAttack()
     {
-        
         if (attackIsReady == true)
         {
             int attackChosen = ChooseAttack();
-
-            
             switch (attackChosen)
             {
                 case 0: case 1:
@@ -96,7 +90,6 @@ public class BossController : MonoBehaviour
                             }
                         }
                     }
-                  
                     break;
                 case 5:
                     if (electricIsReady)
@@ -106,17 +99,13 @@ public class BossController : MonoBehaviour
                             if (node.enabled)
                             {
                                 node.ElectricAttack();
-                                
+                                electricIsReady = false;
                             }
                         }
-                    }
-                    
+                    }   
                     break;
-
             }
             attackTimer = 0;
-            
-
         }
     }
 
@@ -148,12 +137,17 @@ public class BossController : MonoBehaviour
             electricIsReady = true;
         }
     }
-
     private int ChooseAttack()
     {
         int chosenAttack = Random.Range(1, 6);
-        
         return chosenAttack;
+    }
+    public void EnableExplosions()
+    {
+        bossExplosion.gameObject.SetActive(true);
+    }
+    public void DeathRay()
+    {
 
     }
 }
