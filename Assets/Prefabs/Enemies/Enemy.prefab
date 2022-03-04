@@ -63,6 +63,7 @@ MonoBehaviour:
   speed: 0
   origin: {x: 0, y: 0, z: 0}
   movementSpeed: 0
+  healthManager: {fileID: -5142221258851472955}
 --- !u!114 &-5142221258851472955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +84,9 @@ MonoBehaviour:
   shields: 0
   isBossComponent: 0
   explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
+  inventory: {fileID: 0}
+  devastator: {fileID: 0}
+  isBomb: 0
 --- !u!1001 &182873252525737045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,6 +153,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dc88b342456963040a20b4d295841911, type: 3}
       propertyPath: m_Name
       value: alien_bot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dc88b342456963040a20b4d295841911, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: dc88b342456963040a20b4d295841911, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc88b342456963040a20b4d295841911, type: 3}

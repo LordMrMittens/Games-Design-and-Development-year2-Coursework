@@ -66,9 +66,8 @@ public class EnemyMarchController : Mover
         yield return new WaitForSeconds(.3f);
         verticalMovement = 0;
         horizontalMovement = setHorizontalMovement;
-        if(transform.position.y > 0)
-        {
+
             StartCoroutine(changeDirection());
-        }
+        
     }
 }

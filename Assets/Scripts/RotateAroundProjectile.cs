@@ -62,7 +62,7 @@ public class RotateAroundProjectile : MonoBehaviour
                 other.GetComponent<HealthManager>().TakeDamage(damage);
                 gameObject.SetActive(false);
             }
-            Debug.Log(other.name);
+        
         } else
         {
             if (other.tag == "Enemy")

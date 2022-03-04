@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum pickupType { Repair, Shield, Missile, HomingMissile, Devastator, DoubleShot, RateOfFireUp, ShotPowerUp }
+public enum pickupType { Repair, Shield, Missile, Devastator, DoubleShot, RateOfFireUp, ShotPowerUp }
 public class PickupSpawnManager : MonoBehaviour
 {
     PlayerInventory playerInventory;
@@ -10,7 +10,6 @@ public class PickupSpawnManager : MonoBehaviour
     [SerializeField] GameObject pickupPrefab;
     public static PickupSpawnManager PSM;
     public bool pickupIsPresent = false;
-    public bool debug = true;/// delete this after
     private void Start()
     {
         PSM = this;
@@ -28,7 +27,7 @@ public class PickupSpawnManager : MonoBehaviour
 
     public void DecideWhichPickUpToSpawn(Vector3 location)
     {
-        if (debug)
+        if (!pickupIsPresent)
         {
             int powerUpSelection = Random.Range(0, 5);
             if (powerUpSelection == 0)
@@ -60,14 +59,14 @@ public class PickupSpawnManager : MonoBehaviour
                 }
                 else
                 {
-                    SpawnPickup(pickupType.HomingMissile, location);
+                    SpawnPickup(pickupType.Missile, location);
                 }
             } else if (powerUpSelection == 2)
             {
                 SpawnPickup(pickupType.Missile, location);
             } else if (powerUpSelection == 3)
             {
-                SpawnPickup(pickupType.HomingMissile, location);
+                SpawnPickup(pickupType.Shield, location);
             } else
             {
                 SpawnPickup(pickupType.Devastator, location);

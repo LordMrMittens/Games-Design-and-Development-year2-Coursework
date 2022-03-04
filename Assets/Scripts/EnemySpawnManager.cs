@@ -106,9 +106,9 @@ public class EnemySpawnManager : MonoBehaviour
             }
             else if (GameManager.TGM.levelPhase == GameManager.Phase.PhaseTwo)
             {
-                if (GameManager.TGM.playerIsAlive)
+                if (GameManager.TGM.playerIsAlive && player != null)
                 {
-                    spawnpoint = new Spawner() { rotation = playerMovementController.rotation + Random.Range(-90, 90), altitude = playerMovementController.altitude + 5 };
+                    spawnpoint = new Spawner() { rotation = playerMovementController.rotation + Random.Range(-90, 90), altitude = playerMovementController.altitude + 10 };
 
                     unitToSpawn = Random.Range(1, 5);
                 }

@@ -41,7 +41,8 @@ public class GameManager : MonoBehaviour
     public int lives;
     [SerializeField] float phaseThreeTimer;
     float phaseThreeTimeRemaning;
-    int colonyHealth;
+    public int colonyHealth;
+    bool cityHealthHasBeenSet = false;
     CityController city;
     void Start()
     {
@@ -98,8 +99,13 @@ public class GameManager : MonoBehaviour
             if(city == null)
             {
                 city = FindObjectOfType<CityController>();
+                
+                
+            }if (city != null && !cityHealthHasBeenSet)
+            {
                 city.SetHealth(colonyHealth);
-                Debug.Log("DoingThis");
+                cityHealthHasBeenSet = true;
+                
             }
             if (thePlayer == null)
             {
@@ -157,8 +163,8 @@ public class GameManager : MonoBehaviour
     }
     private void EndPhaseOne()
     {
-        targetEnemiesOnScreen = -10000;
-        colonyHealth = FindObjectOfType<CityController>().GetHealth();
+        targetEnemiesOnScreen = 0;
+        
         if (enemiesOnScreen <= 0)
         {
             StartCoroutine(EndPhaseOneWait());
@@ -166,30 +172,44 @@ public class GameManager : MonoBehaviour
     }
     public void EndPhaseTwo()
     {
-        targetEnemiesOnScreen = -10000;
+        targetEnemiesOnScreen = -0;
 
             StartCoroutine(EndPhaseTwoWait());
         
     }
     public void EndPhaseThree()
     {
-        targetEnemiesOnScreen = -10000;
+        targetEnemiesOnScreen = 0;
 
             StartCoroutine(EndPhaseThreeWait());
         
     }
     IEnumerator EndPhaseOneWait()
     {
+        DestroyAllEnemies();
         playerCanMove = false;
-
         yield return new WaitForSeconds(1);
         playerTransformation.TransformIntoShip();
         yield return new WaitForSeconds(2);
         playerMovementController.verticalMovement = constantScrollingSpeed * 10;
     }
+
+    private static void DestroyAllEnemies()
+    {
+        HealthManager[] enemies = FindObjectsOfType<HealthManager>();
+        foreach (var enemy in enemies)
+        {
+            if (enemy.tag == "Enemy")
+            {
+                enemy.GetComponent<HealthManager>().DestroyThisObject();
+            }
+        }
+    }
+
     IEnumerator EndPhaseTwoWait()
     {
-        
+        targetEnemiesOnScreen = 0;
+        DestroyAllEnemies();
         playerCanMove = false;
         yield return new WaitForSeconds(1);
         CameraFollow camera = FindObjectOfType<CameraFollow>();
@@ -203,6 +223,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(5);
         mainMenuManager.VictoryMenu();
     }
+
     public void LoadPhaseOne()
     {
         timerText.gameObject.SetActive(false);
@@ -212,8 +233,8 @@ public class GameManager : MonoBehaviour
     {
         timerText.gameObject.SetActive(false);
         Destroy(thePlayer);
-        SceneManager.LoadScene("Phase2");
-        OnLevelWasLoaded();
+        SceneManager.LoadScene(4);
+        LoadLevel();
         levelPhase = Phase.PhaseTwo;
         playerCanMove = true;
         
@@ -223,8 +244,8 @@ public class GameManager : MonoBehaviour
         timerText.gameObject.SetActive(true);
         playerIsAlive = false;
         Destroy(thePlayer);
-        SceneManager.LoadScene("Phase3");
-        OnLevelWasLoaded();
+        SceneManager.LoadScene(6);
+        LoadLevel();
         levelPhase = Phase.PhaseThree;
         phaseThreeTimeRemaning = phaseThreeTimer;
         playerCanMove = true;
@@ -234,7 +255,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
     }
-    private void OnLevelWasLoaded()
+    private void LoadLevel()
     {
         DynamicGI.UpdateEnvironment();
     }

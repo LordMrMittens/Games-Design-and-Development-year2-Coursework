@@ -16,7 +16,7 @@ public class BossDeathExplosion : MonoBehaviour
 
         if (exploding)
         {
-            t += Time.time / explosionTime;
+            t += Time.deltaTime * explosionTime;
             size = Mathf.Lerp(0, extendedSize, t);
             transform.localScale = new Vector3(size, size, size);
             if (size >= extendedSize)

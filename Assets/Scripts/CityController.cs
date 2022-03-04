@@ -38,6 +38,7 @@ public class CityController : MonoBehaviour
             other.gameObject.SetActive(false);
             
             healthManager.TakeDamage(other.GetComponent<HealthManager>().damageGiven);
+            GameManager.TGM.colonyHealth = GetHealth();
         }
     }
     public int GetHealth()

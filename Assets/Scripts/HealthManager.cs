@@ -59,7 +59,14 @@ public class HealthManager : MonoBehaviour
             }
         }
     }
-    private void DestroyThisObject()
+    private void Update()
+    {
+        if (transform.position.y < Camera.main.transform.position.y - 5 && gameObject.tag != "City")
+        {
+            Destroy(gameObject);
+        }
+    }
+    public void DestroyThisObject()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
         if (gameObject.tag == "Enemy")
@@ -124,9 +131,5 @@ public class HealthManager : MonoBehaviour
             }
         }
 
-        if (transform.position.y < Camera.main.transform.position.y - 20)
-        {
-            Destroy(gameObject);
-        }
     }
 }

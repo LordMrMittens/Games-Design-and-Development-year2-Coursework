@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 4.5
+  positionTwoOffset: 4
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 4.5
+  positionTwoOffset: 4
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -14189,7 +14189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -14234,7 +14234,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 2.3
+  positionTwoOffset: 1.8
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -15173,7 +15173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -21810,7 +21810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -22711,7 +22711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -23205,7 +23205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -23250,7 +23250,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 4.5
+  positionTwoOffset: 4
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -37403,7 +37403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -53170,7 +53170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -59677,7 +59677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -64999,7 +64999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -65044,7 +65044,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 2.3
+  positionTwoOffset: 1.8
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -68169,7 +68169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -68214,7 +68214,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 4.5
+  positionTwoOffset: 4
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -69152,7 +69152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -69197,7 +69197,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 2.3
+  positionTwoOffset: 1.8
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -74247,7 +74247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -75027,7 +75027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -75072,7 +75072,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 2.3
+  positionTwoOffset: 1.8
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -75344,6 +75344,133 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &1308429562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1308429564}
+  - component: {fileID: 1308429563}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1308429563
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308429562}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2a65e290b29e651498d69c5a165258ff, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.517
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1308429564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308429562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.657466, y: 144.12053, z: 21.16431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1310511524
 GameObject:
   m_ObjectHideFlags: 0
@@ -76128,7 +76255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   extendedLength: 13
   extendedWidth: 6
-  laserTime: 150
+  laserTime: 1.2
   explosion: {fileID: 1734094742}
   shootingLaser: 0
 --- !u!4 &1359920979
@@ -84057,7 +84184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -88317,7 +88444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   extendedSize: 45
-  explosionTime: 150
+  explosionTime: 2
   exploding: 0
 --- !u!23 &1734094743
 MeshRenderer:
@@ -89940,7 +90067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803108228}
   m_LocalRotation: {x: -0, y: 0.55238366, z: -0, w: 0.83359003}
-  m_LocalPosition: {x: 9.36, y: 4.81, z: -5.64}
+  m_LocalPosition: {x: 9.36, y: 4.42, z: -5.64}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 847656926}
@@ -89965,7 +90092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -90010,7 +90137,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 1
+  positionTwoOffset: 0.5
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -101995,7 +102122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982824620}
   m_LocalRotation: {x: -0, y: -0.028411238, z: -0, w: 0.99959636}
-  m_LocalPosition: {x: 9.67, y: 4.81, z: 5.32}
+  m_LocalPosition: {x: 9.67, y: 4.42, z: 5.32}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2012666552}
@@ -102020,7 +102147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -102065,7 +102192,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 1
+  positionTwoOffset: 0.5
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -102223,7 +102350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -103189,7 +103316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044821194}
   m_LocalRotation: {x: -0, y: 0.46224535, z: -0, w: 0.88675207}
-  m_LocalPosition: {x: -9.81, y: 4.81, z: 4.78}
+  m_LocalPosition: {x: -9.81, y: 4.42, z: 4.78}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1107502394}
@@ -103214,7 +103341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -103259,7 +103386,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 1
+  positionTwoOffset: 0.5
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -103549,7 +103676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -104748,7 +104875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -105327,7 +105454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147771985469}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.97, y: 4.81, z: -4.64}
+  m_LocalPosition: {x: -9.97, y: 4.42, z: -4.64}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1151388028370560479}
@@ -105412,7 +105539,7 @@ MonoBehaviour:
   timeBetweenShots: 0.2
   positionOne: 0
   positionTwo: 0
-  positionTwoOffset: 1
+  positionTwoOffset: 0.5
   moveSpeed: 5
   electricAttackDuration: 3
   electricAttackTimer: 0
@@ -105445,7 +105572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -105524,7 +105651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c0c221e99d7e14787e9cecde60aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 250
   health: 0
   damageGiven: 5
   destroyOnTouch: 0
@@ -105571,13 +105698,13 @@ MonoBehaviour:
   - {fileID: 919132148329074844}
   electricnodes:
   - {fileID: 919132147771985470}
-  timeBetweenLasers: 15
+  timeBetweenLasers: 6
   laserIsReady: 0
-  timeBetweenBulletHell: 15
+  timeBetweenBulletHell: 3
   buletHellIsReady: 0
   timeBetweenMissiles: 10
   missileIsReady: 0
-  timeBetweenElectric: 20
+  timeBetweenElectric: 11
   electricIsReady: 0
   timeBetweenAttacks: 5
   rotateSpeed: 30
@@ -105595,7 +105722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossController: {fileID: 919132149152553507}
-  totalHealth: 1500
+  totalHealth: 3750
   healthbar: {fileID: 412064165}
 --- !u!4 &1151388027855485817
 Transform:

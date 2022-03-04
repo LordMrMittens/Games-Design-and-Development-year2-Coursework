@@ -159,9 +159,10 @@ public class PlayerGun : Gun
                 distance = Vector3.Distance(transform.position, enemy.transform.position);
                 if (shortestDistance > distance)
                 {
-                    if (enemy.GetComponent<HealthManager>().isBomb == false)
-                    shortestDistance = distance;
-                    closestEnemy = enemy;
+
+                        shortestDistance = distance;
+                        closestEnemy = enemy;
+                    
                 }
 
             }

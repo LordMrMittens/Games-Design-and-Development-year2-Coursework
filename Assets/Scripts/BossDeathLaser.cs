@@ -23,11 +23,11 @@ public class BossDeathLaser : MonoBehaviour
     {
          if (shootingLaser)
             {
-                t += Time.time / laserTime;
+                t += Time.deltaTime*laserTime;
                 y = Mathf.Lerp(0, extendedLength, t);
                 if (y >= extendedLength)
                 {
-                    wt += Time.time / (laserTime * 15);
+                    wt += Time.deltaTime;
                     width = Mathf.Lerp(0.1f, extendedWidth, wt);
                 }
                 transform.localScale = new Vector3(width, y, width);
@@ -41,5 +41,8 @@ public class BossDeathLaser : MonoBehaviour
     public void ShootLaser()
     {
         shootingLaser = true;
+    }
+    IEnumerator ShootTheLaser() {
+        yield break;
     }
 }

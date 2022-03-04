@@ -13,9 +13,42 @@ public class MainMenuManager : MonoBehaviour
     {
         Application.Quit();
     }
-    public void LoadSceneOne()
+    public void LoadScreenOne()
     {
         SceneManager.LoadScene(1);
+        isPaused = false;
+        Time.timeScale = 0;
+    }
+    public void LoadSceneOne()
+    {
+        SceneManager.LoadScene(2);
+        isPaused = false;
+        Time.timeScale = 1;
+    }
+    public void LoadScreenTwo()
+    {
+        SceneManager.LoadScene(3);
+        isPaused = false;
+        Time.timeScale = 0;
+    }
+    public void LoadSceneTwo()
+    {
+        SceneManager.LoadScene(4);
+        GameManager.TGM.LoadPhaseTwo();
+        isPaused = false;
+        Time.timeScale = 1;
+    }
+    public void LoadScreenThree()
+    {
+        SceneManager.LoadScene(5);
+
+        isPaused = false;
+        Time.timeScale = 0;
+    }
+    public void LoadSceneThree()
+    {
+        SceneManager.LoadScene(6);
+        GameManager.TGM.LoadPhaseThree();
         isPaused = false;
         Time.timeScale = 1;
     }

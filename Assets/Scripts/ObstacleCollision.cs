@@ -8,7 +8,7 @@ public class ObstacleCollision : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Colliding with player");
+            
             other.GetComponent<HealthManager>().TakeDamage(10000);
             Destroy(gameObject);
         }

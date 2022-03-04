@@ -29,9 +29,6 @@ public class PickUp : MonoBehaviour
             case pickupType.Missile:
                 pickUpMeshes[3].SetActive(true);
                 break;
-            case pickupType.HomingMissile:
-                pickUpMeshes[3].SetActive(true);
-                break;
             case pickupType.DoubleShot:
                 pickUpMeshes[1].SetActive(true);
                 break;
@@ -83,9 +80,6 @@ public class PickUp : MonoBehaviour
                     break;
                 case pickupType.Missile:
                     playerInventory.missiles += 5;
-                    break;
-                case pickupType.HomingMissile:
-                    playerInventory.homingMissiles += 2;
                     break;
                 case pickupType.DoubleShot:
                     playerInventory.hasDoubleShot = true;
