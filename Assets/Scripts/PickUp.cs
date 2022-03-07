@@ -7,7 +7,7 @@ public class PickUp : MonoBehaviour
 {
     public pickupType pickup;
     [SerializeField] GameObject[] pickUpMeshes;
-
+    
     public float moveSpeed;
     public float timeActive;
     float destructionConter;

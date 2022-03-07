@@ -8,6 +8,7 @@ public class BossDeathLaser : MonoBehaviour
     [SerializeField] float extendedWidth;
     [SerializeField] float laserTime;
     [SerializeField] BossDeathExplosion explosion;
+    [SerializeField] AudioSource laserAudio;
     float width = .01f;
     float y = .01f;
 
@@ -23,6 +24,7 @@ public class BossDeathLaser : MonoBehaviour
     {
          if (shootingLaser)
             {
+            laserAudio.Play();
                 t += Time.deltaTime*laserTime;
                 y = Mathf.Lerp(0, extendedLength, t);
                 if (y >= extendedLength)

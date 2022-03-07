@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossDeathExplosion : MonoBehaviour
 {
+    [SerializeField] AudioSource explosionAudio;
     [SerializeField] float extendedSize;
     [SerializeField] float explosionTime;
     float width = .01f;
@@ -16,6 +17,7 @@ public class BossDeathExplosion : MonoBehaviour
 
         if (exploding)
         {
+            explosionAudio.Play();
             t += Time.deltaTime * explosionTime;
             size = Mathf.Lerp(0, extendedSize, t);
             transform.localScale = new Vector3(size, size, size);
