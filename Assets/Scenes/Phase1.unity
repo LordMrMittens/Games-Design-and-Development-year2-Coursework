@@ -2061,7 +2061,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -62237,10 +62237,10 @@ MonoBehaviour:
   missilesText: {fileID: 246312773}
   devastatorText: {fileID: 291469301}
   timerText: {fileID: 437595282}
-  targetScore: 2000
+  targetScore: 1500
   playerIsAlive: 0
   targetEnemiesOnScreenPhaseOne: 10
-  targetEnemiesOnScreenPhaseTwo: 30
+  targetEnemiesOnScreenPhaseTwo: 50
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
   constantScrollingSpeed: 0.13
@@ -62251,7 +62251,7 @@ MonoBehaviour:
   homingMissiles: 0
   devastators: 0
   lives: 0
-  phaseThreeTimer: 150
+  phaseThreeTimer: 100
   colonyHealth: 0
 --- !u!114 &1327713130
 MonoBehaviour:
