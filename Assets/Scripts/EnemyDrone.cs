@@ -12,8 +12,7 @@ public class EnemyDrone : EnemyPatrol
     [SerializeField] float orbitDistance;
     [SerializeField] float orbitSpeed;
     [SerializeField] float dodgeSpeed;
-    GameObject orbitCentre;
-    Vector3 orbitOrigin;
+
     NavMeshAgent navAgent;
     Transform targetFlankingPoint;
     int currentFlankingPoint;

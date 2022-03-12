@@ -5,17 +5,18 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     public int maxHealth;
-    public int health;
+    public int health { get; set; }
     public int damageGiven;
     [SerializeField] bool destroyOnTouch;
     [SerializeField] int pointsValue;
-    public bool shields;
+    public bool shields { get; set; }
     public bool isBossComponent;
     BossHealth bossHealth;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] PlayerInventory inventory;
     [SerializeField] GameObject devastator;
     public bool isBomb;
+    public bool isCity;
 
     private void Start()
     {
@@ -61,9 +62,9 @@ public class HealthManager : MonoBehaviour
     }
     private void Update()
     {
-        if (transform.position.y < Camera.main.transform.position.y - 5 && gameObject.tag != "City")
+        if (transform.position.y < Camera.main.transform.position.y - 5 && !isCity)
         {
-            Destroy(gameObject);
+            DestroyThisObject();
         }
     }
     public void DestroyThisObject()

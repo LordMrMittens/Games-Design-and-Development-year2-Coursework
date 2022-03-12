@@ -8,7 +8,7 @@ public class PlayerTransformationController : MonoBehaviour
     [SerializeField] GameObject[] sideGuns;
     [SerializeField] GameObject[] tankModels;
     [SerializeField] ParticleSystem transformParticles;
-    public bool sidegunsActive;
+    public bool sidegunsActive { get; set; }
     bool hasDoneTransformation=false;
     // Start is called before the first frame update
     void Start()

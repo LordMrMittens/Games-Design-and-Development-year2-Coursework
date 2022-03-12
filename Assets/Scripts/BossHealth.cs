@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
     [SerializeField] BossController bossController;
+    [SerializeField] EndingSoundManager endingSound;
     [SerializeField] int totalHealth;
     public BossHealthBar healthbar;
     public int health { get; set; }
@@ -23,7 +24,7 @@ public class BossHealth : MonoBehaviour
         {
             GameManager.TGM.EndPhaseThree();
             bossController.EnableExplosions();
-            Debug.Log("Boss destroyed");
+            endingSound.PlaySource(endingSound.spaceShipExplosion);
         }
     }
 }

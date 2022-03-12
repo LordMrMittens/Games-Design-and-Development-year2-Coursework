@@ -5016,7 +5016,7 @@ MonoBehaviour:
   distanceFromCenter: 0
   centerCollider: {fileID: 0}
   RB: {fileID: 0}
-  damage: 5
+  damage: 10
   radiusOffset: 0.4
   isPlayerBullet: 0
   pointLight: {fileID: 7448219216887358693}
@@ -5050,8 +5050,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 880ef3f6e6987a64f8e411bee31d62d8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.673
+  m_Pitch: 0.035
   Loop: 0
   Mute: 0
   Spatialize: 0

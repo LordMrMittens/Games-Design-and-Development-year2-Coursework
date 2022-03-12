@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Missile.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PickupSpawnManager.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\BossElectricNodes.cs" />
     <Compile Include="Assets\Scripts\ObstacleCollision.cs" />
     <Compile Include="Assets\Scripts\AgentMover.cs" />
@@ -111,7 +112,7 @@
     <Compile Include="Assets\Scripts\RotateAroundProjectile.cs" />
     <Compile Include="Assets\Scripts\EnemySpawnManager.cs" />
     <Compile Include="Assets\Scripts\Obsolete\ObjectGravity.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\EndingSoundManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

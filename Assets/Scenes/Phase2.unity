@@ -8990,7 +8990,7 @@ GameObject:
   - component: {fileID: 212793616}
   - component: {fileID: 212793615}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63394,15 +63394,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 3615325743660499504, guid: 9395a2c16bda8c94aae4d96f2c20e7b0, type: 3}
   timeToSpawnPlayer: 2
   constantScrollingSpeed: 0.08
-  playerHasDoubleShot: 0
-  playerHasFireRate: 0
-  playerHasDoubleDamage: 0
-  missiles: 0
-  homingMissiles: 0
-  devastators: 0
-  lives: 0
   phaseThreeTimer: 0
-  colonyHealth: 0
 --- !u!114 &1327713130
 MonoBehaviour:
   m_ObjectHideFlags: 0

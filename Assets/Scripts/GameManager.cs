@@ -32,16 +32,16 @@ public class GameManager : MonoBehaviour
     public float playerSpawnRotation { get; set; }
     public float playerSpawnAltitude { get; set; }
 
-    public bool playerHasDoubleShot;
-    public bool playerHasFireRate;
-    public bool playerHasDoubleDamage;
-    public int missiles;
-    public int homingMissiles;
-    public int devastators;
-    public int lives;
+    public bool playerHasDoubleShot { get; set; }
+    public bool playerHasFireRate { get; set; }
+    public bool playerHasDoubleDamage { get; set; }
+    public int missiles { get; set; }
+    public int homingMissiles { get; set; }
+    public int devastators { get; set; }
+    public int lives { get; set; }
     [SerializeField] float phaseThreeTimer;
     float phaseThreeTimeRemaning;
-    public int colonyHealth;
+    public int colonyHealth { get; set; }
     bool cityHealthHasBeenSet = false;
     CityController city;
     void Start()
@@ -142,7 +142,7 @@ public class GameManager : MonoBehaviour
         else
         {
             BossDeathLaser.FindObjectOfType<BossDeathLaser>().ShootLaser();
-           
+            timerText.text = "Time's Up!!!";
         }
     }
 
@@ -186,6 +186,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator EndPhaseOneWait()
     {
+        targetEnemiesOnScreen = -10;
         DestroyAllEnemies();
         playerCanMove = false;
         yield return new WaitForSeconds(1);

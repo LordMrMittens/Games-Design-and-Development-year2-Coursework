@@ -102,7 +102,7 @@ MonoBehaviour:
   nextDestination: {fileID: 0}
   currentNode: 0
   setViewDistance: 0
-  viewDistance: 5
+  viewDistance: 20
   player: {fileID: 0}
   searchInterval: 100
   state: 0
@@ -146,16 +146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 15
-  health: 0
   damageGiven: 5
   destroyOnTouch: 0
   pointsValue: 25
-  shields: 0
   isBossComponent: 0
   explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!65 &5155387351334467264
 BoxCollider:
   m_ObjectHideFlags: 0

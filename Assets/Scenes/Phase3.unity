@@ -560,6 +560,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &15101881
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1847,6 +1848,149 @@ MonoBehaviour:
   m_Bidirectional: 1
   m_AutoUpdatePosition: 0
   m_Area: 0
+--- !u!1 &99476259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 99476262}
+  - component: {fileID: 99476261}
+  - component: {fileID: 99476260}
+  m_Layer: 0
+  m_Name: Explosion Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &99476260
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99476259}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &99476261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99476259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a443d685ce8a95c4c9157dc6762defcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spaceShipExplosion: {fileID: 8300000, guid: 6a428be522502424695514be6b60849f, type: 3}
+  cityLaser: {fileID: 8300000, guid: 95b8449e196a3c04aad99a30342fefbc, type: 3}
+  explosionController: {fileID: 99476260}
+--- !u!4 &99476262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99476259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.358454, y: -3.5658865, z: -0.82668257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &99852626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba96c72d5943d524985554da0a2f830d, type: 3}
@@ -1913,6 +2057,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &103102424
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3832,7 +3977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242646009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.23, y: 1.56, z: -10.49}
+  m_LocalPosition: {x: 0.91, y: 1.56, z: -10.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -3987,8 +4132,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4156,8 +4301,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8833,7 +8978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250559644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0599995, y: -1.16, z: 0}
+  m_LocalPosition: {x: -7.46, y: -1.16, z: -1.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -8988,8 +9133,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9157,8 +9302,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14200,6 +14345,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &295366291
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15184,6 +15330,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!1 &363944396
 GameObject:
   m_ObjectHideFlags: 0
@@ -16176,8 +16323,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -16345,8 +16492,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
-      minScalar: 11
+      scalar: 11
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -21821,6 +21968,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &446422306
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21850,7 +21998,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 1674018348}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 300609001}
@@ -22722,6 +22870,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!65 &478436993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23216,6 +23365,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &493955335
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26856,7 +27006,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707401781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4700003, y: 5.16, z: 5.59}
+  m_LocalPosition: {x: -6.61, y: 2.33, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -27011,8 +27161,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -27180,8 +27330,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -32058,8 +32208,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -32227,8 +32377,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
-      minScalar: 11
+      scalar: 11
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -37414,6 +37564,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &740308303
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37443,7 +37594,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 2095162746}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 484422411}
@@ -39128,7 +39279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823308698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8099995, y: 4.76, z: -9.45}
+  m_LocalPosition: {x: 3.89, y: 0.83, z: -0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -39283,8 +39434,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -39452,8 +39603,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -53181,6 +53332,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &890585638
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53210,7 +53362,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 1357004594}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 1613988644}
@@ -53980,7 +54132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939368089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.34000015, y: 8.76, z: -1.38}
+  m_LocalPosition: {x: -0.34000015, y: 4.64, z: -1.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -54135,8 +54287,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -54304,8 +54456,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -59688,6 +59840,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &992973542
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59717,7 +59870,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 469176543}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 1006354360}
@@ -60317,8 +60470,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -60486,8 +60639,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
-      minScalar: 11
+      scalar: 11
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -65010,6 +65163,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1031872162
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68180,6 +68334,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1160722407
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69163,6 +69318,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1227572553
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69282,7 +69438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230954957}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.25, y: 1.74, z: -9.22}
+  m_LocalPosition: {x: -7.97, y: 1.74, z: -9.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -69437,8 +69593,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -69606,8 +69762,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -74258,6 +74414,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!65 &1240977739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75038,6 +75195,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1288258247
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -75373,7 +75531,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2a65e290b29e651498d69c5a165258ff, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.517
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -76234,7 +76392,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1359920979}
   - component: {fileID: 1359920978}
-  - component: {fileID: 1359920980}
   m_Layer: 0
   m_Name: DeathLaser
   m_TagString: Untagged
@@ -76258,7 +76415,7 @@ MonoBehaviour:
   extendedWidth: 6
   laserTime: 1.2
   explosion: {fileID: 1734094742}
-  laserAudio: {fileID: 1359920980}
+  soundManager: {fileID: 99476261}
   shootingLaser: 0
 --- !u!4 &1359920979
 Transform:
@@ -76275,102 +76432,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1359920980
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359920977}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 95b8449e196a3c04aad99a30342fefbc, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1364002997
 GameObject:
   m_ObjectHideFlags: 0
@@ -76986,7 +77047,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395378599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.62, y: -0.55, z: -0.5}
+  m_LocalPosition: {x: -2.22, y: -0.55, z: -9.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -77141,8 +77202,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -77310,8 +77371,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -84293,6 +84354,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!65 &1517517077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86512,6 +86574,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 1
 --- !u!114 &1631485737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88522,7 +88585,6 @@ GameObject:
   - component: {fileID: 1734094744}
   - component: {fileID: 1734094743}
   - component: {fileID: 1734094742}
-  - component: {fileID: 1734094746}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -88542,7 +88604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cf3369beffd10418a9c864358168b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionAudio: {fileID: 1734094746}
   extendedSize: 45
   explosionTime: 2
   exploding: 0
@@ -88609,102 +88670,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1734094746
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734094741}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 10098394df981bc4885190d110f07617, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1734515868
 GameObject:
   m_ObjectHideFlags: 0
@@ -90299,6 +90264,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1803108231
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -91428,8 +91394,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -91597,8 +91563,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 15
-      minScalar: 11
+      scalar: 11
+      minScalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -96891,7 +96857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947160206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.95, y: 2.79, z: -8.86}
+  m_LocalPosition: {x: 7.83, y: -1.13, z: -9.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111262775}
@@ -97046,8 +97012,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 5
+      scalar: 4
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -97215,8 +97181,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 11
-      minScalar: 5
+      scalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -102354,6 +102320,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1982824623
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -102557,6 +102524,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &1985895227
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -102586,7 +102554,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 797781456}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 1892146496}
@@ -103548,6 +103516,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &2044821197
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -103883,6 +103852,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &2058283399
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -103912,7 +103882,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 1004206529}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 9217347}
@@ -105082,6 +105052,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!135 &2103118054
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -105111,7 +105082,7 @@ MonoBehaviour:
   bulletTemplate: {fileID: 7280299743685637164, guid: f5cf736798623f24ba53b83f2ab74071, type: 3}
   cannon: {fileID: 508692776}
   maxBulletSpeed: 10
-  bulletDamage: 1
+  bulletDamage: 10
   origin: {x: 0, y: 0, z: 0}
   timeBetweenShots: 0.2
   laserTarget: {fileID: 2039095264}
@@ -105779,6 +105750,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!1 &919132148329074843
 GameObject:
   m_ObjectHideFlags: 0
@@ -105858,6 +105830,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   devastator: {fileID: 0}
   isBomb: 0
+  isCity: 0
 --- !u!1 &919132149152553506
 GameObject:
   m_ObjectHideFlags: 0
@@ -105902,7 +105875,7 @@ MonoBehaviour:
   missileIsReady: 0
   timeBetweenElectric: 11
   electricIsReady: 0
-  timeBetweenAttacks: 5
+  timeBetweenAttacks: 3
   rotateSpeed: 30
   bossExplosion: {fileID: 1086276002}
 --- !u!114 &919132149152553508
@@ -105918,6 +105891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossController: {fileID: 919132149152553507}
+  endingSound: {fileID: 99476261}
   totalHealth: 3750
   healthbar: {fileID: 412064165}
 --- !u!4 &1151388027855485817

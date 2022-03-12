@@ -4,21 +4,15 @@ using UnityEngine;
 public enum PlayerUpgrades { none, doubleShot, fireRate, doubleDamage}
 public class PlayerInventory : MonoBehaviour
 {
-    public PlayerUpgrades upgrades;
+    public PlayerUpgrades upgrades { get; set; }
     PlayerTransformationController playerTransformation;
-  
-    PlayerGun playerGun;
-    public bool hasDoubleShot;
-    public bool hasFireRateUp;
-    public bool hasShotPowerUp;
-
-    [SerializeField] GameObject missilePrefab;
-    public int missiles;
-    [SerializeField] GameObject homingMissilePrefab;
-    public int homingMissiles;
-    [SerializeField] GameObject devastatorPrefab;
-    public int devastators;
-    public bool hasShield;
+    public bool hasDoubleShot { get; set; }
+    public bool hasFireRateUp { get; set; }
+    public bool hasShotPowerUp { get; set; }
+    public int missiles { get; set; }
+    public int homingMissiles { get; set; }
+    public int devastators { get; set; }
+    public bool hasShield { get; set; }
     public ParticleSystem shield;
     public ParticleSystem.EmissionModule emmiter;
     void Start()

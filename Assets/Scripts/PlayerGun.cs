@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerGun : Gun
 {
-    PlayerMovementController playerMovementController;
-    PlayerTransformationController playerTransformation;
+
     [SerializeField] Camera mainCamera;
     [SerializeField] GameObject[] cannons;
     public LayerMask targetMask;
@@ -17,8 +16,6 @@ public class PlayerGun : Gun
 
     new void Start()
     {
-        playerMovementController = GetComponent<PlayerMovementController>();
-        playerTransformation = GetComponent<PlayerTransformationController>();
         playerInventory = GetComponent<PlayerInventory>();
         cannons = GameObject.FindGameObjectsWithTag("Cannon");
         damage = bulletDamage;
