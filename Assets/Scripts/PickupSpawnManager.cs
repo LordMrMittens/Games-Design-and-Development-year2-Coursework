@@ -29,7 +29,7 @@ public class PickupSpawnManager : MonoBehaviour
     {
         if (!pickupIsPresent)
         {
-            int powerUpSelection = Random.Range(0, 5);
+            int powerUpSelection = Random.Range(0, 4);
             if (powerUpSelection == 0)
             {
                 if (!playerInventory.hasDoubleShot)
@@ -66,11 +66,8 @@ public class PickupSpawnManager : MonoBehaviour
                 SpawnPickup(pickupType.Missile, location);
             } else if (powerUpSelection == 3)
             {
-                SpawnPickup(pickupType.Shield, location);
-            } else
-            {
                 SpawnPickup(pickupType.Devastator, location);
-            }
+            } 
         }
     }
     void SpawnPickup(pickupType type, Vector3 location)
