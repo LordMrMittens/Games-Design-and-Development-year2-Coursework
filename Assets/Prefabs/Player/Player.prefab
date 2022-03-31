@@ -606,17 +606,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f748e6369b6403e408a696679434f49a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgrades: 0
-  hasDoubleShot: 0
-  hasFireRateUp: 0
-  hasShotPowerUp: 0
-  missilePrefab: {fileID: 0}
-  missiles: 5000
-  homingMissilePrefab: {fileID: 0}
-  homingMissiles: 5000
-  devastatorPrefab: {fileID: 0}
-  devastators: 0
-  hasShield: 0
   shield: {fileID: 5830680144268231197}
 --- !u!114 &3615325743660499496
 MonoBehaviour:
@@ -631,16 +620,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  health: 0
   damageGiven: 0
   destroyOnTouch: 0
   pointsValue: 0
-  shields: 0
   isBossComponent: 0
   explosion: {fileID: 934168684570871974, guid: 9e98a01a9dcd8ab4382be0c5b9d338f6, type: 3}
   inventory: {fileID: 3615325743660499501}
   devastator: {fileID: 3410848907728580190, guid: f57f4a2d436a17144b8d1e95a5a8362a, type: 3}
   isBomb: 0
+  isCity: 0
 --- !u!54 &3615325743660499494
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -680,7 +668,6 @@ MonoBehaviour:
   - {fileID: 8887434843401470475}
   - {fileID: 6414945001831631046}
   transformParticles: {fileID: 4221874777837371163, guid: 25781528b1705b1409b3adaff9863633, type: 3}
-  sidegunsActive: 0
 --- !u!199 &3477469130298083019
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6180,7 +6167,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.9958562, b: 0.5707547, a: 1}
   m_Intensity: 2
-  m_Range: 50
+  m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
