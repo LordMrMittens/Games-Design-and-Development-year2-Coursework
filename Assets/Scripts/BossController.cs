@@ -26,6 +26,7 @@ public class BossController : MonoBehaviour
     [SerializeField] float rotateSpeed;
     Vector3 currentEulerAngles = new Vector3(0, 0, 0);
     [SerializeField] ParticleSystem bossExplosion;
+    public bool isAlive = true;
     public float z {get;set;}
     void Start()
     {
@@ -40,10 +41,13 @@ public class BossController : MonoBehaviour
     }
     void Update()
     {
-        UpdateAttackTimers();
-        TryAttack();
-        currentEulerAngles += new Vector3(0, z, 0) * Time.deltaTime * rotateSpeed;
-        transform.localEulerAngles = currentEulerAngles;
+        if (isAlive)
+        {
+            UpdateAttackTimers();
+            TryAttack();
+            currentEulerAngles += new Vector3(0, z, 0) * Time.deltaTime * rotateSpeed;
+            transform.localEulerAngles = currentEulerAngles;
+        }
     }
     private void TryAttack()
     {

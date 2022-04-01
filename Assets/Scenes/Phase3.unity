@@ -105902,7 +105902,7 @@ GameObject:
   - component: {fileID: 919132149152553508}
   m_Layer: 11
   m_Name: Boss_UFO-3
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105936,6 +105936,7 @@ MonoBehaviour:
   timeBetweenAttacks: 3
   rotateSpeed: 30
   bossExplosion: {fileID: 1086276002}
+  isAlive: 1
 --- !u!114 &919132149152553508
 MonoBehaviour:
   m_ObjectHideFlags: 0

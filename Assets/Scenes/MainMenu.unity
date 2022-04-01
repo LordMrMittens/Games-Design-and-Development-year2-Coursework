@@ -9040,8 +9040,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27, y: 56}
-  m_SizeDelta: {x: 588.5248, y: 294.8474}
+  m_AnchoredPosition: {x: 2.9357, y: 19.708}
+  m_SizeDelta: {x: 766.1245, y: 360.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1591408319
 MonoBehaviour:
@@ -9065,10 +9065,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 066edd4549646d14c85e6331c5290b89, type: 3}
-    m_FontSize: 24
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -9076,7 +9076,30 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits go here
+  m_Text: 'Audio sourced from www.freesound.org
+
+    Artists:
+
+    Jobro, Marcuslee,
+    Mparsons99, Cosmicd, Jpnien, 2hear, Kafokafo,  Sentinel, John129pats, Mazk1985,
+    Jmayoff, JohanDeecke, GlitchedTones, Tjcason, Ledhed, Michael-Grinnell, ThePlax,
+    Beboncan, Bone666138, Qubodup, Jagadamba, AstronautChild, Onderwish, X3nus, Theoter,
+    Audiomirage, Almusic34, Lagmusics.
+
+
+    Skyboxes sourced from Skybox studio
+    at the Unity Asset Store
+
+
+    Metal plate texture courtesy of Katsukagi at www.3dtextures.me
+
+
+    Font:
+    Space Mission by MaknaStudio at www.dafont.com
+
+    https://www.dafont.com/space-mission.font
+
+'
 --- !u!222 &1591408320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9296,7 +9319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 254.18192, y: -168}
+  m_AnchoredPosition: {x: 256.1, y: -184.3}
   m_SizeDelta: {x: 471.7545, y: 47.6257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719836465

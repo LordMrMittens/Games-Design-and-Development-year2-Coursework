@@ -22,8 +22,10 @@ public class BossHealth : MonoBehaviour
         healthbar.SetHealth(health);
         if (health < 0)
         {
+
             GameManager.TGM.EndPhaseThree();
             bossController.EnableExplosions();
+            bossController.isAlive = false;
             endingSound.PlaySource(endingSound.spaceShipExplosion);
         }
     }

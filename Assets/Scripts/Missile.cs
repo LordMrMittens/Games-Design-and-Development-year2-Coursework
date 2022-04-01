@@ -16,8 +16,15 @@ public class Missile : AgentMover
     public override void Start()
     {
         agent.enabled = true;
-        
         targetLastLocation = manualTargetLocation;
+        if (isPlayerMissile)
+        {
+            Destroy(gameObject, 7);
+        }
+        else
+        {
+            Destroy(gameObject, 15);
+        }
     }
     public override void Update()
     {
